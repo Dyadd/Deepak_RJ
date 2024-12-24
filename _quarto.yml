@@ -1,9 +1,8 @@
 project:
   type: website
-  output-dir: docs
 
 website:
-  title: "Move the Right Lever"
+  title: "Deepak_RJ"
   navbar:
     right:
       - about.qmd

@@ -1,6 +1,6 @@
 ---
 title: "About"
-image: image.jpg
+image: profile.jpg
 about:
   template: jolla
   links:
@@ -16,4 +16,4 @@ about:
 
 ---
 
-I feel ridiculously lucky to learn from the people I learn from, so I hope to share my understanding.
+About this blog

@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Deepak RJ">
+<meta name="dcterms.date" content="2024-12-24">
+<meta name="description" content="Exploring the critical intersection of artificial intelligence and human-centered design in healthcare">
 
-<title>Deepak_RJ – Deepak RJ</title>
+<title>What medicine needs to get right about AI - on HCI – Deepak RJ</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +26,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-0626ff4d7a71b55c8707dcae1d04a9b6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-996116d18a3157189fd2414942a0881c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-0626ff4d7a71b55c8707dcae1d04a9b6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-996116d18a3157189fd2414942a0881c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,65 +69,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -137,7 +80,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Deepak RJ</span>
     </a>
   </div>
@@ -148,11 +91,11 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
@@ -176,7 +119,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Deepak_RJ</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../posts/post-with-code/index.html">Recent Posts</a></li><li class="breadcrumb-item"><a href="../../posts/ai-medicine-hci/writing_index.html">Ai Medicine Hci</a></li><li class="breadcrumb-item"><a href="../../posts/ai-medicine-hci/writing_index.html">What medicine needs to get right about AI - on HCI</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -185,21 +128,43 @@ window.Quarto = {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
-      <h1 class="title">Deepak_RJ</h1>
-                      </div>
+    <div class="quarto-title column-body"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../posts/post-with-code/index.html">Recent Posts</a></li><li class="breadcrumb-item"><a href="../../posts/ai-medicine-hci/writing_index.html">Ai Medicine Hci</a></li><li class="breadcrumb-item"><a href="../../posts/ai-medicine-hci/writing_index.html">What medicine needs to get right about AI - on HCI</a></li></ol></nav>
+      <h1 class="title">What medicine needs to get right about AI - on HCI</h1>
+                  <div>
+        <div class="description">
+          Exploring the critical intersection of artificial intelligence and human-centered design in healthcare
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">AI</div>
+                <div class="quarto-category">Healthcare</div>
+                <div class="quarto-category">HCI</div>
+              </div>
+                  </div>
   </div>
     
   
-  <div class="quarto-title-meta column-body">
+  <div class="quarto-title-meta">
 
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Deepak RJ </p>
+            </div>
+    </div>
       
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">December 24, 2024</p>
+      </div>
+    </div>
     
       
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="sidebar-menu-container"> 
@@ -215,28 +180,28 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./posts/post-with-code/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../posts/post-with-code/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Post With Code</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./posts/welcome/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../posts/welcome/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Welcome To My Blog</span></a>
   </div>
 </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
  <span class="menu-text">Ai Medicine Hci</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./posts/ai-medicine-hci/writing_index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../posts/ai-medicine-hci/writing_index.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">What medicine needs to get right about AI - on HCI</span></a>
   </div>
 </li>
@@ -250,137 +215,164 @@ window.Quarto = {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div><div class="category" data-category="QUk=">AI <span class="quarto-category-count">(1)</span></div><div class="category" data-category="SENJ">HCI <span class="quarto-category-count">(1)</span></div><div class="category" data-category="SGVhbHRoY2FyZQ==">Healthcare <span class="quarto-category-count">(1)</span></div><div class="category" data-category="YW5hbHlzaXM=">analysis <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Y29kZQ==">code <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bmV3cw==">news <span class="quarto-category-count">(2)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#the-ai-revolution-in-healthcare-beyond-the-hype" id="toc-the-ai-revolution-in-healthcare-beyond-the-hype" class="nav-link active" data-scroll-target="#the-ai-revolution-in-healthcare-beyond-the-hype">The AI Revolution in Healthcare: Beyond the Hype</a></li>
+  <li><a href="#the-implementation-challenge" id="toc-the-implementation-challenge" class="nav-link" data-scroll-target="#the-implementation-challenge">The Implementation Challenge</a>
+  <ul class="collapse">
+  <li><a href="#understanding-ai-models-vs-products" id="toc-understanding-ai-models-vs-products" class="nav-link" data-scroll-target="#understanding-ai-models-vs-products">Understanding AI: Models vs Products</a></li>
+  </ul></li>
+  <li><a href="#the-clinical-decision-support-dilemma" id="toc-the-clinical-decision-support-dilemma" class="nav-link" data-scroll-target="#the-clinical-decision-support-dilemma">The Clinical Decision Support Dilemma</a>
+  <ul class="collapse">
+  <li><a href="#the-hidden-costs" id="toc-the-hidden-costs" class="nav-link" data-scroll-target="#the-hidden-costs">The Hidden Costs</a></li>
+  </ul></li>
+  <li><a href="#breaking-free-from-false-assumptions" id="toc-breaking-free-from-false-assumptions" class="nav-link" data-scroll-target="#breaking-free-from-false-assumptions">Breaking Free from False Assumptions</a></li>
+  <li><a href="#moving-forward" id="toc-moving-forward" class="nav-link" data-scroll-target="#moving-forward">Moving Forward</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-body" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
 
+<section id="the-ai-revolution-in-healthcare-beyond-the-hype" class="level2">
+<h2 class="anchored" data-anchor-id="the-ai-revolution-in-healthcare-beyond-the-hype">The AI Revolution in Healthcare: Beyond the Hype</h2>
+<p>The transformer architecture has revolutionized AI, enabling systems to capture complex non-linear relationships in vast datasets. In healthcare, this has led to remarkable capabilities:</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Key Applications
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>Clinical Communication</strong>: AI systems now understand medical context and can answer patient questions at a level comparable to or exceeding doctors <span class="citation" data-cites="chatgpt2024patient">[@chatgpt2024patient]</span></li>
+<li><strong>Administrative Efficiency</strong>: Automated transcription and generation of medical documentation <span class="citation" data-cites="heidihealth2024">[@heidihealth2024]</span></li>
+<li><strong>Workflow Enhancement</strong>: Smart EMR integration for streamlined order entry</li>
+<li><strong>Research Advancement</strong>: Analysis of complex multi-omic biological data <span class="citation" data-cites="nature2024multiomics">[@nature2024multiomics]</span></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="the-implementation-challenge" class="level2">
+<h2 class="anchored" data-anchor-id="the-implementation-challenge">The Implementation Challenge</h2>
+<p>As clinicians increasingly interact with AI tools, two critical aspects emerge:</p>
+<ol type="1">
+<li><strong>Patient Safety</strong>: We must speak the same language as AI implementers to ensure proper safeguards. The concerning implementation of Epic’s Deterioration Index without extensive peer review serves as a cautionary tale <span class="citation" data-cites="epic2021deterioration">[@epic2021deterioration]</span></li>
+<li><strong>Optimal Utilization</strong>: These tools show remarkable promise, but only if we use them correctly <span class="citation" data-cites="bmc2023healthcare">[@bmc2023healthcare]</span></li>
+</ol>
+<section id="understanding-ai-models-vs-products" class="level3">
+<h3 class="anchored" data-anchor-id="understanding-ai-models-vs-products">Understanding AI: Models vs Products</h3>
+<p>A crucial distinction often missed in healthcare is that an AI model itself is not a product. Take OpenAI as an example - while they excel at building powerful models, their success with ChatGPT comes from transforming that model into a helpful assistant. As highlighted in Stanford’s research, we should shift our thinking towards compound AI systems <span class="citation" data-cites="stanford2024compound">[@stanford2024compound]</span>.</p>
+</section>
+</section>
+<section id="the-clinical-decision-support-dilemma" class="level2">
+<h2 class="anchored" data-anchor-id="the-clinical-decision-support-dilemma">The Clinical Decision Support Dilemma</h2>
+<p>Consider clinical decision support in radiology. While companies focus on creating high-performance diagnostic models, the implementation pathway remains unclear. Some success has been demonstrated in screening applications <span class="citation" data-cites="screening2023breast">[@screening2023breast]</span>, but clinical practice implementation remains challenging.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Common Implementation Models
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li><strong>Human-First Verification</strong>
+<ul>
+<li>Clinician writes initial report</li>
+<li>AI system performs error check</li>
+<li>Discrepancies trigger senior review</li>
+</ul></li>
+<li><strong>AI-First Verification</strong>
+<ul>
+<li>AI generates initial report</li>
+<li>Clinician reviews and validates</li>
+</ul></li>
+<li><strong>AI Replacement</strong>
+<ul>
+<li>AI handles routine cases</li>
+<li>Complex cases routed to seniors</li>
+<li>Oversight based on confidence metrics</li>
+</ul></li>
+</ol>
+</div>
+</div>
+<section id="the-hidden-costs" class="level3">
+<h3 class="anchored" data-anchor-id="the-hidden-costs">The Hidden Costs</h3>
+<p>Each approach brings significant challenges:</p>
+<ul>
+<li><strong>Workflow Impact</strong>: Options 1 &amp; 2 may increase radiologist stress and workload <span class="citation" data-cites="jama2024radiologist">[@jama2024radiologist]</span></li>
+<li><strong>Trust Dynamics</strong>: Like working with a brilliant but occasionally erratic colleague</li>
+<li><strong>Economic Pressure</strong>: Healthcare organizations face strong incentives to pursue full automation <span class="citation" data-cites="ide2024ai">[@ide2024ai]</span></li>
+<li><strong>Workforce Disruption</strong>: Potential displacement of early-career specialists</li>
+</ul>
+</section>
+</section>
+<section id="breaking-free-from-false-assumptions" class="level2">
+<h2 class="anchored" data-anchor-id="breaking-free-from-false-assumptions">Breaking Free from False Assumptions</h2>
+<p>Our limited options stem from a fundamental assumption: that we need autonomous AI agents. This assumption restricts our thinking and overlooks potentially more effective solutions.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Key Questions to Consider
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li>What alternative products could we create?</li>
+<li>How might we design systems that enhance rather than replace expertise?</li>
+<li>What new models of human-AI collaboration could we explore?</li>
+</ol>
+</div>
+</div>
+</section>
+<section id="moving-forward" class="level2">
+<h2 class="anchored" data-anchor-id="moving-forward">Moving Forward</h2>
+<p>The path forward requires us to:</p>
+<ol type="1">
+<li>Reimagine AI implementation beyond autonomous agents</li>
+<li>Design for true human-AI collaboration</li>
+<li>Balance economic pressures with clinical excellence</li>
+<li>Adapt medical education for this new paradigm</li>
+</ol>
+<p>The question isn’t whether AI will transform healthcare - it’s how we ensure that transformation serves both providers and patients effectively.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+A Note on Human-Centered Design
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>As we develop these systems, we must prioritize designs that: - Enhance clinical workflows rather than disrupting them - Support rather than replace clinical judgment - Maintain the human elements of healthcare delivery</p>
+</div>
+</div>
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
+<p><span class="citation" data-cites="chatgpt2024patient">[@chatgpt2024patient]</span>: jamanetwork.com/journals/jamainternalmedicine/fullarticle/2804309 <span class="citation" data-cites="heidihealth2024">[@heidihealth2024]</span>: https://www.heidihealth.com/ <span class="citation" data-cites="nature2024multiomics">[@nature2024multiomics]</span>: www.nature.com/articles/s41592-024-02201-0#Sec22 <span class="citation" data-cites="epic2021deterioration">[@epic2021deterioration]</span>: jamanetwork.com/journals/jamainternalmedicine/fullarticle/2781307 <span class="citation" data-cites="bmc2023healthcare">[@bmc2023healthcare]</span>: https://bmcmededuc.biomedcentral.com/articles/10.1186/s12909-023-04529-1 <span class="citation" data-cites="stanford2024compound">[@stanford2024compound]</span>: https://www.youtube.com/watch?v=2kSaVGW4-PE <span class="citation" data-cites="screening2023breast">[@screening2023breast]</span>: https://pubmed.ncbi.nlm.nih.gov/31867408/ <span class="citation" data-cites="jama2024radiologist">[@jama2024radiologist]</span>: jamanetwork.com/journals/jamanetworkopen/fullarticle/2826721 <span class="citation" data-cites="ide2024ai">[@ide2024ai]</span>: https://arxiv.org/abs/2312.05481</p>
 
 
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="QUklMkNIZWFsdGhjYXJlJTJDSENJ" data-listing-date-sort="1734958800000" data-listing-file-modified-sort="1735284162155" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="512">
-<div class="thumbnail">
-<p><a href="./posts/ai-medicine-hci/writing_index.html" class="no-external"></a></p><a href="./posts/ai-medicine-hci/writing_index.html" class="no-external">
-<p><img loading="lazy" src="./posts/ai-medicine-hci/thumbnail.jpg" class="thumbnail-image"></p>
-</a><p><a href="./posts/ai-medicine-hci/writing_index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/ai-medicine-hci/writing_index.html" class="no-external">What medicine needs to get right about AI - on HCI</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/ai-medicine-hci/writing_index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('QUk='); return false;">
-AI
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('SGVhbHRoY2FyZQ=='); return false;">
-Healthcare
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('SENJ'); return false;">
-HCI
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/ai-medicine-hci/writing_index.html" class="no-external">Exploring the critical intersection of artificial intelligence and human-centered design in healthcare</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/ai-medicine-hci/writing_index.html" class="no-external">
-<div class="listing-date">
-Dec 24, 2024
-</div>
-<div class="listing-author">
-Deepak RJ
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="bmV3cyUyQ2NvZGUlMkNhbmFseXNpcw==" data-listing-date-sort="1734958800000" data-listing-file-modified-sort="1735024496931" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="7">
-<div class="thumbnail">
-<p><a href="./posts/post-with-code/index.html" class="no-external"></a></p><a href="./posts/post-with-code/index.html" class="no-external">
-<p><img loading="lazy" src="./posts/post-with-code/image.jpg" class="thumbnail-image"></p>
-</a><p><a href="./posts/post-with-code/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/post-with-code/index.html" class="no-external">Post With Code</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/post-with-code/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('bmV3cw=='); return false;">
-news
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Y29kZQ=='); return false;">
-code
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('YW5hbHlzaXM='); return false;">
-analysis
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/post-with-code/index.html" class="no-external">This is a post with executable code.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/post-with-code/index.html" class="no-external">
-<div class="listing-date">
-Dec 24, 2024
-</div>
-<div class="listing-author">
-Harlow Malloc
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="bmV3cw==" data-listing-date-sort="1734699600000" data-listing-file-modified-sort="1735024496920" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="32">
-<div class="thumbnail">
-<p><a href="./posts/welcome/index.html" class="no-external"></a></p><a href="./posts/welcome/index.html" class="no-external">
-<p class="card-img-top"><img src="posts\welcome\thumbnail.jpg"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/welcome/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/welcome/index.html" class="no-external">Welcome To My Blog</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/welcome/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('bmV3cw=='); return false;">
-news
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/welcome/index.html" class="no-external">This is the first post in a Quarto blog. Welcome!</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/welcome/index.html" class="no-external">
-<div class="listing-date">
-Dec 21, 2024
-</div>
-<div class="listing-author">
-Tristan O’Malley
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

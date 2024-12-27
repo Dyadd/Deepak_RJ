@@ -2,18 +2,41 @@ project:
   type: website
 
 website:
-  title: "Deepak_RJ"
+  title: "Deepak RJ"
+  description: "Thoughts on medicine, technology, and human-centered design"
+  site-url: ""
+  repo-url: ""
+  repo-actions: [issue]
+  
+  page-footer: 
+    left: "Blog built with [Quarto](https://quarto.org/)"
+    right: "&copy; 2024 Deepak RJ"
+    
   navbar:
+    background: light
+    search: true
     right:
+      - text: Blog
+        file: index.qmd
       - about.qmd
       - icon: github
         href: https://github.com/
       - icon: twitter
         href: https://twitter.com
+
+  sidebar:
+    style: floating
+    contents:
+      - section: "Recent Posts"
+        contents: posts/*/*.qmd
+
 format:
   html:
-    theme: cosmo
-    css: styles.css
-
-
-
+    theme:
+      light: [cosmo, custom.scss]
+    mainfont: "Lato"
+    code-copy: true
+    code-overflow: wrap
+    toc: true
+    toc-title: On this page
+    highlight-style: github

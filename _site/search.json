@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Deepak_RJ",
     "section": "",
-    "text": "Post With Code\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nDec 24, 2024\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nDec 21, 2024\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+    "text": "What medicine needs to get right about AI - on HCI\n\n\n\n\n\n\nAI\n\n\nHealthcare\n\n\nHCI\n\n\n\nExploring the critical intersection of artificial intelligence and human-centered design in healthcare\n\n\n\n\n\nDec 24, 2024\n\n\nDeepak RJ\n\n\n\n\n\n\n\n\n\n\n\n\nPost With Code\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nDec 24, 2024\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nDec 21, 2024\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/post-with-code/index.html",
@@ -26,5 +26,120 @@
     "title": "Welcome To My Blog",
     "section": "",
     "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  },
+  {
+    "objectID": "posts/ai-medicine-hci/index.html",
+    "href": "posts/ai-medicine-hci/index.html",
+    "title": "What medicine needs to get right about AI - on HCI",
+    "section": "",
+    "text": "The integration of artificial intelligence in medicine represents one of the most significant technological shifts in healthcare. However, the success of this integration hinges not just on the sophistication of AI algorithms, but on how well we design these systems to work with human users - both healthcare providers and patients.\n[Your content will go here]",
+    "crumbs": [
+      "Blog",
+      "Recent Posts",
+      "What medicine needs to get right about AI - on HCI"
+    ]
+  },
+  {
+    "objectID": "posts/ai-medicine-hci/index.html#introduction",
+    "href": "posts/ai-medicine-hci/index.html#introduction",
+    "title": "What medicine needs to get right about AI - on HCI",
+    "section": "",
+    "text": "The integration of artificial intelligence in medicine represents one of the most significant technological shifts in healthcare. However, the success of this integration hinges not just on the sophistication of AI algorithms, but on how well we design these systems to work with human users - both healthcare providers and patients.\n[Your content will go here]",
+    "crumbs": [
+      "Blog",
+      "Recent Posts",
+      "What medicine needs to get right about AI - on HCI"
+    ]
+  },
+  {
+    "objectID": "posts/ai-medicine-hci/writing_index.html",
+    "href": "posts/ai-medicine-hci/writing_index.html",
+    "title": "What medicine needs to get right about AI - on HCI",
+    "section": "",
+    "text": "The transformer architecture has revolutionized AI, enabling systems to capture complex non-linear relationships in vast datasets. In healthcare, this has led to remarkable capabilities:\n\n\n\n\n\n\nKey Applications\n\n\n\n\nClinical Communication: AI systems now understand medical context and can answer patient questions at a level comparable to or exceeding doctors [@chatgpt2024patient]\nAdministrative Efficiency: Automated transcription and generation of medical documentation [@heidihealth2024]\nWorkflow Enhancement: Smart EMR integration for streamlined order entry\nResearch Advancement: Analysis of complex multi-omic biological data [@nature2024multiomics]",
+    "crumbs": [
+      "Blog",
+      "Recent Posts",
+      "Ai Medicine Hci",
+      "What medicine needs to get right about AI - on HCI"
+    ]
+  },
+  {
+    "objectID": "posts/ai-medicine-hci/writing_index.html#the-ai-revolution-in-healthcare-beyond-the-hype",
+    "href": "posts/ai-medicine-hci/writing_index.html#the-ai-revolution-in-healthcare-beyond-the-hype",
+    "title": "What medicine needs to get right about AI - on HCI",
+    "section": "",
+    "text": "The transformer architecture has revolutionized AI, enabling systems to capture complex non-linear relationships in vast datasets. In healthcare, this has led to remarkable capabilities:\n\n\n\n\n\n\nKey Applications\n\n\n\n\nClinical Communication: AI systems now understand medical context and can answer patient questions at a level comparable to or exceeding doctors [@chatgpt2024patient]\nAdministrative Efficiency: Automated transcription and generation of medical documentation [@heidihealth2024]\nWorkflow Enhancement: Smart EMR integration for streamlined order entry\nResearch Advancement: Analysis of complex multi-omic biological data [@nature2024multiomics]",
+    "crumbs": [
+      "Blog",
+      "Recent Posts",
+      "Ai Medicine Hci",
+      "What medicine needs to get right about AI - on HCI"
+    ]
+  },
+  {
+    "objectID": "posts/ai-medicine-hci/writing_index.html#the-implementation-challenge",
+    "href": "posts/ai-medicine-hci/writing_index.html#the-implementation-challenge",
+    "title": "What medicine needs to get right about AI - on HCI",
+    "section": "The Implementation Challenge",
+    "text": "The Implementation Challenge\nAs clinicians increasingly interact with AI tools, two critical aspects emerge:\n\nPatient Safety: We must speak the same language as AI implementers to ensure proper safeguards. The concerning implementation of Epic’s Deterioration Index without extensive peer review serves as a cautionary tale [@epic2021deterioration]\nOptimal Utilization: These tools show remarkable promise, but only if we use them correctly [@bmc2023healthcare]\n\n\nUnderstanding AI: Models vs Products\nA crucial distinction often missed in healthcare is that an AI model itself is not a product. Take OpenAI as an example - while they excel at building powerful models, their success with ChatGPT comes from transforming that model into a helpful assistant. As highlighted in Stanford’s research, we should shift our thinking towards compound AI systems [@stanford2024compound].",
+    "crumbs": [
+      "Blog",
+      "Recent Posts",
+      "Ai Medicine Hci",
+      "What medicine needs to get right about AI - on HCI"
+    ]
+  },
+  {
+    "objectID": "posts/ai-medicine-hci/writing_index.html#the-clinical-decision-support-dilemma",
+    "href": "posts/ai-medicine-hci/writing_index.html#the-clinical-decision-support-dilemma",
+    "title": "What medicine needs to get right about AI - on HCI",
+    "section": "The Clinical Decision Support Dilemma",
+    "text": "The Clinical Decision Support Dilemma\nConsider clinical decision support in radiology. While companies focus on creating high-performance diagnostic models, the implementation pathway remains unclear. Some success has been demonstrated in screening applications [@screening2023breast], but clinical practice implementation remains challenging.\n\n\n\n\n\n\nCommon Implementation Models\n\n\n\n\nHuman-First Verification\n\nClinician writes initial report\nAI system performs error check\nDiscrepancies trigger senior review\n\nAI-First Verification\n\nAI generates initial report\nClinician reviews and validates\n\nAI Replacement\n\nAI handles routine cases\nComplex cases routed to seniors\nOversight based on confidence metrics\n\n\n\n\n\nThe Hidden Costs\nEach approach brings significant challenges:\n\nWorkflow Impact: Options 1 & 2 may increase radiologist stress and workload [@jama2024radiologist]\nTrust Dynamics: Like working with a brilliant but occasionally erratic colleague\nEconomic Pressure: Healthcare organizations face strong incentives to pursue full automation [@ide2024ai]\nWorkforce Disruption: Potential displacement of early-career specialists",
+    "crumbs": [
+      "Blog",
+      "Recent Posts",
+      "Ai Medicine Hci",
+      "What medicine needs to get right about AI - on HCI"
+    ]
+  },
+  {
+    "objectID": "posts/ai-medicine-hci/writing_index.html#breaking-free-from-false-assumptions",
+    "href": "posts/ai-medicine-hci/writing_index.html#breaking-free-from-false-assumptions",
+    "title": "What medicine needs to get right about AI - on HCI",
+    "section": "Breaking Free from False Assumptions",
+    "text": "Breaking Free from False Assumptions\nOur limited options stem from a fundamental assumption: that we need autonomous AI agents. This assumption restricts our thinking and overlooks potentially more effective solutions.\n\n\n\n\n\n\nKey Questions to Consider\n\n\n\n\nWhat alternative products could we create?\nHow might we design systems that enhance rather than replace expertise?\nWhat new models of human-AI collaboration could we explore?",
+    "crumbs": [
+      "Blog",
+      "Recent Posts",
+      "Ai Medicine Hci",
+      "What medicine needs to get right about AI - on HCI"
+    ]
+  },
+  {
+    "objectID": "posts/ai-medicine-hci/writing_index.html#moving-forward",
+    "href": "posts/ai-medicine-hci/writing_index.html#moving-forward",
+    "title": "What medicine needs to get right about AI - on HCI",
+    "section": "Moving Forward",
+    "text": "Moving Forward\nThe path forward requires us to:\n\nReimagine AI implementation beyond autonomous agents\nDesign for true human-AI collaboration\nBalance economic pressures with clinical excellence\nAdapt medical education for this new paradigm\n\nThe question isn’t whether AI will transform healthcare - it’s how we ensure that transformation serves both providers and patients effectively.\n\n\n\n\n\n\nA Note on Human-Centered Design\n\n\n\nAs we develop these systems, we must prioritize designs that: - Enhance clinical workflows rather than disrupting them - Support rather than replace clinical judgment - Maintain the human elements of healthcare delivery",
+    "crumbs": [
+      "Blog",
+      "Recent Posts",
+      "Ai Medicine Hci",
+      "What medicine needs to get right about AI - on HCI"
+    ]
+  },
+  {
+    "objectID": "posts/ai-medicine-hci/writing_index.html#references",
+    "href": "posts/ai-medicine-hci/writing_index.html#references",
+    "title": "What medicine needs to get right about AI - on HCI",
+    "section": "References",
+    "text": "References\n[@chatgpt2024patient]: jamanetwork.com/journals/jamainternalmedicine/fullarticle/2804309 [@heidihealth2024]: https://www.heidihealth.com/ [@nature2024multiomics]: www.nature.com/articles/s41592-024-02201-0#Sec22 [@epic2021deterioration]: jamanetwork.com/journals/jamainternalmedicine/fullarticle/2781307 [@bmc2023healthcare]: https://bmcmededuc.biomedcentral.com/articles/10.1186/s12909-023-04529-1 [@stanford2024compound]: https://www.youtube.com/watch?v=2kSaVGW4-PE [@screening2023breast]: https://pubmed.ncbi.nlm.nih.gov/31867408/ [@jama2024radiologist]: jamanetwork.com/journals/jamanetworkopen/fullarticle/2826721 [@ide2024ai]: https://arxiv.org/abs/2312.05481",
+    "crumbs": [
+      "Blog",
+      "Recent Posts",
+      "Ai Medicine Hci",
+      "What medicine needs to get right about AI - on HCI"
+    ]
   }
 ]

@@ -10,5 +10,11 @@
   },
   "posts/welcome/index.qmd": {
     "index.html": "d46934b2"
+  },
+  "posts/ai-medicine-hci/index.qmd": {
+    "index.html": "217c74de"
+  },
+  "posts/ai-medicine-hci/writing_index.qmd": {
+    "writing_index.html": "05bbbdf5"
   }
 }

@@ -1,9 +1,9 @@
 ---
-title: "Post With Code"
-author: "Harlow Malloc"
-date: "2024-12-24"
-categories: [news, code, analysis]
+title: "What Medical AI can Learn from Aviation"
+author: "Deepak RJ"
+date: "2024-12-29"
+categories: [AI, HCI]
 image: "image.jpg"
 ---
 
-This is a post with executable code.
+A

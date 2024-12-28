@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>/index.html</loc>
-    <lastmod>2024-12-27T07:50:18.249Z</lastmod>
+    <loc>/posts/welcome/index.html</loc>
+    <lastmod>2024-12-24T07:14:56.920Z</lastmod>
   </url>
   <url>
-    <loc>/posts/ai-medicine-hci/index.html</loc>
-    <lastmod>2024-12-24T07:19:05.100Z</lastmod>
-  </url>
-  <url>
-    <loc>/posts/ai-medicine-hci/writing_index.html</loc>
-    <lastmod>2024-12-27T09:23:19.288Z</lastmod>
+    <loc>/posts/Human-Centered-AI/writing_index.html</loc>
+    <lastmod>2024-12-28T13:31:43.364Z</lastmod>
   </url>
   <url>
     <loc>/about.html</loc>
     <lastmod>2024-12-24T07:14:56.936Z</lastmod>
   </url>
   <url>
-    <loc>/posts/Human-Centered-AI/writing_index.html</loc>
-    <lastmod>2024-12-28T13:24:54.749Z</lastmod>
+    <loc>/index.html</loc>
+    <lastmod>2024-12-27T07:50:18.249Z</lastmod>
+  </url>
+  <url>
+    <loc>/posts/post-with-code/index.html</loc>
+    <lastmod>2024-12-24T07:14:56.931Z</lastmod>
   </url>
 </urlset>

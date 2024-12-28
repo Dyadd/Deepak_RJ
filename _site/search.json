@@ -1,145 +1,14 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Deepak_RJ",
-    "section": "",
-    "text": "What Medicine needs to get right about AI\n\n\n\n\n\n\nAI\n\n\nHCI\n\n\n\nExploring the critical intersection of artificial intelligence and human-centered design in healthcare\n\n\n\n\n\nDec 24, 2024\n\n\nDeepak RJ\n\n\n\n\n\n\n\n\n\n\n\n\nPost With Code\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nDec 24, 2024\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nDec 21, 2024\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "posts/post-with-code/index.html",
-    "href": "posts/post-with-code/index.html",
-    "title": "Post With Code",
-    "section": "",
-    "text": "This is a post with executable code."
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this blog"
-  },
-  {
     "objectID": "posts/welcome/index.html",
     "href": "posts/welcome/index.html",
     "title": "Welcome To My Blog",
     "section": "",
-    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
-  },
-  {
-    "objectID": "posts/ai-medicine-hci/index.html",
-    "href": "posts/ai-medicine-hci/index.html",
-    "title": "What medicine needs to get right about AI - on HCI",
-    "section": "",
-    "text": "The integration of artificial intelligence in medicine represents one of the most significant technological shifts in healthcare. However, the success of this integration hinges not just on the sophistication of AI algorithms, but on how well we design these systems to work with human users - both healthcare providers and patients.\n[Your content will go here]",
+    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts.",
     "crumbs": [
       "Blog",
       "Recent Posts",
-      "What medicine needs to get right about AI - on HCI"
-    ]
-  },
-  {
-    "objectID": "posts/ai-medicine-hci/index.html#introduction",
-    "href": "posts/ai-medicine-hci/index.html#introduction",
-    "title": "What medicine needs to get right about AI - on HCI",
-    "section": "",
-    "text": "The integration of artificial intelligence in medicine represents one of the most significant technological shifts in healthcare. However, the success of this integration hinges not just on the sophistication of AI algorithms, but on how well we design these systems to work with human users - both healthcare providers and patients.\n[Your content will go here]",
-    "crumbs": [
-      "Blog",
-      "Recent Posts",
-      "What medicine needs to get right about AI - on HCI"
-    ]
-  },
-  {
-    "objectID": "posts/ai-medicine-hci/writing_index.html",
-    "href": "posts/ai-medicine-hci/writing_index.html",
-    "title": "What Medicine needs to get right about AI",
-    "section": "",
-    "text": "The transformer architecture has revolutionized AI, enabling systems to capture complex non-linear relationships in vast datasets. In healthcare, this has led to remarkable capabilities:\n\n\n\n\n\n\nKey Applications\n\n\n\n\nClinical Communication: AI systems now understand medical context and can answer patient questions at a level comparable to or exceeding doctors JAMA Patient Interaction Study\nAdministrative Efficiency: Automated transcription and generation of medical documentation Heidi Health\nWorkflow Enhancement: Smart EMR integration for streamlined order entry\nResearch Advancement: Analysis of complex multi-omic biological data",
-    "crumbs": [
-      "Blog",
-      "Recent Posts",
-      "Ai Medicine Hci",
-      "What Medicine needs to get right about AI"
-    ]
-  },
-  {
-    "objectID": "posts/ai-medicine-hci/writing_index.html#the-ai-revolution-in-healthcare-beyond-the-hype",
-    "href": "posts/ai-medicine-hci/writing_index.html#the-ai-revolution-in-healthcare-beyond-the-hype",
-    "title": "What Medicine needs to get right about AI",
-    "section": "",
-    "text": "The transformer architecture has revolutionized AI, enabling systems to capture complex non-linear relationships in vast datasets. In healthcare, this has led to remarkable capabilities:\n\n\n\n\n\n\nKey Applications\n\n\n\n\nClinical Communication: AI systems now understand medical context and can answer patient questions at a level comparable to or exceeding doctors JAMA Patient Interaction Study\nAdministrative Efficiency: Automated transcription and generation of medical documentation Heidi Health\nWorkflow Enhancement: Smart EMR integration for streamlined order entry\nResearch Advancement: Analysis of complex multi-omic biological data",
-    "crumbs": [
-      "Blog",
-      "Recent Posts",
-      "Ai Medicine Hci",
-      "What Medicine needs to get right about AI"
-    ]
-  },
-  {
-    "objectID": "posts/ai-medicine-hci/writing_index.html#the-implementation-challenge",
-    "href": "posts/ai-medicine-hci/writing_index.html#the-implementation-challenge",
-    "title": "What Medicine needs to get right about AI",
-    "section": "The Implementation Challenge",
-    "text": "The Implementation Challenge\nAs clinicians increasingly interact with AI tools, two critical aspects emerge:\n\nPatient Safety: We must speak the same language as AI implementers to ensure proper safeguards. The concerning implementation of Epic’s Deterioration Index without extensive peer review serves as a cautionary tale Epic Deterioration Index Study\nOptimal Utilization: These tools show remarkable promise, but only if we use them correctly BMC Healthcare AI Implementation\n\n\nUnderstanding AI: Models vs Products\nA crucial distinction often missed in healthcare is that an AI model itself is not a product. Take OpenAI as an example - while they excel at building powerful models, their success with ChatGPT comes from transforming that model into a helpful assistant. As highlighted in Stanford’s research, we should shift our thinking towards compound AI systems Stanford Compound AI Systems.",
-    "crumbs": [
-      "Blog",
-      "Recent Posts",
-      "Ai Medicine Hci",
-      "What Medicine needs to get right about AI"
-    ]
-  },
-  {
-    "objectID": "posts/ai-medicine-hci/writing_index.html#the-clinical-decision-support-dilemma",
-    "href": "posts/ai-medicine-hci/writing_index.html#the-clinical-decision-support-dilemma",
-    "title": "What Medicine needs to get right about AI",
-    "section": "The Clinical Decision Support Dilemma",
-    "text": "The Clinical Decision Support Dilemma\nConsider clinical decision support in radiology. While companies focus on creating high-performance diagnostic models, the implementation pathway remains unclear. Some success has been demonstrated in screening applications Breast Cancer Screening Study, but clinical practice implementation remains challenging.\n\n\n\n\n\n\nCommon Implementation Models\n\n\n\n\nHuman-First Verification\n\nClinician writes initial report\nAI system performs error check\nDiscrepancies trigger senior review\n\nAI-First Verification\n\nAI generates initial report\nClinician reviews and validates\n\nAI Replacement\n\nAI handles routine cases\nComplex cases routed to seniors\nOversight based on confidence metrics\n\n\n\n\n\nThe Hidden Costs\nEach approach brings significant challenges:\n\nWorkflow Impact: Options 1 & 2 may increase radiologist stress and workload JAMA Radiologist Workflow Study\nTrust Dynamics: Like working with a brilliant but occasionally erratic colleague\nEconomic Pressure: Healthcare organizations face strong incentives to pursue full automation AI Economic Impact Study\nWorkforce Disruption: Potential displacement of early-career specialists",
-    "crumbs": [
-      "Blog",
-      "Recent Posts",
-      "Ai Medicine Hci",
-      "What Medicine needs to get right about AI"
-    ]
-  },
-  {
-    "objectID": "posts/ai-medicine-hci/writing_index.html#breaking-free-from-false-assumptions",
-    "href": "posts/ai-medicine-hci/writing_index.html#breaking-free-from-false-assumptions",
-    "title": "What Medicine needs to get right about AI",
-    "section": "Breaking Free from False Assumptions",
-    "text": "Breaking Free from False Assumptions\nOur limited options stem from a fundamental assumption: that we need autonomous AI agents. This assumption restricts our thinking and overlooks potentially more effective solutions.\n\n\n\n\n\n\nKey Questions to Consider\n\n\n\n\nWhat alternative products could we create?\nHow might we design systems that enhance rather than replace expertise?\nWhat new models of human-AI collaboration could we explore?",
-    "crumbs": [
-      "Blog",
-      "Recent Posts",
-      "Ai Medicine Hci",
-      "What Medicine needs to get right about AI"
-    ]
-  },
-  {
-    "objectID": "posts/ai-medicine-hci/writing_index.html#moving-forward",
-    "href": "posts/ai-medicine-hci/writing_index.html#moving-forward",
-    "title": "What Medicine needs to get right about AI",
-    "section": "Moving Forward",
-    "text": "Moving Forward\nThe path forward requires us to:\n\nReimagine AI implementation beyond autonomous agents\nDesign for true human-AI collaboration\nBalance economic pressures with clinical excellence\nAdapt medical education for this new paradigm\n\nThe question isn’t whether AI will transform healthcare - it’s how we ensure that transformation serves both providers and patients effectively.\n\n\n\n\n\n\nA Note on Human-Centered Design\n\n\n\nAs we develop these systems, we must prioritize designs that: - Enhance clinical workflows rather than disrupting them - Support rather than replace clinical judgment - Maintain the human elements of healthcare delivery",
-    "crumbs": [
-      "Blog",
-      "Recent Posts",
-      "Ai Medicine Hci",
-      "What Medicine needs to get right about AI"
-    ]
-  },
-  {
-    "objectID": "posts/ai-medicine-hci/writing_index.html#references",
-    "href": "posts/ai-medicine-hci/writing_index.html#references",
-    "title": "What Medicine needs to get right about AI",
-    "section": "References",
-    "text": "References\n\nJAMA Patient Interaction Study\nHeidi Health\nNature Multi-Omics Article\nEpic Deterioration Index Study\nBMC Healthcare AI Implementation\nStanford Compound AI Systems\nBreast Cancer Screening Study\nJAMA Radiologist Workflow Study\nAI Economic Impact Study",
-    "crumbs": [
-      "Blog",
-      "Recent Posts",
-      "Ai Medicine Hci",
-      "What Medicine needs to get right about AI"
+      "Welcome To My Blog"
     ]
   },
   {
@@ -148,84 +17,6 @@
     "title": "What Medicine needs to get right about AI",
     "section": "",
     "text": "The transformer architecture has revolutionized AI, enabling systems to capture complex non-linear relationships in vast datasets. In medicine, this has led to remarkable capabilities:\n\n\n\n\n\n\nCurrent Applications\n\n\n\n\nClinical Communication: When applied to medical language, AI systems now understand medical context and can answer patient questions at a level comparable to or exceeding doctors\nAdministrative Efficiency: When applied to human conversations, we can now automate clinical scribing and writing medical letters\nWorkflow Enhancement: When applied to the EMR, with text-to-action & computer use, you could even automate tedious EMR navigations.\nResearch Advancement: When applied to massive multi-omic biological data in data-rich fields like oncology, the next biomedical breakthroughs will be aided by AI foundation models.",
-    "crumbs": [
-      "Blog",
-      "Recent Posts",
-      "Human Centered AI",
-      "What Medicine needs to get right about AI"
-    ]
-  },
-  {
-    "objectID": "posts/Human-Centered-AI/writing_index.html#the-ai-revolution-in-healthcare-beyond-the-hype",
-    "href": "posts/Human-Centered-AI/writing_index.html#the-ai-revolution-in-healthcare-beyond-the-hype",
-    "title": "What Medicine needs to get right about AI",
-    "section": "",
-    "text": "The transformer architecture has revolutionized AI, enabling systems to capture complex non-linear relationships in vast datasets. In healthcare, this has led to remarkable capabilities:\n\n\n\n\n\n\nKey Applications\n\n\n\n\nClinical Communication: AI systems now understand medical context and can answer patient questions at a level comparable to or exceeding doctors JAMA Patient Interaction Study\nAdministrative Efficiency: Automated transcription and generation of medical documentation Heidi Health\nWorkflow Enhancement: Smart EMR integration for streamlined order entry\nResearch Advancement: Analysis of complex multi-omic biological data",
-    "crumbs": [
-      "Blog",
-      "Recent Posts",
-      "Human Centered AI",
-      "What Medicine needs to get right about AI"
-    ]
-  },
-  {
-    "objectID": "posts/Human-Centered-AI/writing_index.html#the-implementation-challenge",
-    "href": "posts/Human-Centered-AI/writing_index.html#the-implementation-challenge",
-    "title": "What Medicine needs to get right about AI",
-    "section": "The Implementation Challenge",
-    "text": "The Implementation Challenge\nWe clinicians will, or already are, using AI tools at work. It’s crucial that we, as a field, speak the same language as those implementing these tools. This is to ensure patient safety (Epic’s Sepsis cautionary tale) and to use the tools properly. They are quite good, and we should make the most of them.\n\nUnderstanding AI: Models vs Products\nA crucial distinction often missed is that an AI model itself is not a product. Take OpenAI as an example - while they excel at building powerful models, their success with ChatGPT comes from transforming that model into a helpful assistant. As highlighted in this brilliant Stanford talk, considering the specific context and software surrounding the model allows us to be imaginative and practical.\n\n\nThe Clinical Decision Support Dilemma\nConsider clinical decision support in radiology. While companies focus on creating high-performance diagnostic models, the implementation pathway remains unclear. There is practical use in screening and translating reports for patient understanding, but clinical practice implementation remains murky.\nCurrently, using the model, the main product being created is one that generates imaging reports. Here are some options:\n\n\nImplementation Models\n\nHuman & AI Case Collaboration\n\nClinician works on the case at the same time as the AI\nThe AI report is visible for the clinician to use as desired\n\nAI-First Verification\n\nAI generates initial report\nClinician reviews and validates\n\nHuman-First Verification\n\nClinician writes initial report\nAI system performs error check\nDiscrepancies trigger senior clinician review\n\nAI as a Co-Worker\n\nAI handles routine cases & calculates confidence/complexity metrics\nComplex cases routed to senior clinician where appropriate\n\n\n\n\n\n\n\n\nCurrent Models are like GPT-4o\n\n\n\nCurrent models lack intelligent clinician-AI interaction. For instance, a very obvious to improve interaction would be to show clinicians a tree-of-thought reasoning trace for clinical reasoning transparency. As of writing this article, these are not the norm. Assume we’re talking about your run-of-the-mill GPT-4o fine-tuned on radiology data, generating reports.\n\n\nWithout sufficient thought to human-computer interaction, it’s looking pretty bleak.\nOptions 1, 2 and likely 3 cause time-poor and stressed out radiologists. Option 1’s ‘helpful’ reporter product is like a genius who sometimes gets the hardest question right and sometimes the easiest question wrong. In a healthcare setting, there is limited value - more time will be spent on all discordant cases (which may not even result in better clinical performance). Option 2 is option 1 in disguise - you risk over-reliance or ignoring useful outputs. Option 3 is more useful; it sets clear boundaries on the human-AI relationship. By only making the AI visible in discordant cases, it may serve as a good tool to ‘triage’ scans up the chain of experience. However, you run into the same ‘Who is right?’ dilemma.\nFinancially, only option 4 makes sense to radiology practices and hospitals. Ide & Talamas describe this as an autonomous agent replacing routine work, displacing humans to more specialised problem-solving. If this leads to better patient outcomes, we must choose this option. However, we also need to face significant restructuring of training programs and retrain displaced early-career specialists.",
-    "crumbs": [
-      "Blog",
-      "Recent Posts",
-      "Human Centered AI",
-      "What Medicine needs to get right about AI"
-    ]
-  },
-  {
-    "objectID": "posts/Human-Centered-AI/writing_index.html#the-clinical-decision-support-dilemma",
-    "href": "posts/Human-Centered-AI/writing_index.html#the-clinical-decision-support-dilemma",
-    "title": "What Medicine needs to get right about AI",
-    "section": "The Clinical Decision Support Dilemma",
-    "text": "The Clinical Decision Support Dilemma\nConsider clinical decision support in radiology. While companies focus on creating high-performance diagnostic models, the implementation pathway remains unclear. Some success has been demonstrated in screening applications Breast Cancer Screening Study, but clinical practice implementation remains challenging.\n\n\n\n\n\n\nCommon Implementation Models\n\n\n\n\nHuman-First Verification\n\nClinician writes initial report\nAI system performs error check\nDiscrepancies trigger senior review\n\nAI-First Verification\n\nAI generates initial report\nClinician reviews and validates\n\nAI Replacement\n\nAI handles routine cases\nComplex cases routed to seniors\nOversight based on confidence metrics\n\n\n\n\n\nThe Hidden Costs\nEach approach brings significant challenges:\n\nWorkflow Impact: Options 1 & 2 may increase radiologist stress and workload JAMA Radiologist Workflow Study\nTrust Dynamics: Like working with a brilliant but occasionally erratic colleague\nEconomic Pressure: Healthcare organizations face strong incentives to pursue full automation AI Economic Impact Study\nWorkforce Disruption: Potential displacement of early-career specialists",
-    "crumbs": [
-      "Blog",
-      "Recent Posts",
-      "Human Centered AI",
-      "What Medicine needs to get right about AI"
-    ]
-  },
-  {
-    "objectID": "posts/Human-Centered-AI/writing_index.html#breaking-free-from-false-assumptions",
-    "href": "posts/Human-Centered-AI/writing_index.html#breaking-free-from-false-assumptions",
-    "title": "What Medicine needs to get right about AI",
-    "section": "Breaking Free from False Assumptions",
-    "text": "Breaking Free from False Assumptions\nOur limited options stem from several unfortunate assumptions/starting points: * Our best way to help radiologists is to diagnose for them * The best way to help radiologists is to write reports for them * AI is a black box that cannot truly reason, so we can’t truly understand it * This means that as long as we have high-quality training data of prior reports, we can generate high-quality reports and trust them\nReading medical imaging itself is a process. Why can’t we have asked questions like: - How can we automatically identify and show the radiologist the key references (Radiopaedia/StatDx) they would need to look at to solve this case? - Can we automatically show the patient’s last 5 CXRs, process them and identify exactly where changes have evolved? - Considering the speed of system 1 thinking, how can we best display anomaly detection with attached tree-of-thought reasoning traces while enabling a clinician’s systematic read of an image? - During dictation, can we let the radiologist think out in a very unstructured manner, offering real-time reasoning feedback as well as scribing a high quality radiology report? - Can we automate and adapt reporting for specific protocolised research guidelines? - Can we use LLMs to enhance inter-radiologist communication to get rapid second opinions from leading experts?",
-    "crumbs": [
-      "Blog",
-      "Recent Posts",
-      "Human Centered AI",
-      "What Medicine needs to get right about AI"
-    ]
-  },
-  {
-    "objectID": "posts/Human-Centered-AI/writing_index.html#moving-forward",
-    "href": "posts/Human-Centered-AI/writing_index.html#moving-forward",
-    "title": "What Medicine needs to get right about AI",
-    "section": "Moving Forward",
-    "text": "Moving Forward\nThe path forward requires us to:\n\nReimagine AI implementation beyond autonomous agents\nDesign for true human-AI collaboration\nBalance economic pressures with clinical excellence\nAdapt medical education for this new paradigm\n\nThe question isn’t whether AI will transform healthcare - it’s how we ensure that transformation serves both providers and patients effectively.\n\n\n\n\n\n\nA Note on Human-Centered Design\n\n\n\nAs we develop these systems, we must prioritize designs that: - Enhance clinical workflows rather than disrupting them - Support rather than replace clinical judgment - Maintain the human elements of healthcare delivery",
-    "crumbs": [
-      "Blog",
-      "Recent Posts",
-      "Human Centered AI",
-      "What Medicine needs to get right about AI"
-    ]
-  },
-  {
-    "objectID": "posts/Human-Centered-AI/writing_index.html#references",
-    "href": "posts/Human-Centered-AI/writing_index.html#references",
-    "title": "What Medicine needs to get right about AI",
-    "section": "References",
-    "text": "References\n\nJAMA Patient Interaction Study\nHeidi Health\nNature Multi-Omics Article\nEpic Deterioration Index Study\nBMC Healthcare AI Implementation\nStanford Compound AI Systems\nBreast Cancer Screening Study\nJAMA Radiologist Workflow Study\nAI Economic Impact Study",
     "crumbs": [
       "Blog",
       "Recent Posts",
@@ -247,11 +38,24 @@
     ]
   },
   {
-    "objectID": "posts/Human-Centered-AI/writing_index.html#implementation-models",
-    "href": "posts/Human-Centered-AI/writing_index.html#implementation-models",
+    "objectID": "posts/Human-Centered-AI/writing_index.html#the-implementation-challenge",
+    "href": "posts/Human-Centered-AI/writing_index.html#the-implementation-challenge",
     "title": "What Medicine needs to get right about AI",
-    "section": "Implementation Models",
-    "text": "Implementation Models\n\nHuman & AI Case Collaboration\n\nClinician works on the case at the same time as the AI\nThe AI report is visible for the clinician to use as desired\n\nAI-First Verification\n\nAI generates initial report\nClinician reviews and validates\n\nHuman-First Verification\n\nClinician writes initial report\nAI system performs error check\nDiscrepancies trigger senior clinician review\n\nAI as a Co-Worker\n\nAI handles routine cases & calculates confidence/complexity metrics\nComplex cases routed to senior clinician where appropriate :::\n\n\nWithout sufficient thought to human-computer interaction, it’s looking pretty bleak.\nOptions 1, 2 and likely 3 cause time-poor and stressed out radiologists but may result in better clinical performance. Why? the ‘helpful assistant’ product is like a genius who sometimes gets the hardest question right and sometimes the easiest question wrong. - Trust Dynamics: Like working with a brilliant but occasionally erratic colleague - Economic Pressure: Healthcare organizations face strong incentives to pursue full automation AI Economic Impact Study - Workforce Disruption: Potential displacement of early-career specialists",
+    "section": "2 The Implementation Challenge",
+    "text": "2 The Implementation Challenge\nWe clinicians will, or already are, using AI tools at work. It’s crucial that we, as a field, speak the same language as those implementing these tools. This is to ensure patient safety (Epic’s Sepsis cautionary tale) and to use the tools properly. They are quite good, and we should make the most of them.\n\n2.1 Understanding AI: Models vs Products\nA crucial distinction often missed is that an AI model itself is not a product. Take OpenAI as an example - while they excel at building powerful models, their success with ChatGPT comes from transforming that model into a helpful assistant. As highlighted in this brilliant Stanford talk, considering the specific context and software surrounding the model allows us to be imaginative and practical.\n\n\n2.2 The Clinical Decision Support Dilemma\nConsider clinical decision support in radiology. While companies focus on creating high-performance diagnostic models, the implementation pathway remains unclear. There is practical use in screening and translating reports for patient understanding, but clinical practice implementation remains murky.\nCurrently, using the model, the main product being created is one that generates imaging reports. Here are some options:\n\n\n2.3 Implementation Models\n\nHuman & AI Case Collaboration\n\nClinician works on the case at the same time as the AI\nThe AI report is visible for the clinician to use as desired\n\nAI-First Verification\n\nAI generates initial report\nClinician reviews and validates\n\nHuman-First Verification\n\nClinician writes initial report\nAI system performs error check\nDiscrepancies trigger senior clinician review\n\nAI as a Co-Worker\n\nAI handles routine cases & calculates confidence/complexity metrics\nComplex cases routed to senior clinician where appropriate\n\n\n\n\n\n\n\n\nCurrent Models are like GPT-4o\n\n\n\nCurrent models lack intelligent clinician-AI interaction. For instance, a very obvious to improve interaction would be to show clinicians a tree-of-thought reasoning trace for clinical reasoning transparency. As of writing this article, these are not the norm. Assume we’re talking about your run-of-the-mill GPT-4o fine-tuned on radiology data, generating reports.\n\n\nWithout sufficient thought to human-computer interaction, it’s looking pretty bleak.\nOptions 1, 2 and likely 3 cause time-poor and stressed out radiologists. Option 1’s ‘helpful’ reporter product is like a genius who sometimes gets the hardest question right and sometimes the easiest question wrong. In a healthcare setting, there is limited value - more time will be spent on all discordant cases (which may not even result in better clinical performance). Option 2 is option 1 in disguise - you risk over-reliance or ignoring useful outputs. Option 3 is more useful; it sets clear boundaries on the human-AI relationship. By only making the AI visible in discordant cases, it may serve as a good tool to ‘triage’ scans up the chain of experience. However, you run into the same ‘Who is right?’ dilemma.\nFinancially, only option 4 makes sense to radiology practices and hospitals. Ide & Talamas describe this as an autonomous agent replacing routine work, displacing humans to more specialised problem-solving. If this leads to better patient outcomes, we must choose this option. However, we also need to face significant restructuring of training programs and retrain displaced early-career specialists.",
+    "crumbs": [
+      "Blog",
+      "Recent Posts",
+      "Human Centered AI",
+      "What Medicine needs to get right about AI"
+    ]
+  },
+  {
+    "objectID": "posts/Human-Centered-AI/writing_index.html#breaking-free-from-false-assumptions",
+    "href": "posts/Human-Centered-AI/writing_index.html#breaking-free-from-false-assumptions",
+    "title": "What Medicine needs to get right about AI",
+    "section": "3 Breaking Free from False Assumptions",
+    "text": "3 Breaking Free from False Assumptions\nOur limited options stem from several unfortunate assumptions/starting points:\n\nOur best way to help radiologists is to diagnose for them\nThe best way to help radiologists is to write reports for them\nAI is a black box that cannot truly reason, so we can’t truly understand it\nThis means that as long as we have high-quality training data of prior reports, we can generate high-quality reports and trust them\n\nReading medical imaging itself is a process. Why can’t we have asked questions like:\n\nHow can we automatically identify and show the radiologist the key references (Radiopaedia/StatDx) they would need to look at to solve this case?\nCan we automatically show the patient’s last 5 CXRs, process them and identify exactly where changes have evolved?\nConsidering the speed of system 1 thinking, how can we best display anomaly detection with attached tree-of-thought reasoning traces while enabling a clinician’s systematic read of an image?\nDuring dictation, can we let the radiologist think out in a very unstructured manner, offering real-time reasoning feedback as well as scribing a high quality radiology report?\nCan we automate and adapt reporting for specific protocolised research guidelines?\nCan we use LLMs to enhance inter-radiologist communication to get rapid second opinions from leading experts?",
     "crumbs": [
       "Blog",
       "Recent Posts",
@@ -263,13 +67,39 @@
     "objectID": "posts/Human-Centered-AI/writing_index.html#why-are-we-here",
     "href": "posts/Human-Centered-AI/writing_index.html#why-are-we-here",
     "title": "What Medicine needs to get right about AI",
-    "section": "Why are we here?",
-    "text": "Why are we here?\nOutside of a resource-poor setting, there is little unmet clinical need for an autonomous radiologist agent. The explosion of AI, the abundance of radiology reports and the monetary value in creating a high-quality autonomous agent all culminates in these foundation models that can perform exceptionally well.\nHowever, given its training with human-labelled reports and diagnoses, I question if we can truly grow in medicine with these types of models. Can we get closer to ‘perfect medicine’ by having models that talk and breathe our biases?\nHere is a direction I think would be more fruitful, we already have high-quality intelligent staff, why can’t we empower them to perform efficiently and improve to be their best? All of those 6 questions I’ve posed that aim to directly augment a radiologist’s work are tractable now. Note that they are useful products, not necessarily new models. Unsupervised data-driven approaches can teach us so much about biomedicine - medicine will look incredibly different in the upcoming decades. We need nimble well-supported staff and better non-autonomous copilots to 10x their clinical impact.\n\n\n\n\n\n\nA Note on Human-Centered Design\n\n\n\nAs we develop these systems, we must prioritize designs that: - Enhance clinical workflows rather than disrupting them - Support rather than replace clinical judgment - Maintain the human elements of healthcare delivery",
+    "section": "4 Why are we here?",
+    "text": "4 Why are we here?\nOutside of a resource-poor setting, there is little unmet clinical need for an autonomous radiologist agent. The explosion of AI, the abundance of radiology reports and the monetary value in creating a high-quality autonomous agent all culminates in these foundation models that can perform exceptionally well.\nHowever, given its training with human-labelled reports and diagnoses, I question if we can truly grow in medicine with these types of models. Can we get closer to ‘perfect medicine’ by having models that talk and breathe our biases?\nHere is a direction I think would be more fruitful, we already have high-quality intelligent staff, why can’t we empower them to perform efficiently and improve to be their best? All of those 6 questions I’ve posed that aim to directly augment a radiologist’s work are tractable now. Note that they are useful products, not necessarily new models Section 2.1. Unsupervised data-driven approaches can teach us so much about biomedicine - medicine will look incredibly different in the upcoming decades. We need nimble well-supported staff, with both autonomous AI and better non-autonomous copilots to maximise their clinical impact.\nWe’ll explore non-autonomous copilots and autonomous AI in more detail (here) including specifics of how we can think about human-AI interaction.",
     "crumbs": [
       "Blog",
       "Recent Posts",
       "Human Centered AI",
       "What Medicine needs to get right about AI"
+    ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this blog"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Deepak_RJ",
+    "section": "",
+    "text": "What Medicine needs to get right about AI\n\n\n\n\n\n\nAI\n\n\nHCI\n\n\n\nExploring the critical intersection of artificial intelligence and human-centered design in healthcare\n\n\n\n\n\nDec 24, 2024\n\n\nDeepak RJ\n\n\n\n\n\n\n\n\n\n\n\n\nPost With Code\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nDec 24, 2024\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nDec 21, 2024\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "This is a post with executable code.",
+    "crumbs": [
+      "Blog",
+      "Recent Posts",
+      "Post With Code"
     ]
   }
 ]

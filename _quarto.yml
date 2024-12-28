@@ -4,9 +4,9 @@ project:
 
 website:
   title: "Deepak RJ"
-  description: "Thoughts on medicine, technology, and human-centered design"
-  site-url: ""
-  repo-url: ""
+  description: "I write on medical AI"
+  site-url: "https://dyadd.github.io/Deepak_RJ"
+  repo-url: "https://github.com/dyadd/Deepak_RJ"
   repo-actions: [issue]
   
   page-footer: 

@@ -1,1 +1,1 @@
-Sitemap: /sitemap.xml
+Sitemap: https://dyadd.github.io/Deepak_RJ/sitemap.xml

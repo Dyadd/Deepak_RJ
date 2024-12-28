@@ -93,7 +93,8 @@ Outside of a resource-poor setting, there is little unmet clinical need for an a
 However, given its training with human-labelled reports and diagnoses, I question if we can truly grow in medicine with these types of models. 
 Can we get closer to 'perfect medicine' by having models that talk and breathe our biases?
 
-Here is a direction I think would be more fruitful, we already have high-quality intelligent staff, why can't we empower them to perform efficiently and improve to be their best? All of those 6 questions I've posed that aim to directly augment a radiologist's work are tractable now. Note that they are useful products, not necessarily new models @sec-models_vs_products.
+Here is a direction I think would be more fruitful, we already have high-quality intelligent staff, why can't we empower them to perform efficiently and improve to be their best? All of those 6 questions I've posed that aim to directly augment a radiologist's work are tractable now. Note that they are useful products, not necessarily new models (@sec-models_vs_products).
+
 [Unsupervised data-driven approaches](https://www.nature.com/articles/s43856-023-00360-3) can teach us so much about biomedicine - medicine will look incredibly different in the upcoming decades. We need nimble well-supported staff, with both autonomous AI and better non-autonomous copilots to maximise their clinical impact. 
 
-We'll explore non-autonomous copilots and autonomous AI in more detail (here) including specifics of how we can think about human-AI interaction.
+We'll explore non-autonomous copilots and autonomous AI in more detail [here](../mAI_HCI_detailed/index.qmd#sec-introduction) including specifics of how we can think about human-AI interaction.

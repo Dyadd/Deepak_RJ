@@ -1,9 +1,0 @@
----
-title: "What Medical AI can Learn from Aviation"
-author: "Deepak RJ"
-date: "2024-12-29"
-categories: [AI, HCI]
-image: "image.jpg"
----
-
-A

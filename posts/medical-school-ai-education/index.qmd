@@ -1,0 +1,9 @@
+---
+title: "Medical School Learning with AI"
+author: "Deepak RJ"
+date: "2024-12-31"
+categories: [AI, Education]
+draft: True
+---
+
+- On StudyBuddy, asking good questions

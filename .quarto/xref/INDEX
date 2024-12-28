@@ -19,5 +19,17 @@
   },
   "posts/Human-Centered-AI/writing_index.qmd": {
     "writing_index.html": "fbca44d0"
+  },
+  "posts/Human-Centered-AI/index.qmd": {
+    "index.html": "b35b45b3"
+  },
+  "posts/What_Medicine_needs_to_get_right_about_AI/index.qmd": {
+    "index.html": "5e433094"
+  },
+  "posts/mAI_HCI_detailed/index.qmd": {
+    "index.html": "a9dc6c69"
+  },
+  "posts/medical-school-ai-education/index.qmd": {
+    "index.html": "08c0a340"
   }
 }

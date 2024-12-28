@@ -1,0 +1,9 @@
+---
+title: "Medical AI: Lessons on Good Human-Computer Interaction"
+author: "Deepak RJ"
+date: "2024-12-29"
+categories: [AI, HCI]
+image: "image.jpg"
+---
+
+# Introduction {#sec-introduction}

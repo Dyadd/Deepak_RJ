@@ -14,7 +14,7 @@ website:
     right: "&copy; 2024 Deepak RJ"
     
   navbar:
-    background: light
+    background: dark
     search: true
     right:
       - text: Blog

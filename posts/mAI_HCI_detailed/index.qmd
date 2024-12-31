@@ -164,23 +164,19 @@ Consider even far sooner future where AI looks through the EMR and flags where t
 
 To improve human agency, SA is applied as such:
 
-::: callout-tip
-**The Three Levels of SA**
-
-+---------------------------------------------------------+------------------------------------------------+--------------------------------------------------+
-| Current Status (Level 1 SA - Perception)                | Reasoning Process (Level 2 SA - Comprehension) | Future Projections (Level 3 SA - Projection)     |
-+=========================================================+================================================+==================================================+
-| -   Shows the AI's goals and current actions            | -   Explains why the AI makes specific choices | -   Predicts next steps                          |
-| -   Displays environmental data and performance metrics | -   Shows constraints affecting AI decisions   |                                                  |
-| -   Helps users see what the AI sees                    | -   Helps users understand AI behavior         | -   Helps users see what the reasoning leads to  |
-+---------------------------------------------------------+------------------------------------------------+--------------------------------------------------+
-:::
++---------------------------------------------------------+------------------------------------------------+-------------------------------------------------+
+| Current Status (Level 1 SA - Perception)                | Reasoning Process (Level 2 SA - Comprehension) | Future Projections (Level 3 SA - Projection)    |
++=========================================================+================================================+=================================================+
+| -   Shows the AI's goals and current actions            | -   Explains why the AI makes specific choices | -   Predicts next steps                         |
+| -   Displays environmental data and performance metrics | -   Shows constraints affecting AI decisions   |                                                 |
+| -   Helps users see what the AI sees                    | -   Helps users understand AI behavior         | -   Helps users see what the reasoning leads to |
++---------------------------------------------------------+------------------------------------------------+-------------------------------------------------+
 
 #### Clinical Application: Dermatology AI Assistant
 
 To illustrate these principles, consider an AI system supporting skin cancer screening:
 
-A dermatologist examines a patient with multiple atypical moles. The AI flags one as high-risk melanoma (89% confidence), though it doesn't match typical patterns.
+A dermatologist examines a patient with multiple atypical moles. The AI flags one as high-risk melanoma (89% confidence), though it doesn't match typical patterns. Here are important considerations to retain clinician agency & augment performance.
 
 +--------------------------------+------------------------------------------+------------------------------------------------------------+
 | Level 1: Perception            | Level 2: Comprehension                   | Level 3: Projection                                        |
@@ -194,15 +190,17 @@ A dermatologist examines a patient with multiple atypical moles. The AI flags on
 |                                | -   Notes on atypical features           | -   Alternative diagnoses to consider given biopsy results |
 +--------------------------------+------------------------------------------+------------------------------------------------------------+
 
-### Benefits for Physician Autonomy {#sec-benefits}
+::: callout-important
+## Benefits for Physician Autonomy
 
 This approach maintains physician control & creates effective AI-physician collaboration by critically:
 
 -   Making AI decisions transparent **in the way the physician thinks** *(AI SA supports physician SA)*
 
 -   Allowing investigation of AI recommendations **because fits into physician SA** *(AI SA supports physician SA)*
+:::
 
-## System Uncertainty vs. User Confidence 
+## System Uncertainty vs. User Confidence
 
 Consider an AI clinical decision support system. It uses all of the available multimodal data it has (e.g. all EMR data, all imaging, all relevant guidelines) and suggests next actions in a clinical workflow.
 
@@ -248,15 +246,21 @@ Applying SA in this scenario means expressing the uncertainty of the AI system. 
 
 An SA-oriented design would structure uncertainty representation across three cognitive levels, helping physicians build a complete mental model of the situation:
 
-| Level 1: Perception | Level 2: Comprehension | Level 3: Projection |
-|----|----|----|
-| The interface explicitly shows non-modeled dimensions of the patient's condition. Beyond displaying the CT findings and lab values, it acknowledges factors not captured in the system - like subtle physical exam findings, patient affect, or the tempo of the case. This transparency about what's missing helps physicians better gauge the AI's recommendations. | The system supports understanding why certain outcomes might occur by showing its confidence assessments contextually. Rather than just displaying a confidence score for appendicitis, it reveals how different uncertainties interact - how the combination of atypical pain patterns, missing medication history, and unclear onset timing affects its diagnostic confidence. This helps physicians interpret the AI's reasoning process. | The interface enables physicians to actively explore different diagnostic and treatment pathways while considering uncertainties. They can drill down into specific concerns (like possible travel-related infections) or zoom out to monthly patient patterns. This supports both immediate decision-making and longer-term treatment planning. |
++---------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Level 1: Perception                                                                                                                   | Level 2: Comprehension                                                                                                                                                 | Level 3: Projection                                                                                                                                                                                                                         |
++=======================================================================================================================================+========================================================================================================================================================================+=============================================================================================================================================================================================================================================+
+| -   Shows what data is missing from the AI's patient model - including physical exam nuances, patient affect, and symptom progression | -   Shows how different uncertainties combine to affect the AI's confidence levels                                                                                     | -   Enables physicians to actively explore different diagnostic and treatment pathways while considering uncertainties                                                                                                                      |
+|                                                                                                                                       |                                                                                                                                                                        |                                                                                                                                                                                                                                             |
+| -   Displays standard data like CT and lab results alongside clear indicators of what information isn't captured                      | -   Demonstrates relationships between factors (e.g., how unusual pain patterns + incomplete medication history + unclear symptom timing affect diagnostic confidence) | -   Allows you to drill into specific concerns (like possible travel-related infections), update the AI's reasoning to determine change in projection ("If this patient did travel to India for 3 months, what are you differentials now?") |
+|                                                                                                                                       |                                                                                                                                                                        |                                                                                                                                                                                                                                             |
+| -   Makes gaps in the AI's understanding explicit to help doctors put recommendations in context                                      | -   Reveals the AI's reasoning process rather than just showing isolated confidence scores                                                                             |                                                                                                                                                                                                                                             |
++---------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 This approach recognizes that managing clinical uncertainty isn't passive - physicians need to actively engage with the information, controlling how they view and interpret different uncertainty elements based on their expertise and the specific patient context. By organising uncertainty information around clinical goals and supporting both detailed symptom analysis and broader diagnostic consideration, the system helps physicians develop their own situation assessment while maintaining appropriate confidence in both the AI's suggestions and their own clinical judgment.
 
 This design philosophy helps harmonize the tension between the AI's inherent limitations and the physician's need for confident decision-making, without compromising the crucial role of clinical expertise and intuition.
 
-## System Complexity vs. Perceived Complexity 
+## System Complexity vs. Perceived Complexity
 
 This final tension underlies the entire human-AI interaction. Modern clinical AI systems are inherently complex, integrating multiple components and data sources. In our ED scenario, the system simultaneously processes:
 
@@ -352,11 +356,11 @@ This SA-oriented approach helps physicians maintain situational awareness withou
 
 Medical AI integration requires careful attention to three key tensions:
 
-1. **Automation and Human Agency**: For AI to enhance rather than replace medical expertise, clinicians need appropriate visibility into AI systems. This means showing relevant information at the right time while preserving physician autonomy.
+1.  **Automation and Human Agency**: For AI to enhance rather than replace medical expertise, clinicians need appropriate visibility into AI systems. This means showing relevant information at the right time while preserving physician autonomy.
 
-2. **System Uncertainty and User Confidence**: AI systems must explicitly acknowledge their limitations and gaps in knowledge. Rather than presenting overconfident recommendations, they should support physician decision-making by clearly communicating uncertainties.
+2.  **System Uncertainty and User Confidence**: AI systems must explicitly acknowledge their limitations and gaps in knowledge. Rather than presenting overconfident recommendations, they should support physician decision-making by clearly communicating uncertainties.
 
-3. **System vs. Perceived Complexity**: While medical AI systems are inherently complex, their interfaces must balance comprehensive information with usable design. The key is showing enough detail to maintain trust while preventing cognitive overload.
+3.  **System vs. Perceived Complexity**: While medical AI systems are inherently complex, their interfaces must balance comprehensive information with usable design. The key is showing enough detail to maintain trust while preventing cognitive overload.
 
 # Conclusion {#sec-conclusion}
 

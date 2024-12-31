@@ -8,6 +8,7 @@
 
 <meta name="author" content="Deepak RJ">
 <meta name="dcterms.date" content="2024-12-29">
+<meta name="description" content="What aviation can teach us about medical AI">
 
 <title>Medical AI: Lessons on Good Human-Computer Interaction – Deepak RJ</title>
 <style>
@@ -129,7 +130,12 @@ ul.task-list li input[type="checkbox"] {
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../posts/mAI_HCI_detailed/index.html">Recent Posts</a></li><li class="breadcrumb-item"><a href="../../posts/mAI_HCI_detailed/index.html">Medical AI: Lessons on Good Human-Computer Interaction</a></li></ol></nav>
       <h1 class="title">Medical AI: Lessons on Good Human-Computer Interaction</h1>
-                                <div class="quarto-categories">
+                  <div>
+        <div class="description">
+          What aviation can teach us about medical AI
+        </div>
+      </div>
+                          <div class="quarto-categories">
                 <div class="quarto-category">AI</div>
                 <div class="quarto-category">HCI</div>
               </div>
@@ -195,7 +201,36 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#sec-introduction" id="toc-sec-introduction" class="nav-link active" data-scroll-target="#sec-introduction">Introduction</a></li>
+  <li><a href="#sec-introduction" id="toc-sec-introduction" class="nav-link active" data-scroll-target="#sec-introduction"><span class="header-section-number">1</span> Introduction</a></li>
+  <li><a href="#the-core-challenge" id="toc-the-core-challenge" class="nav-link" data-scroll-target="#the-core-challenge"><span class="header-section-number">2</span> The Core Challenge</a>
+  <ul class="collapse">
+  <li><a href="#the-spectrum-of-ai-integration" id="toc-the-spectrum-of-ai-integration" class="nav-link" data-scroll-target="#the-spectrum-of-ai-integration"><span class="header-section-number">2.1</span> The Spectrum of AI Integration</a></li>
+  <li><a href="#a-framework-for-integration-situation-awareness" id="toc-a-framework-for-integration-situation-awareness" class="nav-link" data-scroll-target="#a-framework-for-integration-situation-awareness"><span class="header-section-number">2.2</span> A Framework for Integration: Situation Awareness</a>
+  <ul class="collapse">
+  <li><a href="#understanding-sa-through-a-medical-example" id="toc-understanding-sa-through-a-medical-example" class="nav-link" data-scroll-target="#understanding-sa-through-a-medical-example"><span class="header-section-number">2.2.1</span> Understanding SA Through a Medical Example</a></li>
+  <li><a href="#moving-beyond-individual-sa-a-complex-systems-perspective" id="toc-moving-beyond-individual-sa-a-complex-systems-perspective" class="nav-link" data-scroll-target="#moving-beyond-individual-sa-a-complex-systems-perspective"><span class="header-section-number">2.2.2</span> Moving Beyond Individual SA: A Complex Systems Perspective</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#the-medical-context-three-key-tensions" id="toc-the-medical-context-three-key-tensions" class="nav-link" data-scroll-target="#the-medical-context-three-key-tensions"><span class="header-section-number">3</span> The Medical Context: Three Key Tensions</a>
+  <ul class="collapse">
+  <li><a href="#automation-vs.-human-agency" id="toc-automation-vs.-human-agency" class="nav-link" data-scroll-target="#automation-vs.-human-agency"><span class="header-section-number">3.1</span> 1. Automation vs.&nbsp;Human Agency</a>
+  <ul class="collapse">
+  <li><a href="#the-automation-paradox-in-medicine" id="toc-the-automation-paradox-in-medicine" class="nav-link" data-scroll-target="#the-automation-paradox-in-medicine"><span class="header-section-number">3.1.1</span> The Automation Paradox in Medicine</a></li>
+  <li><a href="#situation-awareness" id="toc-situation-awareness" class="nav-link" data-scroll-target="#situation-awareness"><span class="header-section-number">3.1.2</span> Situation Awareness</a></li>
+  <li><a href="#sec-benefits" id="toc-sec-benefits" class="nav-link" data-scroll-target="#sec-benefits"><span class="header-section-number">3.1.3</span> Benefits for Physician Autonomy</a></li>
+  </ul></li>
+  <li><a href="#system-uncertainty-vs.-user-confidence" id="toc-system-uncertainty-vs.-user-confidence" class="nav-link" data-scroll-target="#system-uncertainty-vs.-user-confidence"><span class="header-section-number">3.2</span> System Uncertainty vs.&nbsp;User Confidence</a>
+  <ul class="collapse">
+  <li><a href="#clinical-scenario" id="toc-clinical-scenario" class="nav-link" data-scroll-target="#clinical-scenario"><span class="header-section-number">3.2.1</span> Clinical Scenario</a></li>
+  <li><a href="#situation-awareness-1" id="toc-situation-awareness-1" class="nav-link" data-scroll-target="#situation-awareness-1"><span class="header-section-number">3.2.2</span> Situation Awareness</a></li>
+  </ul></li>
+  <li><a href="#system-complexity-vs.-perceived-complexity" id="toc-system-complexity-vs.-perceived-complexity" class="nav-link" data-scroll-target="#system-complexity-vs.-perceived-complexity"><span class="header-section-number">3.3</span> System Complexity vs.&nbsp;Perceived Complexity</a>
+  <ul class="collapse">
+  <li><a href="#situation-awareness-2" id="toc-situation-awareness-2" class="nav-link" data-scroll-target="#situation-awareness-2"><span class="header-section-number">3.3.1</span> Situation Awareness</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#sec-takeaways" id="toc-sec-takeaways" class="nav-link" data-scroll-target="#sec-takeaways"><span class="header-section-number">4</span> Key Takeaways</a></li>
+  <li><a href="#sec-conclusion" id="toc-sec-conclusion" class="nav-link" data-scroll-target="#sec-conclusion"><span class="header-section-number">5</span> Conclusion</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/dyadd/Deepak_RJ/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -206,8 +241,487 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="sec-introduction" class="level1">
-<h1>Introduction</h1>
+<section id="sec-introduction" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Introduction</h1>
+<p>We can draw from a rich literature of human-computer interaction (HCI), applied automation in aviation and now emerging human-centered AI (HCAI) to think about medical AI. Many new problems we’re running into now are older problems in disguise. In this article, we’ll draw on premises from the <a href="../../posts/What_Medicine_needs_to_get_right_about_AI/index.html#the-implementation-challenge">key implementation challenges</a>.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Key Context
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This essay builds on <a href="https://www.tandfonline.com/doi/full/10.1080/10447318.2022.2093863">foundational research</a> from Jiang et al and expands their framework with practical medical applications.</p>
+</div>
+</div>
+</section>
+<section id="the-core-challenge" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> The Core Challenge</h1>
+<p>The practical implementation of AI in professional work faces a critical challenge: how to effectively integrate automated systems while preserving human expertise and judgment. While current literature provides <a href="https://www.jmir.org/2022/10/e40238/">theoretical frameworks</a>, we need concrete strategies for real-world application.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Key Insight
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Knowledge work automation represents a <a href="https://arxiv.org/abs/2312.05481">fundamental shift</a> - AI’s embedded world models make human knowledge scalable beyond the previous limitation of human time.</p>
+</div>
+</div>
+<section id="the-spectrum-of-ai-integration" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="the-spectrum-of-ai-integration"><span class="header-section-number">2.1</span> The Spectrum of AI Integration</h2>
+<p>AI tools exist on a spectrum from autonomous to assistive:</p>
+<ol type="1">
+<li>Autonomous systems like <a href="https://www.salesforce.com/au/agentforce/">Salesforce’s Agentforce</a> can independently handle tasks like prospect outreach</li>
+<li>Copilot systems like <a href="https://github.com/features/copilot">GitHub Copilot</a> augment human work by suggesting improvements</li>
+<li>Hybrid approaches combine both, varying by sector and risk profile</li>
+</ol>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Most implementations will likely fall somewhere between fully autonomous and purely assistive, adapting based on the specific context and risk level of the domain.</p>
+<p>For example, a medical copilot might autonomously gather drug interaction data while requiring human oversight for final dosing decisions.</p>
+</div>
+</div>
+<p>For effective integration, well-trained staff is critical. Jeremy Howard’s new law firm, <a href="https://www.legaltech-talk.com/jeremy-howards-new-ai-law-firm-virgil-aims-to-serve-the-startup-industry/">Virgil</a>, aims for bottom-up integration of AI with staff education and AI integration from the get-go.</p>
+<p>Similar to law, medicine is a field where risk is crucially minimised. Patient safety must be at the forefront. <a href="https://www.tandfonline.com/doi/full/10.1080/10447318.2022.2093863">Jiang et al</a> have identified <strong>3 key tensions</strong> we need to solve before we can integrate AI. We’ll largely summarise their fantastic paper while applying it to medicine - please read their full paper and cite them if used.</p>
+</section>
+<section id="a-framework-for-integration-situation-awareness" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="a-framework-for-integration-situation-awareness"><span class="header-section-number">2.2</span> A Framework for Integration: Situation Awareness</h2>
+<p>Before examining the tensions in human-AI interaction, we need to understand Situation Awareness (SA). While SA originated in aviation, it offers valuable insights into how humans and AI systems interact.</p>
+<p>At its core, SA describes how humans gather and process information to solve problems. Think of it as the foundation that supports decision-making - separate from the decisions themselves.</p>
+<p>Even skilled decision-makers can make mistakes if their SA is incomplete or incorrect. Similarly, someone with excellent awareness might still make wrong choices due to gaps in knowledge or training.</p>
+<p>SA unfolds in three distinct levels:</p>
+<ol type="1">
+<li><strong>Perception</strong>: Noticing key elements in your environment within a specific time and space</li>
+<li><strong>Comprehension</strong>: Making sense of what these elements mean</li>
+<li><strong>Projection</strong>: Anticipating how the situation might develop</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://www.tandfonline.com/doi/full/10.1080/10447318.2022.2093863"><img src="situation awareness.jpg" class="img-fluid figure-img" alt="Situation Awareness"></a></p>
+<figcaption>Situation Awareness</figcaption>
+</figure>
+</div>
+<section id="understanding-sa-through-a-medical-example" class="level3" data-number="2.2.1">
+<h3 data-number="2.2.1" class="anchored" data-anchor-id="understanding-sa-through-a-medical-example"><span class="header-section-number">2.2.1</span> Understanding SA Through a Medical Example</h3>
+<p>Let’s explore how SA works in a hospital setting:</p>
+<section id="level-1-perception" class="level4" data-number="2.2.1.1">
+<h4 data-number="2.2.1.1" class="anchored" data-anchor-id="level-1-perception"><span class="header-section-number">2.2.1.1</span> Level 1: Perception</h4>
+<p>Picture yourself on a ward round. You’re taking in everything around the patient - their appearance, vital signs, recent test results, and examination changes. You notice the electronic medical record (EMR) displaying key data, while also being aware of the broader environment: available nursing staff, family presence, and the treating team. This initial stage builds your mental model of the current situation.</p>
+</section>
+<section id="level-2-comprehension" class="level4" data-number="2.2.1.2">
+<h4 data-number="2.2.1.2" class="anchored" data-anchor-id="level-2-comprehension"><span class="header-section-number">2.2.1.2</span> Level 2: Comprehension</h4>
+<p>Now comes synthesis. A doctor combines all these elements into meaningful patterns. For instance, seeing low blood pressure alongside cool extremities and reduced urine output forms a clear picture of poor tissue perfusion - a gestalt that’s more meaningful than any single observation.</p>
+</section>
+<section id="level-3-projection-and-planning" class="level4" data-number="2.2.1.3">
+<h4 data-number="2.2.1.3" class="anchored" data-anchor-id="level-3-projection-and-planning"><span class="header-section-number">2.2.1.3</span> Level 3: Projection and Planning</h4>
+<p>This is where experience and implicit learning shine. Based on the patterns recognized, a clinician can anticipate likely developments. They might predict that a patient with worsening respiratory symptoms and dropping oxygen levels will need intensive care soon, allowing them to start preparations early.</p>
+</section>
+</section>
+<section id="moving-beyond-individual-sa-a-complex-systems-perspective" class="level3" data-number="2.2.2">
+<h3 data-number="2.2.2" class="anchored" data-anchor-id="moving-beyond-individual-sa-a-complex-systems-perspective"><span class="header-section-number">2.2.2</span> Moving Beyond Individual SA: A Complex Systems Perspective</h3>
+<p>Traditional SA focuses on individual decision-makers, but modern healthcare demands a broader view.</p>
+<p>The <em>Distributed Situation Awareness</em> model recognizes that cognition is shared across a network of human agents, technological tools, and now AI systems. This creates a complex environment where the whole system’s capabilities exceed what any individual could achieve alone.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://www.tandfonline.com/doi/full/10.1080/10447318.2022.2093863"><img src="distributed situation awareness.jpg" class="img-fluid figure-img" alt="Distributed Situation Awareness"></a></p>
+<figcaption>Distributed Situation Awareness</figcaption>
+</figure>
+</div>
+<p>Take a modern aircraft landing. The pilot doesn’t manually calculate wind speeds, drag coefficients, or optimal flap positions. Instead, they interact with a carefully designed system that:</p>
+<ul>
+<li>Processes thousands of data points about weather, aircraft weight, speed, and trajectory</li>
+<li>Automatically adjusts micro-controls like precise flap angles</li>
+<li>Presents only the essential information the pilot needs for decision-making</li>
+<li>Alerts the pilot when specific actions are needed</li>
+</ul>
+<p>The pilot achieves “perfect” task awareness <strong>not by knowing every calculation</strong>, but by <strong>understanding the right information at the right time</strong>. They trust the system to handle complex calculations while focusing on higher-level decisions about the landing approach.</p>
+<p>This is the concept of “transactional memory”. Information is distributed across people and technology. Healthcare has always relied on distributed knowledge:</p>
+<section id="traditional-distribution" class="level4" data-number="2.2.2.1">
+<h4 data-number="2.2.2.1" class="anchored" data-anchor-id="traditional-distribution"><span class="header-section-number">2.2.2.1</span> Traditional Distribution</h4>
+<ul>
+<li>Clinical guidelines synthesize evidence and expertise across the field</li>
+<li>Subspecialists develop deep knowledge in narrow domains</li>
+<li>Regular updates and revisions reflect new evidence</li>
+<li>Teams combine different expertise for complex cases</li>
+</ul>
+</section>
+<section id="ai-enhanced-knowledge-systems" class="level4" data-number="2.2.2.2">
+<h4 data-number="2.2.2.2" class="anchored" data-anchor-id="ai-enhanced-knowledge-systems"><span class="header-section-number">2.2.2.2</span> AI-Enhanced Knowledge Systems</h4>
+<p>The introduction of AI creates new possibilities for knowledge work:</p>
+<ol type="1">
+<li>Dynamic Knowledge Retrieval</li>
+</ol>
+<ul>
+<li>AI can instantly access and synthesize vast medical literature</li>
+<li>Real-time updates as new evidence emerges</li>
+<li>Contextual retrieval based on specific patient scenarios</li>
+</ul>
+<ol start="2" type="1">
+<li>Knowledge Iteration</li>
+</ol>
+<ul>
+<li>AI systems can test hypotheses across large datasets</li>
+<li>Rapid identification of patterns and correlations</li>
+<li>Continuous learning from clinical outcomes</li>
+</ul>
+<ol start="3" type="1">
+<li>Knowledge Testing</li>
+</ol>
+<ul>
+<li>Simulation of treatment approaches</li>
+<li>Validation of guidelines across diverse populations</li>
+<li>Early identification of potential risks or limitations</li>
+</ul>
+<ol start="4" type="1">
+<li>Knowledge Refinement</li>
+</ol>
+<ul>
+<li>Integration of multiple knowledge sources</li>
+<li>Adaptation to local contexts and populations</li>
+<li>Identification of gaps in current understanding</li>
+</ul>
+<p>A completely new balance emerges from AI on distributed situation awareness. AI capabilities can complement human expertise in ways previously impossible.</p>
+</section>
+</section>
+</section>
+</section>
+<section id="the-medical-context-three-key-tensions" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> The Medical Context: Three Key Tensions</h1>
+<p>Medicine provides a crucial case study in AI integration, where patient safety is paramount. Drawing from <a href="https://www.tandfonline.com/doi/full/10.1080/10447318.2022.2093863">Jiang et al.’s work</a>, three fundamental tensions emerge:</p>
+<section id="automation-vs.-human-agency" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="automation-vs.-human-agency"><span class="header-section-number">3.1</span> 1. Automation vs.&nbsp;Human Agency</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Key Takeaway
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You need the right ‘window’ into the assistant AI, with the right information at the right time for a highly trained clinician.</p>
+<p>This enables effective human-AI collaboration that doesn’t restrict human agency &amp; correctly uses AI.</p>
+</div>
+</div>
+<section id="the-automation-paradox-in-medicine" class="level3" data-number="3.1.1">
+<h3 data-number="3.1.1" class="anchored" data-anchor-id="the-automation-paradox-in-medicine"><span class="header-section-number">3.1.1</span> The Automation Paradox in Medicine</h3>
+<p>Consider a future where AI manages:</p>
+<ul>
+<li>Interpreting data-intensive multi-omic analyses</li>
+<li>Pharmacogenomic modeling</li>
+<li>Drug dosing for personalized medicine</li>
+</ul>
+<p>Better investigation can help us better characterise disease but this likely requires significant data analysis. This data analysis may mean greater diagnostic accuracy and treatment precision, leading to improved patient outcomes. However, the tension would arise when the intelligent system makes clinical recommendations based upon complex biomarker patterns that are opaque to the human physician and at a level of molecular detail that the human physician cannot fully process, leading to a mismatch in shared understanding between humans and AI. This negates the benefit gained from AI-powered data analysis.</p>
+<p>Consider even far sooner future where AI looks through the EMR and flags where treatment <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4818118/">deviates from guidelines</a>: The clinician needs to be trained to understand deeply how these AI-driven systems work and also how/when these systems fail. Automation bias refers to the deskilling of staff, shown to disproportionally affect <a href="https://doi.org/10.1016/j.jelectrocard.2018.08.007">non-specialist doctors in ECG interpretation</a>. This means users need to be substantial domain experts in both medicine &amp; applied AI to safely stay in the loop.</p>
+</section>
+<section id="situation-awareness" class="level3" data-number="3.1.2">
+<h3 data-number="3.1.2" class="anchored" data-anchor-id="situation-awareness"><span class="header-section-number">3.1.2</span> Situation Awareness</h3>
+<p>To improve human agency, SA is applied as such:</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>The Three Levels of SA</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 36%">
+<col style="width: 30%">
+<col style="width: 32%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Current Status (Level 1 SA - Perception)</th>
+<th>Reasoning Process (Level 2 SA - Comprehension)</th>
+<th>Future Projections (Level 3 SA - Projection)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><ul>
+<li>Shows the AI’s goals and current actions</li>
+<li>Displays environmental data and performance metrics</li>
+<li>Helps users see what the AI sees</li>
+</ul></td>
+<td><ul>
+<li>Explains why the AI makes specific choices</li>
+<li>Shows constraints affecting AI decisions</li>
+<li>Helps users understand AI behavior</li>
+</ul></td>
+<td><ul>
+<li><p>Predicts next steps</p></li>
+<li><p>Helps users see what the reasoning leads to</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<section id="clinical-application-dermatology-ai-assistant" class="level4" data-number="3.1.2.1">
+<h4 data-number="3.1.2.1" class="anchored" data-anchor-id="clinical-application-dermatology-ai-assistant"><span class="header-section-number">3.1.2.1</span> Clinical Application: Dermatology AI Assistant</h4>
+<p>To illustrate these principles, consider an AI system supporting skin cancer screening:</p>
+<p>A dermatologist examines a patient with multiple atypical moles. The AI flags one as high-risk melanoma (89% confidence), though it doesn’t match typical patterns.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 23%">
+<col style="width: 31%">
+<col style="width: 44%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Level 1: Perception</th>
+<th>Level 2: Comprehension</th>
+<th>Level 3: Projection</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><ul>
+<li><p>Clear images of the lesion</p></li>
+<li><p>Enhanced visualizations</p></li>
+<li><p>Feature detection results</p></li>
+</ul></td>
+<td><ul>
+<li><p>Heat maps of concerning areas</p></li>
+<li><p>Breakdown of each concerning feature</p></li>
+<li><p>Similar cases from training data</p></li>
+<li><p>Notes on atypical features</p></li>
+</ul></td>
+<td><ul>
+<li><p>Statistical outcome predictions</p></li>
+<li><p>Recommended monitoring schedule</p></li>
+<li><p>Growth projections</p></li>
+<li><p>Alternative diagnoses to consider given biopsy results</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="sec-benefits" class="level3" data-number="3.1.3">
+<h3 data-number="3.1.3" class="anchored" data-anchor-id="sec-benefits"><span class="header-section-number">3.1.3</span> Benefits for Physician Autonomy</h3>
+<p>This approach maintains physician control &amp; creates effective AI-physician collaboration by critically:</p>
+<ul>
+<li><p>Making AI decisions transparent <strong>in the way the physician thinks</strong> <em>(AI SA supports physician SA)</em></p></li>
+<li><p>Allowing investigation of AI recommendations <strong>because fits into physician SA</strong> <em>(AI SA supports physician SA)</em></p></li>
+</ul>
+</section>
+</section>
+<section id="system-uncertainty-vs.-user-confidence" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="system-uncertainty-vs.-user-confidence"><span class="header-section-number">3.2</span> System Uncertainty vs.&nbsp;User Confidence</h2>
+<p>Consider an AI clinical decision support system. It uses all of the available multimodal data it has (e.g.&nbsp;all EMR data, all imaging, all relevant guidelines) and suggests next actions in a clinical workflow.</p>
+<p>Without intelligently handling the known unknowns and the unknown unknowns, the system risks communicating itself with overconfidence, harming physician autonomy and trust.</p>
+<section id="clinical-scenario" class="level3" data-number="3.2.1">
+<h3 data-number="3.2.1" class="anchored" data-anchor-id="clinical-scenario"><span class="header-section-number">3.2.1</span> Clinical Scenario</h3>
+<p>A 58-year-old patient presents to the Emergency Department with abdominal pain. The hospital’s AI system analyzes available data:</p>
+<p>EMR review:</p>
+<ul>
+<li><p>Well-controlled diabetes</p></li>
+<li><p>Recent normal colonoscopy</p></li>
+<li><p>Stable vital signs</p></li>
+<li><p>CT scan suggesting appendicitis</p></li>
+<li><p>Mildly elevated white blood cell count</p></li>
+</ul>
+<p>Based on these findings and clinical guidelines, the AI system confidently recommends an immediate surgical consultation for an appendicectomy/appendectomy.</p>
+<p>However, critical information remains outside the AI’s analysis:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 42%">
+<col style="width: 57%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Known gaps</th>
+<th>Potential unknowns</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><ul>
+<li><p>Recent travel history (not in EMR)</p></li>
+<li><p>Current medication list (undocumented)</p></li>
+<li><p>Precise onset timing of pain</p></li>
+</ul></td>
+<td><ul>
+<li><p>Anatomical variations</p></li>
+<li><p>Unusual pathogens</p></li>
+<li><p>Undocumented family history of inflammatory conditions</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<p>The treating physician, drawing on years of clinical experience and subtle patient cues, senses something atypical about the presentation. Rather than proceeding directly to surgery, they pursue additional workup - ultimately discovering a rare parasitic infection contracted during the patient’s recent international travel, which had mimicked appendicitis.</p>
+<p>This scenario demonstrates how an AI system that doesn’t explicitly acknowledge uncertainty could prematurely narrow the diagnostic consideration and potentially override valuable physician intuition and clinical judgment. A better system would present its recommendations with <strong>appropriate caveats and confidence levels</strong>, explicitly noting what information is <strong>missing or uncertain</strong>, better supporting physician decision-making.</p>
+</section>
+<section id="situation-awareness-1" class="level3" data-number="3.2.2">
+<h3 data-number="3.2.2" class="anchored" data-anchor-id="situation-awareness-1"><span class="header-section-number">3.2.2</span> Situation Awareness</h3>
+<p>Applying SA in this scenario means expressing the uncertainty of the AI system. The extent to which displaying these uncertainty metrics actually improves physician confidence and decision-making remains unclear - would overall outcomes improve if it showed 65% confidence with clear knowledge gaps, versus 85% confidence without acknowledging uncertainties? Does breaking down uncertainty into specific components help or hinder clinical workflow?</p>
+<p>An SA-oriented design would structure uncertainty representation across three cognitive levels, helping physicians build a complete mental model of the situation:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Level 1: Perception</th>
+<th>Level 2: Comprehension</th>
+<th>Level 3: Projection</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>The interface explicitly shows non-modeled dimensions of the patient’s condition. Beyond displaying the CT findings and lab values, it acknowledges factors not captured in the system - like subtle physical exam findings, patient affect, or the tempo of the case. This transparency about what’s missing helps physicians better gauge the AI’s recommendations.</td>
+<td>The system supports understanding why certain outcomes might occur by showing its confidence assessments contextually. Rather than just displaying a confidence score for appendicitis, it reveals how different uncertainties interact - how the combination of atypical pain patterns, missing medication history, and unclear onset timing affects its diagnostic confidence. This helps physicians interpret the AI’s reasoning process.</td>
+<td>The interface enables physicians to actively explore different diagnostic and treatment pathways while considering uncertainties. They can drill down into specific concerns (like possible travel-related infections) or zoom out to monthly patient patterns. This supports both immediate decision-making and longer-term treatment planning.</td>
+</tr>
+</tbody>
+</table>
+<p>This approach recognizes that managing clinical uncertainty isn’t passive - physicians need to actively engage with the information, controlling how they view and interpret different uncertainty elements based on their expertise and the specific patient context. By organising uncertainty information around clinical goals and supporting both detailed symptom analysis and broader diagnostic consideration, the system helps physicians develop their own situation assessment while maintaining appropriate confidence in both the AI’s suggestions and their own clinical judgment.</p>
+<p>This design philosophy helps harmonize the tension between the AI’s inherent limitations and the physician’s need for confident decision-making, without compromising the crucial role of clinical expertise and intuition.</p>
+</section>
+</section>
+<section id="system-complexity-vs.-perceived-complexity" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="system-complexity-vs.-perceived-complexity"><span class="header-section-number">3.3</span> System Complexity vs.&nbsp;Perceived Complexity</h2>
+<p>This final tension underlies the entire human-AI interaction. Modern clinical AI systems are inherently complex, integrating multiple components and data sources. In our ED scenario, the system simultaneously processes:</p>
+<ul>
+<li><p>Structured EMR data (labs, vitals, medications)</p></li>
+<li><p>Unstructured clinical notes</p></li>
+<li><p>Imaging data through computer vision algorithms</p></li>
+<li><p>Clinical guidelines and medical literature</p></li>
+<li><p>Population-level statistics and outcomes data</p></li>
+</ul>
+<p>As the systems grows in complexity, choosing what to show to clinicians grows in importance.</p>
+<p>Like how micro-calculations of flap adjustment doesn’t need to be visible to the pilot, physicians need a balanced view, enough to maintain trust while preventing information overload. The operational complexity can remain manageable with a moderate perceived complexity, despite significant objective complexity.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Complexity Definitions
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><p><strong>Objective Complexity:</strong> objectively what the system is doing - considering guidelines, statistics, scan results, notes, etc.</p></li>
+<li><p><strong>Perceived Complexity:</strong> the complexity perceived by the clinician:</p>
+<ul>
+<li><p>When we distribute knowledge like trusting the pathologist to accurately read biopsy slides or the MRI machine to function properly, the perceived complexity is reduced to a simple pathology report or conversation with the radiologist.</p></li>
+<li><p>We aim for reducing the perceived complexity in interdisciplinary conversations to minimise cognitive workload and maximise productivity.</p></li>
+</ul></li>
+<li><p><strong>Operational Complexity:</strong> refers to the task’s complexity - diagnosing appendicitis may require:</p>
+<ul>
+<li><p>Multiple interdependent decisions (ordering tests, interpreting results, choosing treatments)</p></li>
+<li><p>Similar presenting symptoms potentially leading to different diagnoses &amp; various decision paths that could lead to the same diagnosis</p></li>
+<li><p>Need to constantly re-evaluate as new information arrives</p></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<p>This is the hardest balance to strike. Perceived complexity changes vastly based on interface design decisions:</p>
+<ul>
+<li><p>Showing comprehensive evidence supporting the AI’s appendicitis recommendation versus overwhelming the physician with data</p></li>
+<li><p>Balancing immediate diagnostic suggestions with the need to communicate uncertainty</p></li>
+<li><p>Determining how much of the AI’s reasoning process to expose</p></li>
+<li><p>Adapting information density based on case urgency and complexity</p></li>
+</ul>
+<section id="situation-awareness-2" class="level3" data-number="3.3.1">
+<h3 data-number="3.3.1" class="anchored" data-anchor-id="situation-awareness-2"><span class="header-section-number">3.3.1</span> Situation Awareness</h3>
+<p>An SA approach would manage complexity through a layered approach:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 32%">
+<col style="width: 39%">
+<col style="width: 27%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Routine Cases (Low Complexity):</th>
+<th>Complex/Atypical Cases (Medium Complexity):</th>
+<th>Emergent Situations (High Time Pressure):</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><ul>
+<li><p>Clean, simplified interface showing primary diagnosis suggestion</p></li>
+<li><p>Key supporting evidence summarized</p></li>
+<li><p>Basic confidence level displayed</p></li>
+<li><p>Option to explore deeper if desired</p></li>
+</ul></td>
+<td><ul>
+<li><p>More detailed presentation of AI reasoning</p></li>
+<li><p>Explicit highlighting of uncertainty factors</p></li>
+<li><p>Interactive elements allowing physicians to explore different diagnostic pathways</p></li>
+<li><p>Comparison views of similar cases and their outcomes</p></li>
+<li><p>Visual representation of how different factors influence the AI’s confidence</p></li>
+</ul></td>
+<td><ul>
+<li><p>Streamlined interface focusing on critical information</p></li>
+<li><p>Clear action recommendations</p></li>
+<li><p>Quick access to essential data points</p></li>
+<li><p>Minimized cognitive load</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<p>The system should adapt its complexity presentation based on factors like:</p>
+<ul>
+<li><p>Case urgency</p></li>
+<li><p>Physician experience level</p></li>
+<li><p>Time of day (cognitive load may be higher during night shifts)</p></li>
+<li><p>Case similarity to typical presentations</p></li>
+<li><p>Level of diagnostic certainty</p></li>
+</ul>
+<p>This framework recognizes that perceived complexity isn’t static - what seems straightforward at the start of a shift might feel overwhelming during a busy night. By structuring information presentation across these varying complexity levels, the system supports physicians’ natural diagnostic reasoning while maintaining their autonomy.</p>
+<p>For example, in our appendicitis case:</p>
+<ul>
+<li><p>Initial presentation: Clean interface showing primary findings and straightforward recommendation</p></li>
+<li><p>As atypical features emerge: System adapts to show more detailed reasoning and uncertainty factors</p></li>
+<li><p>If emergency intervention needed: Interface shifts to highlight critical decision points and key actions</p></li>
+<li><p>During detailed review: Allows exploration of full case complexity for learning purposes</p></li>
+</ul>
+<p>This SA-oriented approach helps physicians maintain situational awareness without being overwhelmed by the system’s inherent complexity, ultimately supporting better clinical decision-making while preserving physician autonomy and confidence.</p>
+</section>
+</section>
+</section>
+<section id="sec-takeaways" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Key Takeaways</h1>
+<p>Medical AI integration requires careful attention to three key tensions:</p>
+<ol type="1">
+<li><p><strong>Automation and Human Agency</strong>: For AI to enhance rather than replace medical expertise, clinicians need appropriate visibility into AI systems. This means showing relevant information at the right time while preserving physician autonomy.</p></li>
+<li><p><strong>System Uncertainty and User Confidence</strong>: AI systems must explicitly acknowledge their limitations and gaps in knowledge. Rather than presenting overconfident recommendations, they should support physician decision-making by clearly communicating uncertainties.</p></li>
+<li><p><strong>System vs.&nbsp;Perceived Complexity</strong>: While medical AI systems are inherently complex, their interfaces must balance comprehensive information with usable design. The key is showing enough detail to maintain trust while preventing cognitive overload.</p></li>
+</ol>
+</section>
+<section id="sec-conclusion" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Conclusion</h1>
+<p>The successful integration of AI in medicine depends on understanding how humans and machines can work together effectively. By applying lessons from aviation and human-computer interaction, we can design AI systems that enhance rather than diminish medical expertise.</p>
+<p>Situation awareness provides a valuable framework for addressing these challenges. When AI systems are designed to support clinician perception, comprehension, and projection, they can genuinely augment medical decision-making rather than attempting to replace clinical judgment.</p>
+<p>The future of medical AI lies not in autonomous systems that work in isolation, but in thoughtfully designed tools that strengthen the doctor-patient relationship and improve clinical outcomes. As we continue developing these systems, maintaining this human-centered perspective will be crucial for realizing the full potential of AI in healthcare.</p>
 
 
 </section>

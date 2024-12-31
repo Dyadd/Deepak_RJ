@@ -138,7 +138,7 @@ A completely new balance emerges from AI on distributed situation awareness. AI 
 
 Medicine provides a crucial case study in AI integration, where patient safety is paramount. Drawing from [Jiang et al.'s work](https://www.tandfonline.com/doi/full/10.1080/10447318.2022.2093863), three fundamental tensions emerge:
 
-## 1. Automation vs. Human Agency
+## Automation vs. Human Agency
 
 ::: callout-note
 # Key Takeaway

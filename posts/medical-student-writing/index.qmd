@@ -3,7 +3,7 @@ title: "Why Medical Students Should Blog"
 number-sections: true
 description: "Medicine can be such a varied and wonderful career especially if you have other interests!"
 author: "Deepak RJ"
-date: "2024-12-24"
+date: "2025-01-11"
 categories: [education]
 image: "thumbnail.jpg"  # You'll need to add an image here
 draft: false

@@ -54,9 +54,9 @@ Blogging offers unique advantages:
 * Learn in public and connect with others who share your interests
 :::
 
-But the reasons each person might want to blog is different. For example, you might notice there is very poor conversation on a specific topic (e.g. ethical foundations for AI integration in medicine, poor understanding of finance/politics by the average clinician) and you wish to fill the gap. Despite your reasons, at the end, you've read things you find interesting and you've shared work that others find valuable. 
+People have diverse motivations for blogging. You might start because you notice a gap in discourse around important topics, like the ethical implications of AI in medicine or the limited financial and political literacy among healthcare professionals. Whatever your initial reason, blogging often leads to two valuable outcomes: deepening your own understanding through research and creating content that others find meaningful.
+My own journey into blogging was gradual. I created a dedicated Gmail account in 2021, set up a WordPress site in 2022, and finally began writing in late 2024. Along the way, I've informally taken notes on what I want to write about. Today, I use [Quarto](https://quarto.org/docs/websites/website-blog.html) for my blog platform and engage in discussions through social media platforms like [X/Twitter](https://x.com/dyad_rj) and [Bluesky](https://bsky.app/profile/dyad-rj.bsky.social).
 
-I was very humbled when I found this out: I created a Gmail account for writing in 2021, made a WordPress in 2022, and finally started writing at the end of 2024. Now, I use Quarto for blogging and platforms like X/Bluesky to engage in discussions I'm interested in.
 
 ::: {.callout-tip}
 # Getting Started

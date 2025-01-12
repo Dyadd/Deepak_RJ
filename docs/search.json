@@ -60,6 +60,20 @@
     ]
   },
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Deepak_RJ",
+    "section": "",
+    "text": "Medical AI: Lessons on Good Human-Computer Interaction\n\n\n\n\n\n\nAI\n\n\nHCI\n\n\n\nWhat aviation can teach us about medical AI\n\n\n\n\n\nDec 29, 2024\n\n\nDeepak RJ\n\n\n\n\n\n\n\n\n\n\n\n\nWhy Medical Students Should Blog\n\n\n\n\n\n\neducation\n\n\n\nMedicine can be such a varied and wonderful career especially if you have other interests!\n\n\n\n\n\nDec 24, 2024\n\n\nDeepak RJ\n\n\n\n\n\n\n\n\n\n\n\n\nWhat Medicine needs to get right about AI\n\n\n\n\n\n\nAI\n\n\nHCI\n\n\n\nExploring the critical intersection of artificial intelligence and human-centered design in healthcare\n\n\n\n\n\nDec 24, 2024\n\n\nDeepak RJ\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this blog"
+  },
+  {
     "objectID": "posts/mAI_HCI_detailed/index.html",
     "href": "posts/mAI_HCI_detailed/index.html",
     "title": "Medical AI: Lessons on Good Human-Computer Interaction",
@@ -132,17 +146,27 @@
     ]
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "posts/medical-student-writing/index.html",
+    "href": "posts/medical-student-writing/index.html",
+    "title": "Why Medical Students Should Blog",
     "section": "",
-    "text": "About this blog"
+    "text": "I often talk to medical students who feel constrained by the traditional medical path. They have vibrant interests in computer science, art, engineering, politics, or design, but struggle to see how these fit into their medical career. If this sounds like you, you’re not alone!",
+    "crumbs": [
+      "Blog",
+      "Recent Posts",
+      "Why Medical Students Should Blog"
+    ]
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Deepak_RJ",
-    "section": "",
-    "text": "Medical AI: Lessons on Good Human-Computer Interaction\n\n\n\n\n\n\nAI\n\n\nHCI\n\n\n\nWhat aviation can teach us about medical AI\n\n\n\n\n\nDec 29, 2024\n\n\nDeepak RJ\n\n\n\n\n\n\n\n\n\n\n\n\nWhat Medicine needs to get right about AI\n\n\n\n\n\n\nAI\n\n\nHCI\n\n\n\nExploring the critical intersection of artificial intelligence and human-centered design in healthcare\n\n\n\n\n\nDec 24, 2024\n\n\nDeepak RJ\n\n\n\n\n\n\nNo matching items"
+    "objectID": "posts/medical-student-writing/index.html#other-blogs",
+    "href": "posts/medical-student-writing/index.html#other-blogs",
+    "title": "Why Medical Students Should Blog",
+    "section": "4.1 Other blogs",
+    "text": "4.1 Other blogs\n\nhttps://rachel.fast.ai/\nhttps://www.interconnects.ai/",
+    "crumbs": [
+      "Blog",
+      "Recent Posts",
+      "Why Medical Students Should Blog"
+    ]
   }
 ]

@@ -10,69 +10,78 @@ draft: false
 ---
 
 # Breaking Out of the Medical Silo
-I often talk to medical students who feel constrained by the traditional medical path. They have vibrant interests in computer science, art, engineering, politics, or design, but struggle to see how these fit into their medical career. If this sounds like you, you're not alone! 
+
+I often talk to medical students who feel constrained by the traditional medical path. They have vibrant interests in computer science, art, engineering, politics, or design, but struggle to see how these fit into their medical career. If this sounds like you, you're not alone!
 
 # Medicine Thrives on Different Perspectives
-One key turning point was when I realised that medical training ultimately serves a workforce need. We've split up medicine into [a handful of axes](https://med.stanford.edu/content/dam/sm/md/documents/resources/Roadmap-to-Choosing-a-Medical-Specialty-.pdf): 
-- if you want to see patients or not
-- if you want to use your hands / not use your hands
-- if you want to help treat specific internal organs / specific external organs / not any specific organ in particular
+
+One key turning point was when I realised that medical training ultimately serves a workforce need. We've split up medicine into [a handful of axes](https://med.stanford.edu/content/dam/sm/md/documents/resources/Roadmap-to-Choosing-a-Medical-Specialty-.pdf):
+
+-   if you want to see patients or not
+-   if you want to use your hands / not use your hands
+-   if you want to help treat specific internal organs / specific external organs / not any specific organ in particular
 
 I didn't go into helping people's health for those considerations to make a bulk of my decision-making!
 
-Society needs attendings/consultants to see patients daily - GPs in UK's NHS system call it 'working the coalface'. But for many talented & bright folk going into medicine, 'working the coalface' may not be how you help people. 
+Society needs attendings/consultants to see patients daily - GPs in UK's NHS system call it 'working the coalface'. But for many talented & bright folk going into medicine, 'working the coalface' may not be how you help people.
 
-Medicine has always gained from interdisciplinary insights. Consider: 
-* [Eric Topol](https://x.com/EricTopol): A cardiologist who became a pioneer in digital medicine and AI. He leads the Scripps Research Translational Institute and has written extensively about how technology is transforming healthcare.
-* [Abraham Verghese](https://profiles.stanford.edu/abraham-verghese): A physician-writer who bridges medicine and literature, showing how narrative skills improve patient care. He's a professor at Stanford and a bestselling author.
-* [Atul Gawande](https://x.com/Atul_Gawande): A surgeon who combines medicine with systems thinking and writing. His work on healthcare checklists, inspired by aviation safety protocols, has saved countless lives.
-* [Danielle Ofri](https://danielleofri.com/): An internist who combines medicine with art and writing, founding the Bellevue Literary Review and showing how humanities enhance medical practice.
-* [Shoshana Ungerleider](https://x.com/ShoshUMD): An internal medicine physician who founded [End Well](https://endwellproject.org/), a nonprofit focused on redesigning the end of life experience through design thinking and technology.
-* [Austin Chiang](https://www.austinchiang.com/home): A gastroenterologist who serves as TikTok's first Chief Medical Officer, pioneering new ways to communicate health information through social media.
-* [Roxana Daneshjou](https://profiles.stanford.edu/roxana-daneshjou): A dermatologist with prior bioengineering training, who completed her MD-PhD at Stanford in genetics with a postdoc in biomedical data science. She leads several initiatives bridging dermatology & AI at Stanford. 
-* [Khoa Cao](https://research.monash.edu/en/persons/khoa-cao): A physician-engineer, trained at the intersections of medicine, public health, economics and engineering to lead Monash's Medical Technology Lab focussing on medical AI. 
+Medicine has always gained from interdisciplinary insights. Consider:
+
+-   [Eric Topol](https://x.com/EricTopol): A cardiologist who became a pioneer in digital medicine and AI. He leads the Scripps Research Translational Institute and has written extensively about how technology is transforming healthcare.
+-   [Abraham Verghese](https://profiles.stanford.edu/abraham-verghese): A physician-writer who bridges medicine and literature, showing how narrative skills improve patient care. He's a professor at Stanford and a bestselling author.
+-   [Atul Gawande](https://x.com/Atul_Gawande): A surgeon who combines medicine with systems thinking and writing. His work on healthcare checklists, inspired by aviation safety protocols, has saved countless lives.
+-   [Danielle Ofri](https://danielleofri.com/): An internist who combines medicine with art and writing, founding the Bellevue Literary Review and showing how humanities enhance medical practice.
+-   [Shoshana Ungerleider](https://x.com/ShoshUMD): An internal medicine physician who founded [End Well](https://endwellproject.org/), a nonprofit focused on redesigning the end of life experience through design thinking and technology.
+-   [Austin Chiang](https://www.austinchiang.com/home): A gastroenterologist who serves as TikTok's first Chief Medical Officer, pioneering new ways to communicate health information through social media.
+-   [Roxana Daneshjou](https://profiles.stanford.edu/roxana-daneshjou): A dermatologist with prior bioengineering training, who completed her MD-PhD at Stanford in genetics with a postdoc in biomedical data science. She leads several initiatives bridging dermatology & AI at Stanford.
+-   [Khoa Cao](https://research.monash.edu/en/persons/khoa-cao): A physician-engineer, trained at the intersections of medicine, public health, economics and engineering to lead Monash's Medical Technology Lab focussing on medical AI.
 
 Your unique interests aren't a distraction – they're potentially your biggest contribution to medicine.
 
 # Why Blogging Works
+
 Blogging mostly describes the intention to read & write.
 
 Blogging is underexplored by clinicians, with only adoption by the [FOAMed](https://litfl.com/foam/) crowd. It's very common in other fields ([AI/data science](https://www.fast.ai/posts/2020-01-16-fast_template.html), [software engineers/developers](https://www.swyx.io/), [business](https://commoncog.com/), [science communication](https://scienceblogs.com/notrocketscience), [management](https://lg.substack.com/), [journalism](https://www.slowboring.com/)). One of the most compelling reasons to blog is discovering what truly interests you. When you blog, you:
 
-1. Explore random topics that catch your attention
-2. Document your "Aha!" moments
-3. Turn casual interests into structured thoughts
-4. Create valuable content others can learn from
+1.  Explore random topics that catch your attention
+2.  Document your "Aha!" moments
+3.  Turn casual interests into structured thoughts
+4.  Create valuable content others can learn from
 
-By doing so, you grow your **specific knowledge** - your unique interests which give you unique insights which let you enter roles no one else can fill. 
+By doing so, you grow your **specific knowledge** - your unique interests which give you unique insights which let you enter roles no one else can fill.
 
-::: {.callout-tip}
-Blogging offers unique advantages:
-* Discover your specific knowledge at the intersection of medicine and your interests
-* Share ideas and get feedback faster than formal research
-* Build a professional identity that reflects your unique perspective
-* Learn in public and connect with others who share your interests
+::: callout-tip
+# Blogging offers unique advantages:
+
+-   Discover your specific knowledge at the intersection of medicine and your interests
+-   Share ideas and get feedback faster than formal research
+-   Build a professional identity that reflects your unique perspective
+-   Learn in public and connect with others who share your interests
 :::
 
-People have diverse motivations for blogging. You might start because you notice a gap in discourse around important topics, like the ethical implications of AI in medicine or the limited financial and political literacy among healthcare professionals. Whatever your initial reason, blogging often leads to two valuable outcomes: deepening your own understanding through research and creating content that others find meaningful.
-My own journey into blogging was gradual. I created a dedicated Gmail account in 2021, set up a WordPress site in 2022, and finally began writing in late 2024. Along the way, I've informally taken notes on what I want to write about. Today, I use [Quarto](https://quarto.org/docs/websites/website-blog.html) for my blog platform and engage in discussions through social media platforms like [X/Twitter](https://x.com/dyad_rj) and [Bluesky](https://bsky.app/profile/dyad-rj.bsky.social).
+People have diverse motivations for blogging. You might start because you notice a gap in discourse around important topics, like the ethical implications of AI in medicine or the limited financial and political literacy among healthcare professionals. Whatever your initial reason, blogging often leads to two valuable outcomes: deepening your own understanding through research and creating content that others find meaningful. My own journey into blogging was gradual. I created a dedicated Gmail account in 2021, set up a WordPress site in 2022, and finally began writing in late 2024. Along the way, I've informally taken notes on what I want to write about. Today, I use [Quarto](https://quarto.org/docs/websites/website-blog.html) for my blog platform and engage in discussions through social media platforms like [X/Twitter](https://x.com/dyad_rj) and [Bluesky](https://bsky.app/profile/dyad-rj.bsky.social).
 
-
-::: {.callout-tip}
+::: callout-tip
 # Getting Started
 
-Pick a simple platform (Quarto is brilliant for any technical blogging)
-Write about what genuinely interests you
-Share your unique perspectives
-Engage with others in your field
+-   Pick a simple platform (Quarto is brilliant for any technical blogging)
+-   Write about what genuinely interests you
+-   Share your unique perspectives
+-   Engage with others in your field
 :::
 
 # Resources
-https://quarto.org/docs/websites/website-blog.html 
-https://hamel.dev/blog/posts/audience/
-http://www.swyx.io/learn-in-public
-https://nav.al/product-media
 
-## Other blogs
-* https://rachel.fast.ai/
-* https://www.interconnects.ai/
+-   https://quarto.org/docs/websites/website-blog.html
+
+-   https://hamel.dev/blog/posts/audience/
+
+-   http://www.swyx.io/learn-in-public
+
+-   https://nav.al/product-media
+
+## Blogs I love
+
+-   https://rachel.fast.ai/
+-   https://www.interconnects.ai/

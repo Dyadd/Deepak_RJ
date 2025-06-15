@@ -25,12 +25,6 @@ website:
       - icon: twitter
         href: https://twitter.com
 
-  sidebar:
-    style: floating
-    contents:
-      - section: "Recent Posts"
-        contents: posts/*/*.qmd
-
 format:
   html:
     theme:
@@ -41,3 +35,4 @@ format:
     toc: true
     toc-title: On this page
     highlight-style: github
+    include-after-body: counterdev.html

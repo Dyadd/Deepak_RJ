@@ -64,3 +64,43 @@ blockquote {
   color: #666;
   font-style: italic;
 }
+
+/* Two-column layout for landing page */
+.landing-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 2rem;
+}
+.landing-columns > div {
+  flex: 1 1 320px;
+  min-width: 300px;
+  max-width: 420px;
+}
+
+@media (max-width: 900px) {
+  .landing-columns {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+.card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.project-card, .writing-card {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 1rem 1.2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  border: 1px solid #e0e0e0;
+}
+.card-desc {
+  color: #555;
+  font-size: 0.98em;
+  margin-top: 0.3em;
+}

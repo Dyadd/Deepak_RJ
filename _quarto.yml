@@ -18,8 +18,9 @@ website:
     search: true
     right:
       - text: Blog
+        file: blog.qmd
+      - text: About
         file: index.qmd
-      - about.qmd
       - icon: github
         href: https://github.com/
       - icon: twitter

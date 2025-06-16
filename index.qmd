@@ -1,14 +1,16 @@
 ---
-title: "Deepak RJ"
+title: ""
 page-layout: full
-title-block-banner: true
+title-block-banner: false
 ---
 
 ![](profile.jpg){fig-align="center" width=180px style="border-radius: 50%; box-shadow: 0 2px 8px rgba(0,0,0,0.15); margin-bottom: 1.5rem;"}
 
 # Deepak RJ
 
-I write (mostly) about emerging medical AI for clinicians and about medicine for data scientists. My goal is to help us actualise AI for medicine, from biomedical research to clinical practice, for the safe and productive merge of data science and medicine.
+I write about medical AI for clinicians, with a focus on actualising AI for psychiatry - the only medical specialty with worsening outcomes.
+
+As a medical student, AI researcher, and long-term insight meditator, I track how technology is reshaping healthcare while exploring deeper questions about consciousness, attention, identity, and what it means to understand minds. I work at the tight-knit [MMTL](https://www.linkedin.com/company/monash-medical-technology-lab/).
 
 [Twitter](https://x.com/dyad_rj) | [LinkedIn](https://www.linkedin.com/in/deepak-r-j/) | [GitHub](https://github.com/Dyadd)
 
@@ -17,8 +19,17 @@ I write (mostly) about emerging medical AI for clinicians and about medicine for
 ::: {.g-col-6}
 ### Current Projects
 
-- [**Ambi**](posts/information-flow-is-underrated/index.qmd)  
+::: {.card-list}
+- [**Ambi**]
   <span class="card-desc">Rethinking the doctor-patient relationship in an agent-run clinic.</span>
+- [**Nexus**](www.nexusmedtech.org)
+  <span class="card-desc">Clinicians need to learn about AI. We aim to create the nexus for all things medical AI, from education to research news.</span>
+- [**Clarity**]
+  <span class="card-desc">Seed funded by [MIME](https://www.monash.edu/mime). Built a RAG system for centralised clinical decision support.</span>
+- [**Chute**] 
+  <span class="card-desc">Automating clinical registry entry for clinicians using LLMs.</span>
+- [**GAMSnack**](www.gamsnack.com)
+  <span class="card-desc">AI-powered education platform aiming to bring the cost of effective 1-on-1 tutoring down to pennies.</span>
 - [**What Medicine Needs to Get Right About AI**](posts/What_Medicine_needs_to_get_right_about_AI/index.qmd)  
   <span class="card-desc">Exploring the critical intersection of artificial intelligence and human-centered design in healthcare.</span>
 - [**Medical AI: Lessons on Good Human-Computer Interaction**](posts/mAI_HCI_detailed/index.qmd)  
@@ -27,7 +38,7 @@ I write (mostly) about emerging medical AI for clinicians and about medicine for
   <span class="card-desc">Encouraging medical students to share their unique perspectives and interests through blogging.</span>
 - [**Medical School Learning with AI**](posts/medical-school-ai-education/index.qmd)  
   <span class="card-desc">On StudyBuddy, asking good questions, and the future of AI in medical education.</span>
-{.card-list}
+:::
 
 :::
 
@@ -35,23 +46,27 @@ I write (mostly) about emerging medical AI for clinicians and about medicine for
 ### My Writing
 
 **Most Viewed**
+
+::: {.card-list}
+- [**Medical AI: Lessons on Good Human-Computer Interaction**](posts/mAI_HCI_detailed/index.qmd)
 - [**Medicine's Information Flow Challenge**](posts/information-flow-is-underrated/index.qmd)
-- [**Why Medical Students Should Blog**](posts/medical-student-writing/index.qmd)
-{.card-list}
+- [**What Medicine Needs to Get Right About AI**](posts/What_Medicine_needs_to_get_right_about_AI/index.qmd)  
+:::
 
 **Most Recent**
-
-:::
-:::
 
 ::: {.listing}
 listing:
   contents: posts
   sort: "date desc"
+  max-items: 5
   type: default
   categories: false
   sort-ui: false
   filter-ui: false
+:::
+
+:::
 :::
 
 

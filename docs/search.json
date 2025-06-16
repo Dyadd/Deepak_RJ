@@ -4,127 +4,77 @@
     "href": "index.html",
     "title": "Deepak RJ",
     "section": "",
-    "text": "Deepak RJ\nI write (mostly) about emerging medical AI for clinicians and about medicine for data scientists. My goal is to help us actualise AI for medicine, from biomedical research to clinical practice, for the safe and productive merge of data science and medicine.\nTwitter | LinkedIn | GitHub\n\n\nCurrent Projects\n\nMedicine’s Information Flow Challenge\nReimagining clinical work through the lens of information flow and building AI systems for better healthcare.\nWhat Medicine Needs to Get Right About AI\nExploring the critical intersection of artificial intelligence and human-centered design in healthcare.\nMedical AI: Lessons on Good Human-Computer Interaction\nWhat aviation can teach us about medical AI and how to design for effective human-AI collaboration.\nWhy Medical Students Should Blog\nEncouraging medical students to share their unique perspectives and interests through blogging.\n&lt;strong&gt;Medical School Learning with AI&lt;/strong&gt;\nOn StudyBuddy, asking good questions, and the future of AI in medical education. {.card-list}\n\n\n\nMy Writing\nMost Viewed - Medicine’s Information Flow Challenge - Why Medical Students Should Blog {.card-list}\nMost Recent\n\n\n\nlisting: contents: posts sort: “date desc” type: default categories: false sort-ui: false filter-ui: false"
+    "text": "Deepak RJ\nI write about medical AI for clinicians, with a focus on actualising AI for psychiatry - the only medical specialty with worsening outcomes.\nAs a medical student, AI researcher, and long-term insight meditator, I track how technology is reshaping healthcare while exploring deeper questions about consciousness, identity, and what it means to understand minds.\nTwitter | LinkedIn | GitHub\n\n\nCurrent Projects\n\n\nAmbi\nRethinking the doctor-patient relationship in an agent-run clinic.\nWhat Medicine Needs to Get Right About AI\nExploring the critical intersection of artificial intelligence and human-centered design in healthcare.\nMedical AI: Lessons on Good Human-Computer Interaction\nWhat aviation can teach us about medical AI and how to design for effective human-AI collaboration.\nWhy Medical Students Should Blog\nEncouraging medical students to share their unique perspectives and interests through blogging.\nMedical School Learning with AI\nOn StudyBuddy, asking good questions, and the future of AI in medical education.\n\n\n\n\nMy Writing\nMost Viewed\n\n\nMedicine’s Information Flow Challenge\nWhy Medical Students Should Blog\n\n\nMost Recent\n\nlisting: contents: posts sort: “date desc” max-items: 5 type: default categories: false sort-ui: false filter-ui: false"
   },
   {
     "objectID": "posts/information-flow-is-underrated/index.html",
     "href": "posts/information-flow-is-underrated/index.html",
     "title": "Medicine’s Information Flow Challenge: Building AI Systems for Better Healthcare",
     "section": "",
-    "text": "Modern medicine’s greatest challenge isn’t necessarily the complexity of disease or the limits of treatments—it’s information flow. Every failure point in healthcare can be traced back to breakdowns in how information moves between stakeholders. This fundamental insight reframes how we should approach healthcare system design, especially as we introduce artificial intelligence.\n\n\nInformation flow problems manifest in obvious ways:\n\nClinical handovers between shifts or departments create vulnerability points where critical details get lost\nReferrals between specialists fragment the patient journey\nPatient histories become diluted or distorted with each retelling\nInvestigation results get lost in complex systems\nPublic health initiatives fail when crucial information doesn’t reach target populations\n\nBut the information flow challenge extends beyond these obvious examples. Medical learning itself—the way physicians accumulate clinical wisdom—represents an information flow bottleneck. Experience-based medicine means knowledge remains trapped in individual clinicians’ minds, creating uneven quality of care.\nEven our most sophisticated knowledge-sharing mechanisms—medical journals and conferences—represent imperfect attempts to facilitate information flow between physicians and statisticians. Yet these systems weren’t designed for the scale and complexity of modern healthcare.\n\n\n\nWhat if we viewed medicine differently? Rather than a profession of individual experts, imagine medicine as a collective intelligence exercise where the system’s emergent capabilities exceed any individual contributor.\nThe most effective clinical decision for any patient requires:\n\nComprehensive search through existing knowledge (published literature)\nThorough research of collected but undistilled information (case reports, clinical data)\nAggregated experience from thousands of similar cases\nConnection to interdisciplinary perspectives\n\nToday’s healthcare system makes this ideal nearly impossible. No single clinician can search all relevant literature, review all similar cases, or connect with every relevant specialist for each patient. The information flow bottleneck creates a ceiling on clinical excellence.",
-    "crumbs": [
-      "Blog",
-      "Recent Posts",
-      "Medicine's Information Flow Challenge: Building AI Systems for Better Healthcare"
-    ]
+    "text": "Modern medicine’s greatest challenge isn’t necessarily the complexity of disease or the limits of treatments—it’s information flow. Every failure point in healthcare can be traced back to breakdowns in how information moves between stakeholders. This fundamental insight reframes how we should approach healthcare system design, especially as we introduce artificial intelligence.\n\n\nInformation flow problems manifest in obvious ways:\n\nClinical handovers between shifts or departments create vulnerability points where critical details get lost\nReferrals between specialists fragment the patient journey\nPatient histories become diluted or distorted with each retelling\nInvestigation results get lost in complex systems\nPublic health initiatives fail when crucial information doesn’t reach target populations\n\nBut the information flow challenge extends beyond these obvious examples. Medical learning itself—the way physicians accumulate clinical wisdom—represents an information flow bottleneck. Experience-based medicine means knowledge remains trapped in individual clinicians’ minds, creating uneven quality of care.\nEven our most sophisticated knowledge-sharing mechanisms—medical journals and conferences—represent imperfect attempts to facilitate information flow between physicians and statisticians. Yet these systems weren’t designed for the scale and complexity of modern healthcare.\n\n\n\nWhat if we viewed medicine differently? Rather than a profession of individual experts, imagine medicine as a collective intelligence exercise where the system’s emergent capabilities exceed any individual contributor.\nThe most effective clinical decision for any patient requires:\n\nComprehensive search through existing knowledge (published literature)\nThorough research of collected but undistilled information (case reports, clinical data)\nAggregated experience from thousands of similar cases\nConnection to interdisciplinary perspectives\n\nToday’s healthcare system makes this ideal nearly impossible. No single clinician can search all relevant literature, review all similar cases, or connect with every relevant specialist for each patient. The information flow bottleneck creates a ceiling on clinical excellence."
   },
   {
     "objectID": "posts/information-flow-is-underrated/index.html#the-omnipresent-flow-problem",
     "href": "posts/information-flow-is-underrated/index.html#the-omnipresent-flow-problem",
     "title": "Medicine’s Information Flow Challenge: Building AI Systems for Better Healthcare",
     "section": "",
-    "text": "Information flow problems manifest in obvious ways:\n\nClinical handovers between shifts or departments create vulnerability points where critical details get lost\nReferrals between specialists fragment the patient journey\nPatient histories become diluted or distorted with each retelling\nInvestigation results get lost in complex systems\nPublic health initiatives fail when crucial information doesn’t reach target populations\n\nBut the information flow challenge extends beyond these obvious examples. Medical learning itself—the way physicians accumulate clinical wisdom—represents an information flow bottleneck. Experience-based medicine means knowledge remains trapped in individual clinicians’ minds, creating uneven quality of care.\nEven our most sophisticated knowledge-sharing mechanisms—medical journals and conferences—represent imperfect attempts to facilitate information flow between physicians and statisticians. Yet these systems weren’t designed for the scale and complexity of modern healthcare.",
-    "crumbs": [
-      "Blog",
-      "Recent Posts",
-      "Medicine's Information Flow Challenge: Building AI Systems for Better Healthcare"
-    ]
+    "text": "Information flow problems manifest in obvious ways:\n\nClinical handovers between shifts or departments create vulnerability points where critical details get lost\nReferrals between specialists fragment the patient journey\nPatient histories become diluted or distorted with each retelling\nInvestigation results get lost in complex systems\nPublic health initiatives fail when crucial information doesn’t reach target populations\n\nBut the information flow challenge extends beyond these obvious examples. Medical learning itself—the way physicians accumulate clinical wisdom—represents an information flow bottleneck. Experience-based medicine means knowledge remains trapped in individual clinicians’ minds, creating uneven quality of care.\nEven our most sophisticated knowledge-sharing mechanisms—medical journals and conferences—represent imperfect attempts to facilitate information flow between physicians and statisticians. Yet these systems weren’t designed for the scale and complexity of modern healthcare."
   },
   {
     "objectID": "posts/information-flow-is-underrated/index.html#medicine-as-a-collective-intelligence-exercise",
     "href": "posts/information-flow-is-underrated/index.html#medicine-as-a-collective-intelligence-exercise",
     "title": "Medicine’s Information Flow Challenge: Building AI Systems for Better Healthcare",
     "section": "",
-    "text": "What if we viewed medicine differently? Rather than a profession of individual experts, imagine medicine as a collective intelligence exercise where the system’s emergent capabilities exceed any individual contributor.\nThe most effective clinical decision for any patient requires:\n\nComprehensive search through existing knowledge (published literature)\nThorough research of collected but undistilled information (case reports, clinical data)\nAggregated experience from thousands of similar cases\nConnection to interdisciplinary perspectives\n\nToday’s healthcare system makes this ideal nearly impossible. No single clinician can search all relevant literature, review all similar cases, or connect with every relevant specialist for each patient. The information flow bottleneck creates a ceiling on clinical excellence.",
-    "crumbs": [
-      "Blog",
-      "Recent Posts",
-      "Medicine's Information Flow Challenge: Building AI Systems for Better Healthcare"
-    ]
+    "text": "What if we viewed medicine differently? Rather than a profession of individual experts, imagine medicine as a collective intelligence exercise where the system’s emergent capabilities exceed any individual contributor.\nThe most effective clinical decision for any patient requires:\n\nComprehensive search through existing knowledge (published literature)\nThorough research of collected but undistilled information (case reports, clinical data)\nAggregated experience from thousands of similar cases\nConnection to interdisciplinary perspectives\n\nToday’s healthcare system makes this ideal nearly impossible. No single clinician can search all relevant literature, review all similar cases, or connect with every relevant specialist for each patient. The information flow bottleneck creates a ceiling on clinical excellence."
   },
   {
     "objectID": "posts/information-flow-is-underrated/index.html#key-information-flows-to-optimize",
     "href": "posts/information-flow-is-underrated/index.html#key-information-flows-to-optimize",
     "title": "Medicine’s Information Flow Challenge: Building AI Systems for Better Healthcare",
     "section": "Key Information Flows to Optimize",
-    "text": "Key Information Flows to Optimize\n\n1. Patient-Doctor Information Flow\nHistory-taking and symptom reporting represent critical but often rushed processes. AI agents could:\n\nConduct thorough pre-appointment history collection\n\nTranslate patient concerns into clinical terminology\nIdentify patterns across appointments and providers\nEnsure no relevant symptoms or concerns are missed\n\n\n\n2. Doctor-Doctor Information Flow\nWhen physicians collaborate, outcomes improve. AI can enhance this by facilitating:\n\nStructured second opinions from clinical assistants\nInterdisciplinary team connection and collaboration\nInternational collaboration on complex cases\nImplementation of truly international standards of medicine\n\n\n\n3. Present Doctor-Past Doctors Information Flow\nCurrent clinicians struggle to benefit from all collective medical wisdom. AI can bridge this by:\n\nSynthesizing relevant journal findings for specific cases\nSurfacing similar historical cases and their outcomes\nTransforming collective medical knowledge into case-specific insights\nEnabling learning from the outcomes of all past similar cases\n\n\n\n4. Clinical Team Information Flow\nCoordination across the broader healthcare team often fails. AI can help by:\n\nEnsuring that nursing observations reach physicians promptly\nCoordinating allied health interventions\nStreamlining communication between departments\nMaintaining continuous awareness of patient status across the team\n\n\n\n5. Patient-Community Services Information Flow\nPatients often struggle to navigate complex healthcare systems. AI can facilitate:\n\nConnection to appropriate community resources\nPatient advocacy for interdisciplinary coordination\nNavigation assistance through complex healthcare journeys\nContinuity between acute and chronic care settings",
-    "crumbs": [
-      "Blog",
-      "Recent Posts",
-      "Medicine's Information Flow Challenge: Building AI Systems for Better Healthcare"
-    ]
+    "text": "Key Information Flows to Optimize\n\n1. Patient-Doctor Information Flow\nHistory-taking and symptom reporting represent critical but often rushed processes. AI agents could:\n\nConduct thorough pre-appointment history collection\n\nTranslate patient concerns into clinical terminology\nIdentify patterns across appointments and providers\nEnsure no relevant symptoms or concerns are missed\n\n\n\n2. Doctor-Doctor Information Flow\nWhen physicians collaborate, outcomes improve. AI can enhance this by facilitating:\n\nStructured second opinions from clinical assistants\nInterdisciplinary team connection and collaboration\nInternational collaboration on complex cases\nImplementation of truly international standards of medicine\n\n\n\n3. Present Doctor-Past Doctors Information Flow\nCurrent clinicians struggle to benefit from all collective medical wisdom. AI can bridge this by:\n\nSynthesizing relevant journal findings for specific cases\nSurfacing similar historical cases and their outcomes\nTransforming collective medical knowledge into case-specific insights\nEnabling learning from the outcomes of all past similar cases\n\n\n\n4. Clinical Team Information Flow\nCoordination across the broader healthcare team often fails. AI can help by:\n\nEnsuring that nursing observations reach physicians promptly\nCoordinating allied health interventions\nStreamlining communication between departments\nMaintaining continuous awareness of patient status across the team\n\n\n\n5. Patient-Community Services Information Flow\nPatients often struggle to navigate complex healthcare systems. AI can facilitate:\n\nConnection to appropriate community resources\nPatient advocacy for interdisciplinary coordination\nNavigation assistance through complex healthcare journeys\nContinuity between acute and chronic care settings"
   },
   {
     "objectID": "posts/information-flow-is-underrated/index.html#key-clinical-capabilities-to-build",
     "href": "posts/information-flow-is-underrated/index.html#key-clinical-capabilities-to-build",
     "title": "Medicine’s Information Flow Challenge: Building AI Systems for Better Healthcare",
     "section": "Key Clinical Capabilities to Build",
-    "text": "Key Clinical Capabilities to Build\nBy optimizing these information flows, we can develop systems that enable several crucial capabilities:\n\n1. Closing Clinical Loops\nMany healthcare errors occur when follow-up actions are missed. AI systems can:\n\nRemind clinicians to chase up outstanding test results\nTrack patients requiring outpatient follow-up\nEnsure discharge plans are implemented completely\nMonitor for medication reconciliation issues\n\n\n\n2. Suggesting Evidence-Based Next Steps\nClinical decision support can be dramatically improved when it’s based on comprehensive information flow:\n\nProvide key clinical insights based on all available data\nSuggest investigations or examinations that might be overlooked\nOffer management suggestions with multiple levels of evidence:\n\nGeneral evidence-based guidelines\nInstitution-specific protocols\nTeam-specific preferences and patterns\n\nPresent options with clear rationales and supporting evidence\n\n\n\n3. Streamlining Administrative Documentation\nSignificant clinician time is wasted on documentation that poorly serves its information flow purpose:\n\nGenerate structured handover summaries from clinical notes\nPrepare comprehensive referrals for specialist consultation\nDevelop patient-centered discharge documentation\nCreate actionable plans that can be implemented by clinical teams\n\n\n\n4. Enabling Advanced Reasoning and Prediction\nWith robust information flow, more sophisticated clinical capabilities become possible:\n\nCounterfactual reasoning about treatment options\nDigital twinning to simulate intervention outcomes\nPredictive analytics for clinical deterioration\nPersonalized treatment response projection",
-    "crumbs": [
-      "Blog",
-      "Recent Posts",
-      "Medicine's Information Flow Challenge: Building AI Systems for Better Healthcare"
-    ]
+    "text": "Key Clinical Capabilities to Build\nBy optimizing these information flows, we can develop systems that enable several crucial capabilities:\n\n1. Closing Clinical Loops\nMany healthcare errors occur when follow-up actions are missed. AI systems can:\n\nRemind clinicians to chase up outstanding test results\nTrack patients requiring outpatient follow-up\nEnsure discharge plans are implemented completely\nMonitor for medication reconciliation issues\n\n\n\n2. Suggesting Evidence-Based Next Steps\nClinical decision support can be dramatically improved when it’s based on comprehensive information flow:\n\nProvide key clinical insights based on all available data\nSuggest investigations or examinations that might be overlooked\nOffer management suggestions with multiple levels of evidence:\n\nGeneral evidence-based guidelines\nInstitution-specific protocols\nTeam-specific preferences and patterns\n\nPresent options with clear rationales and supporting evidence\n\n\n\n3. Streamlining Administrative Documentation\nSignificant clinician time is wasted on documentation that poorly serves its information flow purpose:\n\nGenerate structured handover summaries from clinical notes\nPrepare comprehensive referrals for specialist consultation\nDevelop patient-centered discharge documentation\nCreate actionable plans that can be implemented by clinical teams\n\n\n\n4. Enabling Advanced Reasoning and Prediction\nWith robust information flow, more sophisticated clinical capabilities become possible:\n\nCounterfactual reasoning about treatment options\nDigital twinning to simulate intervention outcomes\nPredictive analytics for clinical deterioration\nPersonalized treatment response projection"
   },
   {
     "objectID": "posts/information-flow-is-underrated/index.html#automation-vs.-human-agency",
     "href": "posts/information-flow-is-underrated/index.html#automation-vs.-human-agency",
     "title": "Medicine’s Information Flow Challenge: Building AI Systems for Better Healthcare",
     "section": "1. Automation vs. Human Agency",
-    "text": "1. Automation vs. Human Agency\nAI systems must enhance rather than replace clinician judgment. This requires:\n\nProviding the right “window” into AI reasoning\nPresenting information that matches clinician cognitive processes\nSupporting situation awareness at perception, comprehension, and projection levels\nEnsuring AI complements rather than undermines human expertise",
-    "crumbs": [
-      "Blog",
-      "Recent Posts",
-      "Medicine's Information Flow Challenge: Building AI Systems for Better Healthcare"
-    ]
+    "text": "1. Automation vs. Human Agency\nAI systems must enhance rather than replace clinician judgment. This requires:\n\nProviding the right “window” into AI reasoning\nPresenting information that matches clinician cognitive processes\nSupporting situation awareness at perception, comprehension, and projection levels\nEnsuring AI complements rather than undermines human expertise"
   },
   {
     "objectID": "posts/information-flow-is-underrated/index.html#system-uncertainty-vs.-user-confidence",
     "href": "posts/information-flow-is-underrated/index.html#system-uncertainty-vs.-user-confidence",
     "title": "Medicine’s Information Flow Challenge: Building AI Systems for Better Healthcare",
     "section": "2. System Uncertainty vs. User Confidence",
-    "text": "2. System Uncertainty vs. User Confidence\nHealthcare AI must acknowledge limitations without undermining clinical confidence:\n\nExplicitly communicate known knowledge gaps\nPresent confidence levels with appropriate context\nAllow clinicians to explore alternative diagnostic pathways\nSupport rather than override clinical intuition and judgment",
-    "crumbs": [
-      "Blog",
-      "Recent Posts",
-      "Medicine's Information Flow Challenge: Building AI Systems for Better Healthcare"
-    ]
+    "text": "2. System Uncertainty vs. User Confidence\nHealthcare AI must acknowledge limitations without undermining clinical confidence:\n\nExplicitly communicate known knowledge gaps\nPresent confidence levels with appropriate context\nAllow clinicians to explore alternative diagnostic pathways\nSupport rather than override clinical intuition and judgment"
   },
   {
     "objectID": "posts/information-flow-is-underrated/index.html#system-complexity-vs.-perceived-complexity",
     "href": "posts/information-flow-is-underrated/index.html#system-complexity-vs.-perceived-complexity",
     "title": "Medicine’s Information Flow Challenge: Building AI Systems for Better Healthcare",
     "section": "3. System Complexity vs. Perceived Complexity",
-    "text": "3. System Complexity vs. Perceived Complexity\nThe interface between complex AI systems and busy clinicians requires careful design:\n\nAdapt information density based on case complexity and urgency\nPresent simplified interfaces for routine cases\nAllow deeper exploration for atypical presentations\nEnsure critical information remains accessible without cognitive overload",
-    "crumbs": [
-      "Blog",
-      "Recent Posts",
-      "Medicine's Information Flow Challenge: Building AI Systems for Better Healthcare"
-    ]
+    "text": "3. System Complexity vs. Perceived Complexity\nThe interface between complex AI systems and busy clinicians requires careful design:\n\nAdapt information density based on case complexity and urgency\nPresent simplified interfaces for routine cases\nAllow deeper exploration for atypical presentations\nEnsure critical information remains accessible without cognitive overload"
   },
   {
     "objectID": "posts/medical-student-writing/index.html",
     "href": "posts/medical-student-writing/index.html",
     "title": "Why Medical Students Should Blog",
     "section": "",
-    "text": "I often talk to medical students who feel constrained by the traditional medical path. They have vibrant interests in computer science, art, engineering, politics, or design, but struggle to see how these fit into their medical career. If this sounds like you, you’re not alone!",
-    "crumbs": [
-      "Blog",
-      "Recent Posts",
-      "Why Medical Students Should Blog"
-    ]
+    "text": "I often talk to medical students who feel constrained by the traditional medical path. They have vibrant interests in computer science, art, engineering, politics, or design, but struggle to see how these fit into their medical career. If this sounds like you, you’re not alone!"
   },
   {
     "objectID": "posts/medical-student-writing/index.html#blogs-i-love",
     "href": "posts/medical-student-writing/index.html#blogs-i-love",
     "title": "Why Medical Students Should Blog",
     "section": "4.1 Blogs I love",
-    "text": "4.1 Blogs I love\n\nhttps://rachel.fast.ai/\nhttps://www.interconnects.ai/",
-    "crumbs": [
-      "Blog",
-      "Recent Posts",
-      "Why Medical Students Should Blog"
-    ]
+    "text": "4.1 Blogs I love\n\nhttps://rachel.fast.ai/\nhttps://www.interconnects.ai/"
   },
   {
     "objectID": "posts/mAI_HCI_detailed/index.html",
@@ -253,5 +203,12 @@
     "title": "Deepak RJ",
     "section": "My Writing",
     "text": "My Writing\n\nMost Viewed Most Recent\n\n\n\n\nMedicine’s Information Flow Challenge\nWhy Medical Students Should Blog \n\n\n\n\n\nlisting: contents: posts sort: “date desc” type: default categories: false sort-ui: false filter-ui: false"
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Blog\nHere you’ll find my latest writing on medical AI and related topics.\n\nlisting: contents: posts sort: “date desc” type: default categories: true sort-ui: false filter-ui: false"
   }
 ]

@@ -1,0 +1,18 @@
+---
+title: "Blog"
+page-layout: article
+---
+
+# Blog
+
+Here you'll find my latest writing on medical AI and related topics.
+
+::: {.listing}
+listing:
+  contents: posts
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: false
+  filter-ui: false
+::: 

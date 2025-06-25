@@ -32,13 +32,13 @@ As a medical student, AI researcher, and long-term insight meditator, I track ho
 ::: {.card-list}
 - **Ambi**
   - <span class="card-desc">Rethinking the doctor-patient relationship in an agent-run clinic.</span>
-- [**Nexus**](www.nexusmedtech.org)
+- [**Nexus**](https://www.nexusmedtech.org)
   - <span class="card-desc">Clinicians need to learn about AI. We aim to create the nexus for all things medical AI, from education to research news.</span>
 - **Clarity**
   - <span class="card-desc">Seed funded by [MIME](https://www.monash.edu/mime). Built a RAG system for centralised clinical decision support.</span>
 - **Chute** 
   - <span class="card-desc">Automating clinical registry entry for clinicians using LLMs.</span>
-- [**GAMSnack**](www.gamsnack.com)
+- [**GAMSnack**](https://www.gamsnack.com)
   - <span class="card-desc">AI-powered education platform aiming to bring the cost of effective 1-on-1 tutoring down to pennies.</span>
 :::
 

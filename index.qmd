@@ -2,6 +2,16 @@
 title: ""
 page-layout: full
 title-block-banner: false
+listing:
+  - id: recent-posts
+    template: simple-posts.ejs
+    contents: posts
+    sort: "date desc"
+    max-items: 5
+    type: custom
+    categories: false
+    sort-ui: false
+    filter-ui: false
 ---
 
 ![](profile.jpg){fig-align="center" width=180px style="border-radius: 50%; box-shadow: 0 2px 8px rgba(0,0,0,0.15); margin-bottom: 1.5rem;"}
@@ -10,7 +20,7 @@ title-block-banner: false
 
 I write about medical AI for clinicians, with a focus on actualising AI for psychiatry - the only medical specialty with worsening outcomes.
 
-As a medical student, AI researcher, and long-term insight meditator, I track how technology is reshaping healthcare while exploring deeper questions about consciousness, attention, identity, and what it means to understand minds. I work at the tight-knit [MMTL](https://www.linkedin.com/company/monash-medical-technology-lab/).
+As a medical student, AI researcher, and long-term insight meditator, I track how technology is reshaping healthcare while exploring deeper questions about attention, identity, computational psychiatry and what it means to understand minds. I work at the tight-knit [MMTL](https://www.linkedin.com/company/monash-medical-technology-lab/).
 
 [Twitter](https://x.com/dyad_rj) | [LinkedIn](https://www.linkedin.com/in/deepak-r-j/) | [GitHub](https://github.com/Dyadd)
 
@@ -20,24 +30,16 @@ As a medical student, AI researcher, and long-term insight meditator, I track ho
 ### Current Projects
 
 ::: {.card-list}
-- [**Ambi**]
-  <span class="card-desc">Rethinking the doctor-patient relationship in an agent-run clinic.</span>
+- **Ambi**
+  - <span class="card-desc">Rethinking the doctor-patient relationship in an agent-run clinic.</span>
 - [**Nexus**](www.nexusmedtech.org)
-  <span class="card-desc">Clinicians need to learn about AI. We aim to create the nexus for all things medical AI, from education to research news.</span>
-- [**Clarity**]
-  <span class="card-desc">Seed funded by [MIME](https://www.monash.edu/mime). Built a RAG system for centralised clinical decision support.</span>
-- [**Chute**] 
-  <span class="card-desc">Automating clinical registry entry for clinicians using LLMs.</span>
+  - <span class="card-desc">Clinicians need to learn about AI. We aim to create the nexus for all things medical AI, from education to research news.</span>
+- **Clarity**
+  - <span class="card-desc">Seed funded by [MIME](https://www.monash.edu/mime). Built a RAG system for centralised clinical decision support.</span>
+- **Chute** 
+  - <span class="card-desc">Automating clinical registry entry for clinicians using LLMs.</span>
 - [**GAMSnack**](www.gamsnack.com)
-  <span class="card-desc">AI-powered education platform aiming to bring the cost of effective 1-on-1 tutoring down to pennies.</span>
-- [**What Medicine Needs to Get Right About AI**](posts/What_Medicine_needs_to_get_right_about_AI/index.qmd)  
-  <span class="card-desc">Exploring the critical intersection of artificial intelligence and human-centered design in healthcare.</span>
-- [**Medical AI: Lessons on Good Human-Computer Interaction**](posts/mAI_HCI_detailed/index.qmd)  
-  <span class="card-desc">What aviation can teach us about medical AI and how to design for effective human-AI collaboration.</span>
-- [**Why Medical Students Should Blog**](posts/medical-student-writing/index.qmd)  
-  <span class="card-desc">Encouraging medical students to share their unique perspectives and interests through blogging.</span>
-- [**Medical School Learning with AI**](posts/medical-school-ai-education/index.qmd)  
-  <span class="card-desc">On StudyBuddy, asking good questions, and the future of AI in medical education.</span>
+  - <span class="card-desc">AI-powered education platform aiming to bring the cost of effective 1-on-1 tutoring down to pennies.</span>
 :::
 
 :::
@@ -55,18 +57,9 @@ As a medical student, AI researcher, and long-term insight meditator, I track ho
 
 **Most Recent**
 
-::: {.listing}
-listing:
-  contents: posts
-  sort: "date desc"
-  max-items: 5
-  type: default
-  categories: false
-  sort-ui: false
-  filter-ui: false
+:::{#recent-posts}
 :::
 
 :::
+
 :::
-
-

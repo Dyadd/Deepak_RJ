@@ -1,0 +1,10 @@
+<% for (const item of items) { %>
+    <div style="margin-bottom: 0.75rem;">
+      <a href="<%= item.path %>" style="color: #2563eb; text-decoration: none; font-weight: 500;"><%= item.title || 'Untitled' %></a>
+      <% if (item.date) { %>
+      <div style="color: #6b7280; font-size: 0.875rem; margin-top: 0.25rem;">
+        <%= new Date(item.date).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' }) %>
+      </div>
+      <% } %>
+    </div>
+<% } %>

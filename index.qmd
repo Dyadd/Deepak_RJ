@@ -50,9 +50,9 @@ As a medical student, AI researcher, and long-term insight meditator, I track ho
 **Most Viewed**
 
 ::: {.card-list}
-- [**Medical AI: Lessons on Good Human-Computer Interaction**](posts/mAI_HCI_detailed/index.qmd)
-- [**Medicine's Information Flow Challenge**](posts/information-flow-is-underrated/index.qmd)
-- [**What Medicine Needs to Get Right About AI**](posts/What_Medicine_needs_to_get_right_about_AI/index.qmd)  
+- [**Medical AI: Lessons on Good Human-Computer Interaction**](posts/mAI_HCI_detailed/)
+- [**Medicine's Information Flow Challenge**](posts/information-flow-is-underrated/)
+- [**What Medicine Needs to Get Right About AI**](posts/What_Medicine_needs_to_get_right_about_AI/)  
 :::
 
 **Most Recent**

@@ -1,106 +1,264 @@
 /*-- scss:defaults --*/
 
-// Base document colors
-$body-bg: #fff;
-$body-color: #444;
-$link-color: #0072B2;
+// Modern color palette
+$body-bg: #ffffff;
+$body-color: #1a1a1a;
+$link-color: #2563eb;
+$link-hover-color: #1d4ed8;
+
+// Typography
+$font-family-sans-serif: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$headings-font-weight: 600;
+$headings-color: #0f172a;
 
 // Code blocks
 $code-block-bg-alpha: -.8;
+$code-bg: #f8fafc;
+$code-color: #334155;
 
 /*-- scss:rules --*/
 
-// Add some padding to the site
+// Overall page improvements
+body {
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+// Enhanced content area
 .content {
-  padding-top: 2em;
-  padding-bottom: 2em;
+  padding-top: 2.5em;
+  padding-bottom: 3em;
 }
 
-// Style the headers
+// Beautiful header styling
 h1, h2, h3, h4, h5, h6 {
-  color: #2C3E50;
-  font-weight: 500;
-  line-height: 1.2;
+  color: $headings-color;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-top: 1.5em;
+  margin-bottom: 0.75em;
+  letter-spacing: -0.02em;
 }
 
-// Style links
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 0.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #334155;
+}
+
+// Modern link styling
 a {
   text-decoration: none;
+  color: $link-color;
+  transition: all 0.2s ease;
+  
   &:hover {
-    text-decoration: underline;
+    color: $link-hover-color;
+    text-decoration: none;
   }
 }
 
-// Style the navigation
+// Enhanced navigation bar
 .navbar {
   padding-top: 1em;
   padding-bottom: 1em;
-  box-shadow: 0 2px 4px rgba(0,0,0,.1);
-}
-
-// Style blog post cards
-.quarto-grid-item {
-  border: 1px solid #eee;
-  border-radius: 5px;
-  transition: transform 0.2s;
-  &:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 4px 8px rgba(0,0,0,.1);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  backdrop-filter: blur(10px);
+  
+  .navbar-brand {
+    font-weight: 700;
+    font-size: 1.3rem;
+  }
+  
+  .nav-link {
+    font-weight: 500;
+    transition: all 0.2s ease;
+    
+    &:hover {
+      color: $link-hover-color !important;
+    }
   }
 }
 
-// Improve readability
-.body {
-  font-size: 1.1em;
-  line-height: 1.7;
+// Beautiful blog post cards
+.quarto-grid-item {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  background: white;
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    border-color: $link-color;
+  }
+  
+  .listing-title {
+    font-weight: 600;
+    color: $headings-color;
+  }
+  
+  .listing-description {
+    color: #64748b;
+    line-height: 1.6;
+  }
+}
+
+// Improved readability for article content
+article {
+  font-size: 1.1rem;
+  line-height: 1.8;
   max-width: 800px;
   margin: 0 auto;
-}
-
-// Style blockquotes
-blockquote {
-  border-left: 3px solid #0072B2;
-  padding-left: 1em;
-  color: #666;
-  font-style: italic;
-}
-
-/* Two-column layout for landing page */
-.landing-columns {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
-  align-items: flex-start;
-  margin-top: 2rem;
-}
-.landing-columns > div {
-  flex: 1 1 320px;
-  min-width: 300px;
-  max-width: 420px;
-}
-
-@media (max-width: 900px) {
-  .landing-columns {
-    flex-direction: column;
-    align-items: stretch;
+  
+  p {
+    margin-bottom: 1.5em;
   }
+  
+  img {
+    border-radius: 8px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  }
+}
+
+// Modern blockquotes
+blockquote {
+  border-left: 4px solid $link-color;
+  padding-left: 1.5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  color: #475569;
+  font-style: italic;
+  background: #f8fafc;
+  border-radius: 0 8px 8px 0;
+  margin: 1.5em 0;
+}
+
+// Code styling
+code {
+  background: $code-bg;
+  color: $code-color;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+pre {
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+}
+
+// Enhanced landing page layout
+.grid {
+  margin-top: 2rem;
+  gap: 2.5rem;
 }
 
 .card-list {
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
+  gap: 1rem;
+  
+  > * {
+    margin: 0;
+  }
+  
+  a {
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: $headings-color;
+    
+    &:hover {
+      color: $link-color;
+    }
+  }
 }
+
+// Project and writing cards
 .project-card, .writing-card {
-  background: #f8f9fa;
-  border-radius: 8px;
-  padding: 1rem 1.2rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-  border: 1px solid #e0e0e0;
+  background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+  border-radius: 10px;
+  padding: 1.25rem 1.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    transform: translateY(-2px);
+  }
 }
+
 .card-desc {
-  color: #555;
-  font-size: 0.98em;
-  margin-top: 0.3em;
+  color: #64748b;
+  font-size: 0.95em;
+  margin-top: 0.5em;
+  line-height: 1.6;
+}
+
+// Profile image enhancement
+img[style*="border-radius: 50%"] {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+  
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+// Footer styling
+.page-footer {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e5e7eb;
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+// Callout styling improvements
+.callout {
+  border-radius: 8px;
+  border-left-width: 4px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  
+  .callout-title {
+    font-weight: 600;
+  }
+}
+
+// Table of contents
+.toc-active {
+  color: $link-color !important;
+  font-weight: 600;
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  article {
+    font-size: 1rem;
+  }
+  
+  .grid {
+    gap: 1.5rem;
+  }
 }

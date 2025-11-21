@@ -3,7 +3,7 @@ title: "Medical School Learning with AI"
 author: "Deepak RJ"
 date: "2024-12-31"
 categories: [AI, Education]
-draft: True
+draft: true
 ---
 
 - On StudyBuddy, asking good questions

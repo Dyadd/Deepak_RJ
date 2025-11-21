@@ -22,9 +22,9 @@ website:
       - text: About
         file: index.qmd
       - icon: github
-        href: https://github.com/
+        href: https://github.com/Dyadd
       - icon: twitter
-        href: https://twitter.com
+        href: https://x.com/dyad_rj
 
 format:
   html:
@@ -33,7 +33,16 @@ format:
     mainfont: "Lato"
     code-copy: true
     code-overflow: wrap
+    code-block-bg: true
     toc: true
     toc-title: On this page
+    toc-depth: 3
+    toc-location: right
     highlight-style: github
+    link-external-newwindow: true
+    link-external-icon: true
+    smooth-scroll: true
+    anchor-sections: true
+    citations-hover: true
+    footnotes-hover: true
     include-after-body: counterdev.html

@@ -20,9 +20,8 @@ const formatDate = (date: string) =>
       <div class="home-header">
         <img src={`${base}profile.jpg`} alt="Deepak RJ" class="home-avatar" />
         <h1>Deepak RJ</h1>
-        <p class="home-tagline">
-          Writing about medical AI for clinicians, with a focus on actualising AI
-          for psychiatry&mdash;the only medical specialty with worsening outcomes.
+        <p class="home-interests">
+          Translational Medical AI &middot; Computational Medicine &middot; Computational Phenomenology &middot; Computational Psychiatry
         </p>
         <div class="home-links">
           <a href="https://x.com/dyad_rj" target="_blank" rel="noopener">Twitter</a>
@@ -33,11 +32,15 @@ const formatDate = (date: string) =>
 
       <div class="home-grid">
         <div class="home-section">
-          <h2>Current Projects</h2>
+          <div class="section-label">Current Projects</div>
           <ul class="project-list">
             <li>
-              <div class="project-name">Ambi</div>
-              <div class="project-desc">Rethinking the doctor-patient relationship in an agent-run clinic.</div>
+              <a href="https://bloomed.study" target="_blank" rel="noopener" class="project-name">Bloomed</a>
+              <div class="project-desc">Mapping the ontology of medicine and a student's model to maximise yield per study session.</div>
+            </li>
+            <li>
+              <a href="https://loopymind.com" target="_blank" rel="noopener" class="project-name">loopymind</a>
+              <div class="project-desc">Building a culture of phenomenological exploration, and mapping how humans' minds work at scale through phenomenological inquiry and meditation.</div>
             </li>
             <li>
               <a href="https://www.nexusmedtech.org" target="_blank" rel="noopener" class="project-name">Nexus</a>
@@ -45,24 +48,20 @@ const formatDate = (date: string) =>
             </li>
             <li>
               <div class="project-name">Clarity</div>
-              <div class="project-desc">Seed funded by MIME. Built a RAG system for centralised clinical decision support.</div>
-            </li>
-            <li>
-              <div class="project-name">Chute</div>
-              <div class="project-desc">Automating clinical registry entry for clinicians using LLMs.</div>
+              <div class="project-desc">MIME-funded point-of-care clinical decision support for doctors.</div>
             </li>
             <li>
               <a href="https://www.gamsnack.com" target="_blank" rel="noopener" class="project-name">GAMSnack</a>
-              <div class="project-desc">AI-powered education platform bringing the cost of 1-on-1 tutoring down to pennies.</div>
+              <div class="project-desc">Mapping cognitive states in GAMSAT students for AI-powered personalised tutoring.</div>
             </li>
           </ul>
         </div>
 
         <div class="home-section">
-          <h2>Most Viewed</h2>
+          <div class="section-label">Most Viewed</div>
           <MostViewed base={base} />
 
-          <h2 style="margin-top: 2em;">Most Recent</h2>
+          <div class="section-label" style="margin-top: 1.5em;">Most Recent</div>
           <ul class="post-list">
             {posts.map(post => (
               <li class="post-item">

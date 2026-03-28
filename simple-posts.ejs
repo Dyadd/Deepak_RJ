@@ -1,9 +1,26 @@
-<% for (const item of items) { %>
+<% for (const item of items) { 
+     const rawPath = (item.url || item.path || '').toString();
+     const normalizedPath = rawPath
+        .replace(/\\/g, '/')
+        .replace(/\/index\.html?$/i, '/')
+        .replace(/\.qmd$/i, '/');
+     const href = normalizedPath
+        ? (normalizedPath.startsWith('http') ? normalizedPath : '/' + normalizedPath.replace(/^\/+/, ''))
+        : '#';
+     const title = item.title || 'Untitled';
+     let dateLabel = '';
+     if (item.date) {
+        const parsedDate = new Date(item.date);
+        if (!Number.isNaN(parsedDate.getTime())) {
+          dateLabel = parsedDate.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+        }
+     }
+%>
     <div style="margin-bottom: 0.75rem;">
-      <a href="<%= item.path %>" style="color: #2563eb; text-decoration: none; font-weight: 500;"><%= item.title || 'Untitled' %></a>
-      <% if (item.date) { %>
+      <a href="<%- href %>" style="color: #2563eb; text-decoration: none; font-weight: 500;"><%- title %></a>
+      <% if (dateLabel) { %>
       <div style="color: #6b7280; font-size: 0.875rem; margin-top: 0.25rem;">
-        <%= new Date(item.date).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' }) %>
+        <%- dateLabel %>
       </div>
       <% } %>
     </div>

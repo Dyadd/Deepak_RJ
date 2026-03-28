@@ -1,0 +1,25 @@
+---
+/**
+ * Drop this into any page/layout to track page views.
+ * Uses Umami analytics (free, privacy-friendly, has API).
+ *
+ * Setup:
+ * 1. Create a free account at https://cloud.umami.is
+ * 2. Add your site and get your website ID
+ * 3. Set UMAMI_WEBSITE_ID below
+ */
+interface Props {
+  /** Umami website ID — get this from your Umami dashboard */
+  websiteId?: string;
+}
+
+const { websiteId = '' } = Astro.props;
+---
+
+{websiteId && (
+  <script
+    defer
+    src="https://cloud.umami.is/script.js"
+    data-website-id={websiteId}
+  ></script>
+)}

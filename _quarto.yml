@@ -20,7 +20,7 @@ website:
       - text: Blog
         file: blog.qmd
       - text: About
-        file: index.qmd
+        file: about.qmd
       - icon: github
         href: https://github.com/Dyadd
       - icon: twitter

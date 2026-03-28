@@ -1,0 +1,85 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import MostViewed from '../components/MostViewed.astro';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('blog'))
+  .filter(post => !post.data.draft)
+  .sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime())
+  .slice(0, 5);
+
+const base = import.meta.env.BASE_URL;
+
+const formatDate = (date: string) =>
+  new Date(date).toLocaleDateString('en-US', { year: 'numeric', month: 'short' });
+---
+
+<BaseLayout title="Deepak RJ" activeNav="home">
+  <main>
+    <div class="container">
+      <div class="home-header">
+        <img src={`${base}profile.jpg`} alt="Deepak RJ" class="home-avatar" />
+        <h1>Deepak RJ</h1>
+        <p class="home-tagline">
+          Writing about medical AI for clinicians, with a focus on actualising AI
+          for psychiatry&mdash;the only medical specialty with worsening outcomes.
+        </p>
+        <div class="home-links">
+          <a href="https://x.com/dyad_rj" target="_blank" rel="noopener">Twitter</a>
+          <a href="https://www.linkedin.com/in/deepak-r-j/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/Dyadd" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+
+      <div class="home-grid">
+        <div class="home-section">
+          <h2>Current Projects</h2>
+          <ul class="project-list">
+            <li>
+              <div class="project-name">Ambi</div>
+              <div class="project-desc">Rethinking the doctor-patient relationship in an agent-run clinic.</div>
+            </li>
+            <li>
+              <a href="https://www.nexusmedtech.org" target="_blank" rel="noopener" class="project-name">Nexus</a>
+              <div class="project-desc">Creating the nexus for all things medical AI, from education to research news.</div>
+            </li>
+            <li>
+              <div class="project-name">Clarity</div>
+              <div class="project-desc">Seed funded by MIME. Built a RAG system for centralised clinical decision support.</div>
+            </li>
+            <li>
+              <div class="project-name">Chute</div>
+              <div class="project-desc">Automating clinical registry entry for clinicians using LLMs.</div>
+            </li>
+            <li>
+              <a href="https://www.gamsnack.com" target="_blank" rel="noopener" class="project-name">GAMSnack</a>
+              <div class="project-desc">AI-powered education platform bringing the cost of 1-on-1 tutoring down to pennies.</div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="home-section">
+          <h2>Most Viewed</h2>
+          <MostViewed base={base} />
+
+          <h2 style="margin-top: 2em;">Most Recent</h2>
+          <ul class="post-list">
+            {posts.map(post => (
+              <li class="post-item">
+                <a href={`${base}blog/${post.id}/`}>
+                  <div class="post-title">{post.data.title}</div>
+                  <div class="post-meta">
+                    <time datetime={post.data.date}>{formatDate(post.data.date)}</time>
+                  </div>
+                </a>
+              </li>
+            ))}
+          </ul>
+          <p style="margin-top: 1em;">
+            <a href={`${base}blog/`}>All posts &rarr;</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+</BaseLayout>

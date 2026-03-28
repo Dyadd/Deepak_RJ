@@ -1,0 +1,99 @@
+---
+/**
+ * Displays "Most Viewed" posts, powered by Umami share URL API.
+ *
+ * How it works:
+ * - On page load, fetches view counts from Umami's public share API
+ * - Sorts posts by views and renders the list
+ * - Falls back to a curated static list if the API is unavailable
+ */
+interface Props {
+  base: string;
+}
+
+const { base } = Astro.props;
+
+// Static fallback order (your current "most viewed" from the old site)
+const fallbackPosts = [
+  {
+    slug: 'medical-ai-hci',
+    title: 'Medical AI: Lessons on Good Human-Computer Interaction',
+  },
+  {
+    slug: 'information-flow',
+    title: "Medicine's Information Flow Challenge",
+  },
+  {
+    slug: 'what-medicine-needs-to-get-right-about-ai',
+    title: 'What Medicine Needs to Get Right About AI',
+  },
+];
+---
+
+<div id="most-viewed-list">
+  <ul class="post-list">
+    {fallbackPosts.map(post => (
+      <li class="post-item" data-slug={post.slug}>
+        <a href={`${base}blog/${post.slug}/`}>
+          <div class="post-title">{post.title}</div>
+          <div class="post-meta">
+            <span class="view-count"></span>
+          </div>
+        </a>
+      </li>
+    ))}
+  </ul>
+</div>
+
+<script>
+  const SHARE_ID = 'iDKg9ky0v5dJ7v3p';
+
+  async function updateMostViewed() {
+    try {
+      const now = Date.now();
+      const startAt = now - 90 * 24 * 60 * 60 * 1000; // last 90 days
+
+      const res = await fetch(
+        `https://cloud.umami.is/api/share/${SHARE_ID}/metrics?startAt=${startAt}&endAt=${now}&type=url`
+      );
+
+      if (!res.ok) return;
+
+      const metrics: { x: string; y: number }[] = await res.json();
+
+      // Match blog URLs and extract view counts
+      const viewCounts = new Map<string, number>();
+      for (const m of metrics) {
+        const match = m.x.match(/\/blog\/([^/]+)/);
+        if (match) {
+          viewCounts.set(match[1], m.y);
+        }
+      }
+
+      // Sort the existing list items by view count
+      const list = document.querySelector('#most-viewed-list ul');
+      if (!list) return;
+
+      const items = Array.from(list.querySelectorAll('li[data-slug]')) as HTMLLIElement[];
+      items.sort((a, b) => {
+        const aViews = viewCounts.get(a.dataset.slug || '') || 0;
+        const bViews = viewCounts.get(b.dataset.slug || '') || 0;
+        return bViews - aViews;
+      });
+
+      // Update view count labels and reorder
+      for (const item of items) {
+        const count = viewCounts.get(item.dataset.slug || '');
+        const label = item.querySelector('.view-count');
+        if (label && count) {
+          label.textContent = `${count.toLocaleString()} views`;
+        }
+        list.appendChild(item);
+      }
+    } catch {
+      // Silently fall back to static order
+    }
+  }
+
+  updateMostViewed();
+</script>

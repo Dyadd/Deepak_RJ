@@ -4,7 +4,8 @@ import mdx from '@astrojs/mdx';
 
 export default defineConfig({
   site: 'https://dyadd.github.io',
-  base: '/Deepak_RJ',
+  base: '/Deepak_RJ/',
+  outDir: '../docs',
   integrations: [mdx()],
   markdown: {
     shikiConfig: {

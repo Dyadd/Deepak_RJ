@@ -3,8 +3,8 @@ import { defineConfig } from 'astro/config';
 import mdx from '@astrojs/mdx';
 
 export default defineConfig({
-  site: 'https://dyadd.github.io',
-  base: '/Deepak_RJ/',
+  site: 'https://deepakrj.com',
+  base: '/',
   outDir: '../docs',
   integrations: [mdx()],
   markdown: {

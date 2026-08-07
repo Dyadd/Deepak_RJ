@@ -1,0 +1,47 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const projects = [
+  {
+    name: 'Bloomed',
+    href: 'https://bloomed.study',
+    description:
+      "Mapping the ontology of medicine and a student's model to maximise yield per study session.",
+  },
+  {
+    name: 'loopymind',
+    href: 'https://loopymind.com',
+    description:
+      'Building a culture of phenomenological exploration, and mapping how humans’ minds work at scale through phenomenological inquiry and meditation.',
+  },
+];
+---
+
+<BaseLayout title="Work — Deepak RJ" description="What Deepak RJ is building">
+  <main>
+    <div class="container">
+      <h1 class="page-title">Work</h1>
+
+      <p class="work-lead">
+        Technical Lead at the
+        <a href="https://caolabs.ai" target="_blank" rel="noopener">Cao Lab</a>.
+      </p>
+
+      <h2 class="section-label">
+        <span>Projects</span>
+        <span class="column-count">{String(projects.length).padStart(2, '0')}</span>
+      </h2>
+
+      <ul class="project-list">
+        {projects.map(project => (
+          <li class="project-item">
+            <a href={project.href} target="_blank" rel="noopener" class="project-name">
+              {project.name}
+            </a>
+            <p class="project-description">{project.description}</p>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </main>
+</BaseLayout>

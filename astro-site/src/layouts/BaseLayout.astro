@@ -4,13 +4,26 @@ import ViewTracker from '../components/ViewTracker.astro';
 interface Props {
   title: string;
   description?: string;
-  activeNav?: 'home' | 'blog' | 'about';
+  /** Home page: no nav, no footer links — just the content. */
+  bare?: boolean;
+  /** Content column the nav and footer align to. */
+  width?: 'narrow' | 'wide';
 }
 
-const { title, description = "Writing on medical AI and neuropsychiatry", activeNav } = Astro.props;
+const {
+  title,
+  description = "Writing on medical AI and the mind",
+  bare = false,
+  width = 'narrow',
+} = Astro.props;
 const base = import.meta.env.BASE_URL;
 
-// Set your Umami website ID here once you have one:
+const here = Astro.url.pathname.replace(/\/?$/, '/');
+const navLinks = [
+  { label: 'Writing', href: `${base}writing/` },
+  { label: 'Work', href: `${base}work/` },
+];
+
 const umamiWebsiteId = '859aec8b-0917-4835-8813-9e7cb9d8d1ae';
 ---
 
@@ -24,31 +37,34 @@ const umamiWebsiteId = '859aec8b-0917-4835-8813-9e7cb9d8d1ae';
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&family=JetBrains+Mono:wght@400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Space+Mono:wght@400;700&display=swap"
       rel="stylesheet"
     />
   </head>
-  <body>
-    <nav class="nav">
-      <div class="nav-inner">
-        <a href={`${base}`} class="nav-brand">Deepak RJ</a>
-        <ul class="nav-links">
-          <li><a href={`${base}`} class={activeNav === 'home' ? 'active' : ''}>Home</a></li>
-          <li><a href={`${base}blog/`} class={activeNav === 'blog' ? 'active' : ''}>Blog</a></li>
-          <li><a href={`${base}about/`} class={activeNav === 'about' ? 'active' : ''}>About</a></li>
-          <li><a href="https://github.com/Dyadd" target="_blank" rel="noopener">GitHub</a></li>
-          <li><a href="https://x.com/dyad_rj" target="_blank" rel="noopener">Twitter</a></li>
-        </ul>
-      </div>
-    </nav>
+  <body style={width === 'wide' ? '--content-width: var(--max-width-wide)' : undefined}>
+    {!bare && (
+      <nav class="nav">
+        <div class="nav-inner">
+          <a href={base} class="nav-brand">Deepak RJ</a>
+          <div class="nav-links">
+            {navLinks.map(link => (
+              <a
+                href={link.href}
+                class="nav-link"
+                aria-current={here === link.href ? 'page' : undefined}
+              >
+                {link.label}
+              </a>
+            ))}
+          </div>
+        </div>
+      </nav>
+    )}
 
     <slot />
 
     <footer class="footer">
-      <div class="footer-inner">
-        <span>&copy; {new Date().getFullYear()} Deepak RJ</span>
-        <span>Built with <a href="https://astro.build" target="_blank" rel="noopener">Astro</a></span>
-      </div>
+      <div class="footer-inner">&copy; {new Date().getFullYear()} Deepak RJ</div>
     </footer>
     <ViewTracker websiteId={umamiWebsiteId} />
   </body>

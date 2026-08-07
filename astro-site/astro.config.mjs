@@ -7,6 +7,10 @@ export default defineConfig({
   base: '/',
   outDir: '../docs',
   integrations: [mdx()],
+  redirects: {
+    '/blog': '/writing/',
+    '/about': '/',
+  },
   markdown: {
     shikiConfig: {
       theme: 'github-light',

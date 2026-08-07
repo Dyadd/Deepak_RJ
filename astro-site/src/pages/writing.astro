@@ -1,0 +1,53 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const SECTIONS = ['Medical AI', 'MindTech'] as const;
+
+const posts = (await getCollection('blog'))
+  .filter(post => !post.data.draft)
+  .sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime());
+
+const columns = SECTIONS.map(section => ({
+  section,
+  posts: posts.filter(post => post.data.section === section),
+}));
+
+const base = import.meta.env.BASE_URL;
+
+const formatDate = (date: string) =>
+  new Date(date).toLocaleDateString('en-US', { year: 'numeric', month: 'short' });
+---
+
+<BaseLayout title="Writing — Deepak RJ" description="Writing on medical AI and the mind" width="wide">
+  <main>
+    <div class="container-wide">
+      <h1 class="page-title">Writing</h1>
+
+      <div class="writing-columns">
+        {columns.map(column => (
+          <section class="writing-column">
+            <h2 class="column-title">
+              <span>{column.section}</span>
+              <span class="column-count">{String(column.posts.length).padStart(2, '0')}</span>
+            </h2>
+            {column.posts.length > 0 ? (
+              <ul class="post-list">
+                {column.posts.map(post => (
+                  <li class="post-item">
+                    <a href={`${base}blog/${post.id}/`}>
+                      <span class="post-title">{post.data.title}</span>
+                      <time class="post-date" datetime={post.data.date}>{formatDate(post.data.date)}</time>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <p class="column-empty">Nothing published here yet.</p>
+            )}
+          </section>
+        ))}
+      </div>
+    </div>
+  </main>
+</BaseLayout>

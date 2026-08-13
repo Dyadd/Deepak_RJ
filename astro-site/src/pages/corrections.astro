@@ -1,0 +1,56 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { corrections } from '../data/corrections';
+
+const base = import.meta.env.BASE_URL;
+
+const formatDate = (date: string) =>
+  new Date(date).toLocaleDateString('en-US', { year: 'numeric', month: 'short' });
+---
+
+<BaseLayout
+  title="Corrections — Deepak RJ"
+  description="A public record of claims I published that turned out to be wrong"
+>
+  <main>
+    <div class="container">
+      <h1 class="page-title">Corrections</h1>
+      <p class="work-lead">
+        Thinking only improves under feedback, and feedback only works if the errors are on
+        record. This page lists claims I published that turned out to be wrong, and what I
+        now believe instead. The practice is borrowed from
+        <a href="https://www.astralcodexten.com/p/mistakes">Astral Codex Ten</a>.
+      </p>
+
+      {corrections.length > 0 ? (
+        <ol class="correction-list">
+          {corrections.map(item => (
+            <li class="correction-item">
+              <div class="correction-meta">
+                <time datetime={item.date}>{formatDate(item.date)}</time>
+                {item.post && (
+                  <>
+                    <span aria-hidden="true">·</span>
+                    <a href={`${base}blog/${item.post.slug}/`}>{item.post.title}</a>
+                  </>
+                )}
+              </div>
+              <p class="correction-claimed">
+                <span class="correction-label">Claimed</span>
+                {item.claimed}
+              </p>
+              <p class="correction-fix">
+                <span class="correction-label">Correction</span>
+                {item.correction}
+              </p>
+            </li>
+          ))}
+        </ol>
+      ) : (
+        <p class="column-empty">
+          Nothing on record yet. When a published claim turns out to be wrong, the entry goes here.
+        </p>
+      )}
+    </div>
+  </main>
+</BaseLayout>

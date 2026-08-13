@@ -358,6 +358,75 @@ main {
 
 .column-count { color: #b99b76; }
 
+/* --- Corrections --- */
+.page-title:has(+ .writing-standfirst) { margin-bottom: 1rem; }
+
+.writing-standfirst {
+  font-size: 1.12rem;
+  color: var(--color-text-secondary);
+  margin-bottom: 2.8rem;
+}
+
+.standfirst-count {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  color: #b99b76;
+}
+
+.correction-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.correction-item {
+  margin-bottom: 2.6em;
+  padding-bottom: 2.2em;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.correction-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.correction-meta {
+  display: flex;
+  gap: 0.7em;
+  align-items: baseline;
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--color-text-muted);
+  margin-bottom: 0.9em;
+}
+
+.correction-meta a {
+  color: var(--color-text-muted);
+  text-decoration: none;
+}
+
+.correction-meta a:hover { color: var(--color-accent); }
+
+.correction-claimed,
+.correction-fix {
+  margin-bottom: 0.7em;
+}
+
+.correction-claimed { color: var(--color-text-secondary); }
+
+.correction-label {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--color-text-muted);
+  margin-bottom: 0.25em;
+}
+
 .work-lead {
   font-size: 1.15rem;
   color: var(--color-text-secondary);

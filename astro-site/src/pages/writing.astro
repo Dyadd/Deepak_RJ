@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
+import { corrections } from '../data/corrections';
 
 const SECTIONS = ['Medical AI', 'MindTech'] as const;
 
@@ -23,6 +24,11 @@ const formatDate = (date: string) =>
   <main>
     <div class="container-wide">
       <h1 class="page-title">Writing</h1>
+      <p class="writing-standfirst">
+        I keep a public list of things I've gotten wrong —
+        <a href={`${base}corrections/`}>Corrections</a>
+        <span class="standfirst-count">{String(corrections.length).padStart(2, '0')}</span>
+      </p>
 
       <div class="writing-columns">
         {columns.map(column => (

@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { stripTypeScriptTypes } from 'node:module';
 import vm from 'node:vm';
-import { exercises, renderTab, transposeText } from '../src/data/guitar.ts';
+import { exercises, renderTab, renderTabHtml, transposeText } from '../src/data/guitar.ts';
 import { annotate, renderLesson, lessons, glossary } from '../src/data/guitar-lessons.ts';
 import { buildSequence, clampTempo, frequency, scheduleNote } from '../src/lib/guitar-playback.ts';
 
@@ -19,15 +19,20 @@ test('every lick/chord has four varied bars; theory has two; all transposed tabs
     for (const offset of [0, 2, 3, 5]) {
       const bars = renderTab(exercise, offset).split('\n\n');
       assert.equal(bars.length, exercise.cells.length / 8);
+      assert.equal((renderTabHtml(exercise, offset).match(/<figure/g) ?? []).length, bars.length);
+      assert.match(renderTabHtml(exercise, offset), /&amp;/);
       bars.forEach((bar, index) => {
         const rows = bar.split('\n');
         assert.equal(rows[0], `BAR ${index + 1}`);
         assert.equal(rows.length, 8);
         assert.equal(new Set(rows.slice(2).map(row => row.length)).size, 1);
+        const cells = exercise.cells.slice(index * 8, index * 8 + 8).map(cell => cell.map(note => note.replace(/\d+/g, fret => Number(fret) + offset)));
+        const width = Math.max(4, ...cells.flat().map(note => note.length + 1));
+        assert.ok(rows[2].length <= 51, 'each bar stays compact even with two-digit ornaments');
         for (let i = 0; i < 8; i++) {
           for (let string = 0; string < 6; string++) {
             const expected = exercise.cells[index * 8 + i][string].replace(/\d+/g, fret => Number(fret) + offset);
-            assert.equal(rows[string + 2].slice(2 + i * 7, 2 + (i + 1) * 7), expected.padEnd(7, '-'));
+            assert.equal(rows[string + 2].slice(2 + i * width, 2 + (i + 1) * width), expected.padEnd(width, '-'));
           }
         }
       });
@@ -112,7 +117,7 @@ function harness(AudioContext = FakeAudio) {
   const source = readFileSync(new URL('../src/pages/guitar.astro', import.meta.url), 'utf8').split('<script>')[1].split('</script>')[0].replace(/^\s*import .*?;$/gm, '');
   const document = {getElementById:get, hidden:false, addEventListener(name,fn) { events[name]=fn; }};
   vm.runInNewContext(stripTypeScriptTypes(source), {
-    exercises, renderTab, transposeText, annotate, renderLesson, buildSequence, clampTempo, scheduleNote,
+    exercises, renderTab, renderTabHtml, transposeText, annotate, renderLesson, buildSequence, clampTempo, scheduleNote,
     AudioContext, document, window: {addEventListener(name,fn) { events[name]=fn; }},
     setInterval(fn) { const id=++nextTimer; timers.set(id,fn); return id; }, clearInterval(id) {timers.delete(id);},
   });
@@ -140,7 +145,7 @@ test('filters, shuffle, transposition, lesson updates and unavailable audio', as
   }
   get('transpose').value = '5'; get('transpose').handlers.change();
   const current = exercises.find(e => e.title === get('exercise-title').textContent);
-  assert.equal(get('tab').textContent, renderTab(current, 5));
+  assert.equal(get('tab').innerHTML, renderTabHtml(current, 5));
   assert.equal(get('transposition-note').hidden, false);
   get('bpm').value = '999'; get('bpm').handlers.change();
   assert.equal(get('bpm').value, '160');

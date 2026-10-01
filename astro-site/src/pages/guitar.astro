@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { exercises, renderTab } from '../data/guitar';
+import { exercises, renderTabHtml } from '../data/guitar';
 import { annotate, renderLesson } from '../data/guitar-lessons';
 const first = exercises[0];
 ---
@@ -27,7 +27,7 @@ const first = exercises[0];
         <progress id="play-progress" value="0" max={first.cells.length} aria-label="Tab playback progress"></progress>
         <span id="audio-status" role="status"></span>
       </div>
-      <pre class="tablature" tabindex="0" aria-label="Guitar tablature, high e string at the top. Scroll horizontally if needed."><code id="tab">{renderTab(first)}</code></pre>
+      <div id="tab" class="tablature" set:html={renderTabHtml(first)} />
       <p class="playback-note">A synthesized plucked-string guide. Hammer-ons, pull-offs and slides are approximated. Tempo defaults to 65 BPM (beats per minute).</p>
       <div id="feel" class="feel annotated" set:html={annotate(first.feel)} />
       <div class="legend"><span><b>h</b> hammer-on</span><span><b>p</b> pull-off</span><span><b>/</b> slide up</span><span><b>—</b> no new attack</span></div>
@@ -43,7 +43,7 @@ const first = exercises[0];
   </main>
 </BaseLayout>
 <script>
-  import { exercises, renderTab, transposeText } from '../data/guitar';
+  import { exercises, renderTabHtml, transposeText } from '../data/guitar';
   import { annotate, renderLesson } from '../data/guitar-lessons';
   import { buildSequence, clampTempo, scheduleNote } from '../lib/guitar-playback';
   const el = <T extends HTMLElement>(id: string) => document.getElementById(id) as T;
@@ -76,7 +76,7 @@ const first = exercises[0];
     el('exercise-title').textContent = current.title;
     el('exercise-tag').textContent = `${current.kind} / ${current.level}`;
     el('harmony').textContent = transposeText(current.harmony, offset);
-    el('tab').textContent = renderTab(current, offset);
+    el('tab').innerHTML = renderTabHtml(current, offset);
     el('bar-count').textContent = `4/4 · ${current.cells.length / 8} BARS`;
     progress.max = current.cells.length;
     for (const field of ['feel','technique','theory','challenge'] as const) el(field).innerHTML = annotate(current[field]);
@@ -144,27 +144,32 @@ const first = exercises[0];
   shuffle(true);
 </script>
 <style is:global>
-  .practice { width: min(1060px, 100%); margin: 0 auto; padding: 2rem 2rem 0; }
+  .practice { width: min(1800px, 100%); margin: 0 auto; padding: 2rem 2rem 0; }
   .room-nav, .eyebrow, .controls label, button, .exercise-top, .tab-meta, .legend, .study-grid h3, .challenge h3, .tab-player, .room-signoff { font-family: var(--font-mono); }
   .room-nav { display:flex; justify-content:space-between; gap:1rem; font-size:.62rem; letter-spacing:.07em; color:var(--color-text-muted); }
   .room-nav a { text-decoration:none; }
   .eyebrow { font-size:.62rem; letter-spacing:.15em; text-transform:uppercase; margin-bottom:1rem; color:#775d42; }
-  .controls { display:grid; grid-template-columns:1fr 1.1fr 1fr 1.2fr; align-items:end; gap:1rem; padding:1.35rem 0; border-top:1px solid var(--color-border-strong); border-bottom:1px solid var(--color-border-strong); margin:1.7rem 0 2rem; }
+  .controls { display:grid; grid-template-columns:1fr 1.1fr 1fr 1.2fr; align-items:end; gap:1rem; padding:.85rem 0; border-top:1px solid var(--color-border-strong); border-bottom:1px solid var(--color-border-strong); margin:1rem 0 1rem; }
   .controls label { display:grid; gap:.5rem; font-size:.59rem; color:var(--color-text-secondary); }
   select { width:100%; min-height:44px; background:transparent; border:1px solid var(--color-border-strong); border-radius:0; padding:.5rem; font: .68rem var(--font-mono); color:var(--color-text); }
   button { min-height:44px; cursor:pointer; font-size:.66rem; border:1px solid var(--color-border-strong); color:var(--color-text); background:transparent; padding:.6rem .8rem; }
   button:hover { background:var(--color-surface); }
   .shuffle { background:#334c3c; color:#fff5e6; border-color:#334c3c; display:flex; justify-content:space-between; align-items:center; gap:.4rem; }
   .shuffle:hover { background:#22372a; }
-  .exercise { border:1px solid var(--color-border-strong); background:#fff3e2; padding:1.8rem 2rem 0; box-shadow:5px 5px 0 #ead2b3; }
+  .exercise { border:1px solid var(--color-border-strong); background:#fff3e2; padding:1rem 2rem 0; box-shadow:5px 5px 0 #ead2b3; }
   .exercise-top { display:flex; justify-content:space-between; gap:1rem; font-size:.59rem; color:var(--color-text-muted); }
   .exercise-top .eyebrow { margin:0; color:#8d432d; }
-  .title-row { display:flex; align-items:center; justify-content:space-between; gap:1rem; margin:1rem 0 1.8rem; }
+  .title-row { display:flex; align-items:center; justify-content:space-between; gap:1rem; margin:.6rem 0 1rem; }
   .title-row h2 { margin:0; font-size:2rem; }
   .harmony { color:#334c3c; font-size:1rem; text-align:right; }
-  .tab-meta { display:flex; justify-content:space-between; gap:1rem; font-size:.53rem; letter-spacing:.05em; color:#bdbca5; padding:.85rem 1.2rem 0; background:#24382e; }
-  .tablature { margin:0; border:0; background:#24382e; color:#f9e9cd; padding:1rem 1.2rem 1.4rem; line-height:1.9; }
-  .tablature code { font: .78rem/1.9 var(--font-mono); letter-spacing:0; color:inherit; white-space:pre; }
+  .tab-meta { display:flex; justify-content:space-between; gap:1rem; font-size:.53rem; letter-spacing:.05em; color:#bdbca5; padding:.55rem .8rem; background:#24382e; }
+  .tablature { display:grid; grid-template-columns:minmax(0, 1fr); gap:.8rem; background:#24382e; color:#f9e9cd; padding:.75rem .8rem; }
+  .tab-bar { min-width:0; margin:0; }
+  .tab-bar figcaption { font:.55rem/1.3 var(--font-mono); color:#bdbca5; text-transform:uppercase; letter-spacing:.08em; margin-bottom:.3rem; }
+  .tab-bar pre { margin:0; border:0; padding:0; background:transparent; color:inherit; overflow-x:auto; line-height:1.35; }
+  .tab-bar code { font:12px/1.35 var(--font-mono); letter-spacing:0; color:inherit; white-space:pre; }
+  @media(min-width:960px) { .tablature { grid-template-columns:repeat(2, minmax(0, 1fr)); } }
+  @media(min-width:1700px) { .tablature { grid-template-columns:repeat(4, minmax(0, 1fr)); } }
   .feel { color:var(--color-text-secondary); font-size:.91rem; margin:1rem 0 .6rem; }
   .legend { display:flex; flex-wrap:wrap; gap:.4rem 1.2rem; font-size:.57rem; color:var(--color-text-muted); padding-bottom:1.3rem; border-bottom:1px solid var(--color-border); }
   .legend b { color:#8d432d; }
@@ -174,7 +179,7 @@ const first = exercises[0];
   .challenge { background:#f1dfc7; margin:0 -2rem; padding:1.2rem 2rem; }
   .challenge .annotated { margin:0; font-size:.96rem; }
   .transpose-note { padding:.75rem; background:#f1dfc7; font-size:.85rem; margin:1rem 0 0; }
-  .tab-player { padding:.9rem 1.2rem; background:#e9ddc9; display:flex; align-items:center; gap:.8rem; flex-wrap:wrap; font-size:.65rem; }
+  .tab-player { padding:.5rem .8rem; background:#e9ddc9; display:flex; align-items:center; gap:.8rem; flex-wrap:wrap; font-size:.65rem; }
   .tab-player label { display:flex; align-items:center; gap:.6rem; }
   .tab-player input { width:65px; min-height:44px; border:1px solid var(--color-border-strong); background:transparent; font:inherit; color:inherit; padding:.4rem; }
   .how-to { margin-top:1.8rem; border-top:1px solid var(--color-border-strong); padding:1rem 0; font-size:.88rem; color:var(--color-text-secondary); }

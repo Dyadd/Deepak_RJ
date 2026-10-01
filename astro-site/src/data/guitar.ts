@@ -150,12 +150,21 @@ export function transposeText(text: string, offset: number): string {
   });
 }
 export function renderTab(exercise: Exercise, offset = 0): string {
-  const width = 7;
   const bars: string[] = [];
   for (let start = 0; start < exercise.cells.length; start += 8) {
+    const cells = exercise.cells.slice(start, start + 8).map(cell => cell.map(note => note.replace(/\d+/g, f => String(Number(f) + offset))));
+    // Keep equal rhythmic spacing, expanding only for longer two-digit ornaments.
+    const width = Math.max(4, ...cells.flat().map(note => note.length + 1));
     bars.push(`BAR ${start / 8 + 1}\n` +
       '  ' + ['1','&','2','&','3','&','4','&'].map(s => s.padEnd(width,' ')).join('').trimEnd() + '\n' +
-      ['e','B','G','D','A','E'].map((string, i) => string + '|' + exercise.cells.slice(start, start + 8).map(cell => cell[i].replace(/\d+/g, f => String(Number(f) + offset)).padEnd(width, '-')).join('') + '|').join('\n'));
+      ['e','B','G','D','A','E'].map((string, i) => string + '|' + cells.map(cell => cell[i].padEnd(width, '-')).join('') + '|').join('\n'));
   }
   return bars.join('\n\n');
+}
+
+export function renderTabHtml(exercise: Exercise, offset = 0): string {
+  return renderTab(exercise, offset).split('\n\n').map((bar, index) => {
+    const tab = bar.slice(bar.indexOf('\n') + 1).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    return `<figure class="tab-bar"><figcaption>Bar ${index + 1}</figcaption><pre tabindex="0" aria-label="Bar ${index + 1} guitar tablature, high e string at the top. Scroll horizontally if needed."><code>${tab}</code></pre></figure>`;
+  }).join('');
 }

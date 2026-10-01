@@ -1,65 +1,90 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { exercises, renderTab } from '../data/guitar';
+import { annotate, renderLesson } from '../data/guitar-lessons';
 const first = exercises[0];
 ---
 <BaseLayout title="Guitar practice — Deepak RJ" description="A little neo-soul practice room. Original fingerstyle licks, rich chords, and theory you can hear." bare width="wide">
   <main class="practice">
     <nav class="room-nav" aria-label="Practice navigation"><a href="/">← Deepak RJ</a><span>FINGERSTYLE / NEO-SOUL</span></nav>
-    <header class="room-header">
-      <div><p class="eyebrow">THE GUITAR ROOM</p><h1>A little soul.<br /><em>A new idea.</em></h1></div>
-      <p class="intro">Pick up the guitar. Find a pocket.<br />Fingerstyle licks, colourful chords, and a little theory to connect the dots.</p>
-    </header>
+    <h1 class="sr-only">Guitar practice</h1>
     <form class="controls" onsubmit="return false">
       <label>Today’s focus<select id="focus"><option value="all">Surprise me</option><option value="lick">Licks</option><option value="chords">Chords</option><option value="theory">Theory in practice</option></select></label>
       <label>Difficulty<select id="level"><option value="all">A bit of both</option><option value="Flow">Flow · intermediate</option><option value="Stretch">Stretch · challenging</option></select></label>
       <label>Move the shape<select id="transpose"><option value="0">Original key</option><option value="2">Up 2 frets</option><option value="3">Up 3 frets</option><option value="5">Up 5 frets</option></select></label>
       <button id="shuffle" class="shuffle" type="button">Shuffle practice <span aria-hidden="true">↗</span></button>
     </form>
-    <noscript><p>Enable JavaScript to shuffle exercises and use the metronome. Here’s one to get started.</p></noscript>
+    <noscript><p>Enable JavaScript to shuffle exercises and play the tabs. Here’s one to get started.</p></noscript>
     <div id="announcement" class="sr-only" aria-live="polite"></div>
     <article class="exercise" aria-labelledby="exercise-title">
       <div class="exercise-top"><span id="exercise-tag" class="eyebrow">LICK / FLOW</span><span id="pool-count">12 ideas in the mix</span></div>
       <div class="title-row"><h2 id="exercise-title">{first.title}</h2><span id="harmony" class="harmony">{first.harmony}</span></div>
-      <div class="tab-meta"><span>STANDARD TUNING · E A D G B e</span><span>4/4 · ONE BAR</span></div>
+      <div class="tab-meta"><span>STANDARD TUNING · E A D G B e</span><span id="bar-count">4/4 · 4 BARS</span></div>
+      <div class="tab-player" aria-label="Tab playback">
+        <button id="play-tab" type="button" aria-pressed="false">▶ Play tab</button>
+        <label for="bpm">Tempo <input id="bpm" type="number" min="40" max="160" value="65" step="1" inputmode="numeric" /> BPM</label>
+        <span id="play-position" aria-hidden="true">Ready</span>
+        <progress id="play-progress" value="0" max={first.cells.length} aria-label="Tab playback progress"></progress>
+        <span id="audio-status" role="status"></span>
+      </div>
       <pre class="tablature" tabindex="0" aria-label="Guitar tablature, high e string at the top. Scroll horizontally if needed."><code id="tab">{renderTab(first)}</code></pre>
-      <p id="feel" class="feel">{first.feel}</p>
+      <p class="playback-note">A synthesized plucked-string guide. Hammer-ons, pull-offs and slides are approximated. Tempo defaults to 65 BPM (beats per minute).</p>
+      <div id="feel" class="feel annotated" set:html={annotate(first.feel)} />
       <div class="legend"><span><b>h</b> hammer-on</span><span><b>p</b> pull-off</span><span><b>/</b> slide up</span><span><b>—</b> no new attack</span></div>
       <p id="transposition-note" class="transpose-note" hidden></p>
       <div class="study-grid">
-        <section><h3>01 / Under the fingers</h3><p id="technique">{first.technique}</p></section>
-        <section><h3>02 / Behind the sound</h3><p id="theory">{first.theory}</p></section>
+        <section><h3>01 / Under the fingers</h3><div id="technique" class="annotated" set:html={annotate(first.technique)} /></section>
+        <section><h3>02 / Behind the sound</h3><p class="annotation-hint">New to theory? Hover over an underlined term for a hint, or click / tap to open its full explanation.</p><div id="theory" class="annotated" set:html={annotate(first.theory)} /><div id="lesson" set:html={renderLesson(first.id)} /></section>
       </div>
-      <div class="challenge"><h3>Make it yours</h3><p id="challenge">{first.challenge}</p></div>
+      <div class="challenge"><h3>Make it yours</h3><div id="challenge" class="annotated" set:html={annotate(first.challenge)} /></div>
     </article>
-    <section class="practice-footer" aria-label="Practice tools">
-      <div class="metronome"><span class="beat" id="beat" aria-hidden="true"></span><label for="bpm">Tempo <input id="bpm" type="number" min="40" max="160" value="65" step="1" inputmode="numeric" /> <span>BPM</span></label><button id="metronome" type="button" aria-pressed="false">Start click</button><span id="audio-status" role="status"></span></div>
-      <p>Start at 65. Three clean loops. Then make one small change.</p>
-    </section>
-    <details class="how-to"><summary>A note on reading these tabs</summary><p>Read left to right. The thin, high e string is on top; the thick, low E is on the bottom. Numbers are frets, and 0 is an open string. Notes aligned vertically are played together. Each column is one eighth note; count “1 &amp; 2 &amp; 3 &amp; 4 &amp;”. Hammer-ons, pull-offs and slides split their column into two sixteenths. A dash means no new attack; the feel note tells you when to sustain or leave silence.</p><p>These are original practice sketches, not song transcriptions. “Flow” assumes you’re comfortable with barre chords and basic fingerstyle. “Stretch” adds position shifts, independent voices, or denser voicings. The click marks quarter notes, with a higher tone on beat 1.</p></details>
+    <details class="how-to"><summary>A note on reading these tabs</summary><p>Read left to right. The thin, high e string is on top; the thick, low E is on the bottom. Numbers are frets, and 0 is an open string. Notes aligned vertically are played together. Each column is one eighth note; count “1 &amp; 2 &amp; 3 &amp; 4 &amp;”. Hammer-ons, pull-offs and slides split their column into two sixteenths. A dash means no new attack; the feel note tells you when to sustain or leave silence.</p><p>These are original practice sketches, not song transcriptions. “Flow” assumes you’re comfortable with barre chords and basic fingerstyle. “Stretch” adds position shifts, independent voices, or denser voicings. Play tab follows the displayed frets and tempo. Change tempo, key or exercise to stop playback, then press Play tab to hear the new version.</p></details>
     <p class="room-signoff">Less scrolling. More playing.</p>
   </main>
 </BaseLayout>
 <script>
   import { exercises, renderTab, transposeText } from '../data/guitar';
+  import { annotate, renderLesson } from '../data/guitar-lessons';
+  import { buildSequence, clampTempo, scheduleNote } from '../lib/guitar-playback';
   const el = <T extends HTMLElement>(id: string) => document.getElementById(id) as T;
   const focus = el<HTMLSelectElement>('focus');
   const level = el<HTMLSelectElement>('level');
   const transpose = el<HTMLSelectElement>('transpose');
+  const bpm = el<HTMLInputElement>('bpm');
+  const play = el<HTMLButtonElement>('play-tab');
+  const progress = el<HTMLProgressElement>('play-progress');
   let current = exercises[0];
   let remaining: string[] = [];
+  let audio: AudioContext | undefined;
+  let timer: ReturnType<typeof setInterval> | undefined;
+  let version = 0;
+  let active = false;
   const pool = () => exercises.filter(e => (focus.value === 'all' || e.kind === focus.value) && (level.value === 'all' || e.level === level.value));
+  function stop(finished = false) {
+    version++;
+    active = false;
+    clearInterval(timer);
+    if (audio) { void audio.close().catch(() => {}); audio = undefined; }
+    play.textContent = '▶ Play tab'; play.setAttribute('aria-pressed', 'false');
+    progress.value = finished ? current.cells.length : 0;
+    el('play-position').textContent = finished ? 'Finished' : 'Ready';
+  }
   function render() {
+    stop();
+    el('audio-status').textContent = '';
     const offset = Number(transpose.value);
     el('exercise-title').textContent = current.title;
     el('exercise-tag').textContent = `${current.kind} / ${current.level}`;
     el('harmony').textContent = transposeText(current.harmony, offset);
     el('tab').textContent = renderTab(current, offset);
-    for (const field of ['feel','technique','theory','challenge'] as const) el(field).textContent = current[field];
+    el('bar-count').textContent = `4/4 · ${current.cells.length / 8} BARS`;
+    progress.max = current.cells.length;
+    for (const field of ['feel','technique','theory','challenge'] as const) el(field).innerHTML = annotate(current[field]);
+    el('lesson').innerHTML = renderLesson(current.id);
     el('pool-count').textContent = `${pool().length} ideas in the mix`;
     el('transposition-note').hidden = !offset;
-    el('transposition-note').textContent = `Tab moved up ${offset} frets. The study notes below describe the original ${current.harmony} shape: add ${offset} to every fret they mention, and move each named pitch up ${offset} semitones. An original open string becomes a fretted note.`;
-    el('announcement').textContent = `${current.title}. ${current.kind}, ${current.level}. ${transposeText(current.harmony, offset)}.`;
+    el('transposition-note').textContent = `Tab and playback moved up ${offset} frets. The study notes below describe the original ${current.harmony} shape: add ${offset} to every fret they mention, and move each named pitch up ${offset} semitones. An original open string becomes a fretted note.`;
+    el('announcement').textContent = `${current.title}. ${current.kind}, ${current.level}. ${transposeText(current.harmony, offset)}. ${current.cells.length / 8} bars.`;
   }
   function shuffle(reset = false) {
     const candidates = pool();
@@ -74,78 +99,57 @@ const first = exercises[0];
   focus.addEventListener('change', () => shuffle(true));
   level.addEventListener('change', () => shuffle(true));
   transpose.addEventListener('change', render);
-  shuffle(true);
-
-  let audio: AudioContext | undefined;
-  let timer: ReturnType<typeof setInterval> | undefined;
-  let nextBeat = 0;
-  let count = 0;
-  let running = false;
-  let starting = false;
-  const pending = new Set<ReturnType<typeof setTimeout>>();
-  const bpm = el<HTMLInputElement>('bpm');
-  const button = el<HTMLButtonElement>('metronome');
-  function tempo() {
-    const value = Number(bpm.value);
-    return Math.max(40, Math.min(160, Number.isFinite(value) && value ? value : 65));
-  }
-  bpm.addEventListener('change', () => { bpm.value = String(tempo()); });
-  function stop() {
-    running = false;
-    clearInterval(timer);
-    pending.forEach(clearTimeout); pending.clear();
-    if (audio) { void audio.close(); audio = undefined; }
-    button.textContent = 'Start click'; button.setAttribute('aria-pressed', 'false');
-    el('beat').classList.remove('on');
-  }
-  function schedule() {
-    if (!audio || !running) return;
-    while (nextBeat < audio.currentTime + 0.1) {
-      const osc = audio.createOscillator();
-      const gain = audio.createGain();
-      osc.frequency.value = count % 4 === 0 ? 1000 : 700;
-      gain.gain.setValueAtTime(0.12, nextBeat);
-      gain.gain.exponentialRampToValueAtTime(0.001, nextBeat + 0.035);
-      osc.connect(gain); gain.connect(audio.destination);
-      osc.start(nextBeat); osc.stop(nextBeat + 0.04);
-      osc.onended = () => { osc.disconnect(); gain.disconnect(); };
-      const flash = setTimeout(() => {
-        pending.delete(flash); el('beat').classList.add('on');
-        const off = setTimeout(() => { pending.delete(off); el('beat').classList.remove('on'); }, 90);
-        pending.add(off);
-      }, Math.max(0, (nextBeat - audio.currentTime) * 1000));
-      pending.add(flash);
-      nextBeat += 60 / tempo(); count++;
-    }
-  }
-  button.addEventListener('click', async () => {
-    if (starting) return;
-    if (running) { stop(); return; }
-    starting = true;
+  bpm.addEventListener('change', () => {
+    bpm.value = String(clampTempo(Number(bpm.value)));
+    const wasActive = active;
+    stop();
+    el('audio-status').textContent = wasActive ? 'Tempo changed. Press Play tab to hear it.' : '';
+  });
+  play.addEventListener('click', async () => {
+    if (active) { stop(); return; }
+    stop();
+    const request = version;
+    active = true;
+    play.textContent = '■ Stop'; play.setAttribute('aria-pressed', 'true');
+    el('audio-status').textContent = '';
     try {
-      audio = new AudioContext(); await audio.resume();
-      if (document.hidden) { stop(); return; }
-      running = true; count = 0; nextBeat = audio.currentTime + 0.05;
-      button.textContent = 'Stop click'; button.setAttribute('aria-pressed', 'true');
-      el('audio-status').textContent = '';
-      schedule(); timer = setInterval(schedule, 25);
-    } catch { stop(); el('audio-status').textContent = 'Audio is unavailable in this browser.'; }
-    finally { starting = false; }
+      const context = new AudioContext();
+      audio = context;
+      await context.resume();
+      if (request !== version || document.hidden) {
+        if (request === version) stop();
+        return;
+      }
+      const sequence = buildSequence(current, Number(transpose.value), clampTempo(Number(bpm.value)));
+      const output = context.createGain();
+      output.gain.value = 0.7;
+      output.connect(context.destination);
+      const begins = context.currentTime + 0.08;
+      for (const note of sequence.notes) scheduleNote(context, output, note, begins);
+      timer = setInterval(() => {
+        if (request !== version) return;
+        const elapsed = Math.max(0, context.currentTime - begins);
+        if (elapsed >= sequence.duration + 0.05) { stop(true); return; }
+        const cell = Math.min(current.cells.length - 1, Math.floor(elapsed / sequence.step));
+        progress.value = Math.min(current.cells.length, elapsed / sequence.step);
+        el('play-position').textContent = `Bar ${Math.floor(cell / 8) + 1} / ${current.cells.length / 8} · ${Math.floor(cell % 8 / 2) + 1}${cell % 2 ? ' &' : ''}`;
+      }, 40);
+    } catch {
+      if (request !== version) return;
+      stop(); el('audio-status').textContent = 'Audio is unavailable. Try Play tab again in a browser with audio enabled.';
+    }
   });
   document.addEventListener('visibilitychange', () => { if (document.hidden) stop(); });
-  window.addEventListener('pagehide', stop);
+  window.addEventListener('pagehide', () => stop());
+  shuffle(true);
 </script>
-<style>
+<style is:global>
   .practice { width: min(1060px, 100%); margin: 0 auto; padding: 2rem 2rem 0; }
-  .room-nav, .eyebrow, .controls label, button, .exercise-top, .tab-meta, .legend, .study-grid h3, .challenge h3, .metronome, .room-signoff { font-family: var(--font-mono); }
+  .room-nav, .eyebrow, .controls label, button, .exercise-top, .tab-meta, .legend, .study-grid h3, .challenge h3, .tab-player, .room-signoff { font-family: var(--font-mono); }
   .room-nav { display:flex; justify-content:space-between; gap:1rem; font-size:.62rem; letter-spacing:.07em; color:var(--color-text-muted); }
   .room-nav a { text-decoration:none; }
-  .room-header { display:grid; grid-template-columns: 1.1fr 1fr; gap:2rem; align-items:end; padding:3.5rem 0 2.5rem; }
   .eyebrow { font-size:.62rem; letter-spacing:.15em; text-transform:uppercase; margin-bottom:1rem; color:#775d42; }
-  h1 { font-size:clamp(3rem, 6vw, 4.6rem); line-height:1.04; margin:0; letter-spacing:-.045em; }
-  h1 em { color:#8d432d; font-weight:400; }
-  .intro { color:var(--color-text-secondary); font-size:1.12rem; max-width:350px; margin:0 0 .3rem; }
-  .controls { display:grid; grid-template-columns:1fr 1.1fr 1fr 1.2fr; align-items:end; gap:1rem; padding:1.35rem 0; border-top:1px solid var(--color-border-strong); border-bottom:1px solid var(--color-border-strong); margin-bottom:2rem; }
+  .controls { display:grid; grid-template-columns:1fr 1.1fr 1fr 1.2fr; align-items:end; gap:1rem; padding:1.35rem 0; border-top:1px solid var(--color-border-strong); border-bottom:1px solid var(--color-border-strong); margin:1.7rem 0 2rem; }
   .controls label { display:grid; gap:.5rem; font-size:.59rem; color:var(--color-text-secondary); }
   select { width:100%; min-height:44px; background:transparent; border:1px solid var(--color-border-strong); border-radius:0; padding:.5rem; font: .68rem var(--font-mono); color:var(--color-text); }
   button { min-height:44px; cursor:pointer; font-size:.66rem; border:1px solid var(--color-border-strong); color:var(--color-text); background:transparent; padding:.6rem .8rem; }
@@ -166,21 +170,35 @@ const first = exercises[0];
   .legend b { color:#8d432d; }
   .study-grid { display:grid; grid-template-columns:1fr 1fr; gap:2rem; padding:1.5rem 0; }
   .study-grid h3, .challenge h3 { font-size:.6rem; text-transform:uppercase; letter-spacing:.06em; margin:0 0 .7rem; color:#775d42; }
-  .study-grid p { font-size:.96rem; margin:0; }
+  .study-grid .annotated { font-size:.96rem; }
   .challenge { background:#f1dfc7; margin:0 -2rem; padding:1.2rem 2rem; }
-  .challenge p { margin:0; font-size:.96rem; }
+  .challenge .annotated { margin:0; font-size:.96rem; }
   .transpose-note { padding:.75rem; background:#f1dfc7; font-size:.85rem; margin:1rem 0 0; }
-  .practice-footer { padding:1.5rem 0; }
-  .metronome { display:flex; align-items:center; gap:.8rem; flex-wrap:wrap; font-size:.65rem; }
-  .metronome label { display:flex; align-items:center; gap:.6rem; }
-  .metronome input { width:65px; min-height:44px; border:1px solid var(--color-border-strong); background:transparent; font:inherit; color:inherit; padding:.4rem; }
-  .beat { width:8px; height:8px; border-radius:50%; background:#cbbca7; }
-  .beat.on { background:#334c3c; box-shadow:0 0 0 4px #334c3c22; }
-  .practice-footer p { font-size:.85rem; color:var(--color-text-secondary); margin:.8rem 0 0; }
-  .how-to { border-top:1px solid var(--color-border-strong); padding:1rem 0; font-size:.88rem; color:var(--color-text-secondary); }
+  .tab-player { padding:.9rem 1.2rem; background:#e9ddc9; display:flex; align-items:center; gap:.8rem; flex-wrap:wrap; font-size:.65rem; }
+  .tab-player label { display:flex; align-items:center; gap:.6rem; }
+  .tab-player input { width:65px; min-height:44px; border:1px solid var(--color-border-strong); background:transparent; font:inherit; color:inherit; padding:.4rem; }
+  .how-to { margin-top:1.8rem; border-top:1px solid var(--color-border-strong); padding:1rem 0; font-size:.88rem; color:var(--color-text-secondary); }
   .how-to summary { cursor:pointer; }
   .how-to p { margin:1rem 0 0; }
   .room-signoff { font-size:.58rem; text-transform:uppercase; letter-spacing:.15em; margin:2rem 0 0; color:var(--color-text-muted); }
   .sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
-  @media(max-width:700px) { .practice { padding:1.3rem 1rem 0; } .room-nav span { display:none; } .room-header { grid-template-columns:1fr; gap:1.5rem; padding:2.5rem 0 2rem; } .controls { grid-template-columns:1fr 1fr; } .exercise { padding:1.2rem 1rem 0; } .title-row { align-items:start; flex-direction:column; gap:.5rem; } .title-row h2 { font-size:1.7rem; } .study-grid { grid-template-columns:1fr; gap:1.5rem; } .challenge { margin:0 -1rem; padding:1.2rem 1rem; } .tab-meta { padding:.7rem .7rem 0; font-size:.48rem; } .tablature { padding:.8rem .7rem; } .exercise-top { font-size:.52rem; } .exercise-top .eyebrow { font-size:.55rem; } }
+  @media(max-width:700px) { .practice { padding:1.3rem 1rem 0; } .room-nav span { display:none; } .controls { grid-template-columns:1fr 1fr; } .exercise { padding:1.2rem 1rem 0; } .title-row { align-items:start; flex-direction:column; gap:.5rem; } .title-row h2 { font-size:1.7rem; } .study-grid { grid-template-columns:1fr; gap:1.5rem; } .challenge { margin:0 -1rem; padding:1.2rem 1rem; } .tab-meta { padding:.7rem .7rem 0; font-size:.48rem; } .tablature { padding:.8rem .7rem; } .exercise-top { font-size:.52rem; } .exercise-top .eyebrow { font-size:.55rem; } }
+  .playback-note { font-size:.76rem; color:var(--color-text-secondary); margin:.55rem 0 1rem; }
+  .tab-player progress { width:100%; height:4px; accent-color:#334c3c; }
+  #play-tab { background:#334c3c; color:#fff3e2; border-color:#334c3c; min-width:125px; }
+  #play-tab:hover { background:#22372a; }
+  #audio-status:empty { display:none; }
+  .annotation-hint { font-size:.8rem; color:var(--color-text-secondary); margin:0 0 .75rem; }
+  .annotated { line-height:1.8; }
+  .term { display:inline; }
+  .term > summary { display:inline; cursor:help; color:#8d432d; text-decoration:underline dotted; text-underline-offset:4px; }
+  .term > summary::-webkit-details-marker { display:none; }
+  .term[open] { display:block; background:#f1dfc7; border-left:2px solid #8d432d; margin:.6rem 0; padding:.6rem .8rem; }
+  .term[open] > summary { font-weight:600; cursor:pointer; }
+  .term-explanation { display:block; color:var(--color-text); font-size:.88rem; line-height:1.65; margin-top:.3rem; }
+  .term:not([open]) > .term-explanation { display:none; }
+  .lesson { border-top:1px solid var(--color-border-strong); padding:.8rem 0; }
+  .lesson:first-child { margin-top:1.1rem; }
+  .lesson > summary { cursor:pointer; color:#334c3c; font-size:.96rem; }
+  .lesson > .annotated { margin-top:.7rem; }
 </style>

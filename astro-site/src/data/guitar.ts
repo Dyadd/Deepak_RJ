@@ -6,13 +6,13 @@ export type Exercise = {
 const n = (string: number, fret: string): string[] => Array.from({length: 6}, (_, i) => i === string - 1 ? fret : '-');
 const c = (...frets: string[]) => frets;
 const rest = c('-', '-', '-', '-', '-', '-');
-export const exercises: Exercise[] = [
+const sketches: Exercise[] = [
   {id:'velvet', title:'The velvet turn', kind:'lick', level:'Flow', harmony:'Am9',
     cells:[n(3,'5h7'),n(2,'5'),n(1,'5'),n(1,'7p5'),n(2,'8'),n(2,'5'),n(3,'7'),n(3,'5')],
-    feel:'One bar of even eighths. Each hammer-on or pull-off divides its slot into two sixteenths.',
+    feel:'Four bars of even eighths. Each hammer-on or pull-off divides its slot into two sixteenths.',
     technique:'Alternate index and middle on the melody. Pick only the first note of each h/p pair; keep the second note equally clear.',
     theory:'Over Am9, B is the 9th. The high-string 7p5 moves from B to A: colour resolving to the root.',
-    challenge:'Loop three times, then replace the final C with A (G string, fret 2) for a more settled ending.'},
+    challenge:'Loop three times, then end on B (high e, fret 7) instead of A to leave the phrase gently unresolved.'},
   {id:'sixths', title:'Two voices, one conversation', kind:'lick', level:'Flow', harmony:'Cmaj7',
     cells:[c('5','-','5','-','-','-'),rest,c('7','-','7','-','-','-'),c('8','-','9','-','-','-'),rest,c('7','-','7','-','-','-'),c('5','-','5','-','-','-'),rest],
     feel:'Pluck vertically aligned notes together. Let each pair ring through the following empty slot.',
@@ -24,7 +24,7 @@ export const exercises: Exercise[] = [
     feel:'Even eighths; h/p pairs are two sixteenths within one slot.',
     technique:'Keep the fretting hand near fifth position. Let the hammer-on provide momentum without rushing the next pluck.',
     theory:'F♯ on B-string fret 7 is the natural 6th of A Dorian. Alongside B, the 9th, it gives a brighter minor colour than A natural minor.',
-    challenge:'Change both F♯ notes to F (B string, fret 6). Compare Dorian with natural minor.'},
+    challenge:'Change every F♯ to F (B string, fret 6, or D string, fret 3). Compare Dorian with natural minor.'},
   {id:'slide', title:'Slide into the ninth', kind:'lick', level:'Stretch', harmony:'Am9',
     cells:[c('-','5','5','-','-','5'),n(3,'7/9'),n(2,'8'),n(1,'7'),n(1,'8p7'),n(2,'8'),n(3,'9'),n(1,'5')],
     feel:'The opening chord occupies one eighth. Slide and pull-off pairs each take two sixteenths.',
@@ -55,12 +55,12 @@ export const exercises: Exercise[] = [
     technique:'Thumb A/D; index G; middle B. Let notes overlap and keep both E strings silent.',
     theory:'C–E–B–D contains root, 3rd, major 7th and 9th. The 5th is omitted; the 3rd and 7th still define the chord.',
     challenge:'Play the same voicing as short, offbeat stabs instead of a sustained arpeggio.'},
-  {id:'twofive', title:'A small ii–V', kind:'chords', level:'Stretch', harmony:'Dm9 → G13',
+  {id:'twofive', title:'A small ii–V', kind:'chords', level:'Stretch', harmony:'Dm9 → G13 → Cmaj9',
     cells:[c('-','5','5','3','5','-'),rest,rest,c('-','5','5','3','5','-'),c('5','5','4','3','-','3'),rest,rest,c('5','5','4','3','-','3')],
-    feel:'Dm9 on beats 1 and 2-and; G13 on beats 3 and 4-and. Sustain between attacks.',
+    feel:'Bar 1 moves Dm9 to G13; bar 2 settles on Cmaj9. Bar 3 returns to Dm9; bar 4 moves G13 to Cmaj9. Sustain between attacks.',
     technique:'Keep D-string fret 3 and B-string fret 5 in place as the bass changes. Brush G13 upward with the fingers after the thumb plays low G.',
     theory:'Dm9 is D–F–C–E. G13 here is G–F–B–E–A. C moves down to B while F and E remain: smooth voice leading with very little motion.',
-    challenge:'Resolve to Cmaj9 (x3243x, low to high) for a second bar.'},
+    challenge:'Play the four bars again, but omit the bass and listen to how the upper notes connect.'},
   {id:'melodychord', title:'A melody inside the chord', kind:'chords', level:'Stretch', harmony:'Am7 → Am9 → Am7',
     cells:[c('5','5','5','5','-','5'),rest,c('7','5','5','5','-','-'),c('8','5','5','5','-','-'),rest,c('7','5','5','5','-','-'),c('5','5','5','5','-','5'),rest],
     feel:'Let the inner voices sustain while the top line moves A–B–C–B–A.',
@@ -78,8 +78,70 @@ export const exercises: Exercise[] = [
     feel:'Play each pair together on beats 1, 2 and 3; let the last pair ring.',
     technique:'Index/middle pluck G/B together. Move only one fretted note at each chord change.',
     theory:'C–F are the 7th and 3rd of Dm7. B–F are the 3rd and 7th of G7. B–E are the major 7th and 3rd of Cmaj7. Each change moves one voice down a semitone.',
-    challenge:'Add the roots D, G and C with your thumb. Find comfortable bass positions before combining the voices.'},
+    challenge:'Omit the bass notes in bar 2 and sing D, G and C instead. Then restore the bass and compare.'},
 ];
+// Three composed response bars for each lick/chord: develop, contrast, resolve.
+// These are written variations, not copies of the opening bar.
+const continuations: Record<string, string[][][]> = {
+  velvet: [
+    [n(4,'7'),n(3,'5'),n(3,'7'),n(2,'5h8'),n(1,'5'),n(1,'7'),n(2,'8'),rest],
+    [n(1,'8p7'),n(1,'5'),n(2,'8'),n(2,'5'),n(3,'7/9'),n(2,'8'),n(1,'7'),rest],
+    [n(2,'8'),n(2,'5'),n(3,'7p5'),n(4,'7'),n(3,'5'),n(2,'5'),n(1,'5'),rest],
+  ],
+  sixths: [
+    [c('8','-','9','-','-','-'),rest,c('10','-','10','-','-','-'),rest,c('12','-','12','-','-','-'),rest,c('10','-','10','-','-','-'),rest],
+    [c('8','-','9','-','-','-'),c('7','-','7','-','-','-'),c('5','-','5','-','-','-'),rest,c('3','-','4','-','-','-'),rest,c('5','-','5','-','-','-'),rest],
+    [c('7','-','7','-','-','-'),rest,c('8','-','9','-','-','-'),c('7','-','7','-','-','-'),c('8','-','9','-','-','-'),rest,rest,rest],
+  ],
+  dorian: [
+    [n(4,'4h5'),n(4,'7'),n(3,'5'),n(3,'7'),n(2,'5'),n(2,'7'),n(2,'8'),rest],
+    [n(1,'7'),n(1,'5'),n(2,'8p7'),n(2,'5'),n(3,'7/9'),n(2,'7'),n(2,'5'),rest],
+    [n(3,'7'),n(3,'5'),n(4,'7'),n(4,'5'),n(4,'4h5'),n(4,'7'),n(1,'5'),rest],
+  ],
+  slide: [
+    [n(6,'5'),n(3,'5h7'),n(2,'5'),n(1,'7'),n(1,'8'),n(1,'7'),n(2,'8'),rest],
+    [n(3,'7/9'),n(2,'8'),n(1,'7h8'),n(1,'10'),n(1,'8p7'),n(2,'8'),n(3,'9'),rest],
+    [n(3,'9'),n(3,'7'),n(3,'5'),n(4,'7'),c('5','5','5','-','-','5'),rest,rest,rest],
+  ],
+  approach: [
+    [n(1,'10'),n(1,'8'),n(1,'7'),n(2,'8'),n(2,'7h8'),n(3,'9'),n(2,'8'),rest],
+    [n(3,'8/9'),n(2,'8'),n(1,'7'),n(1,'8'),n(1,'10'),n(1,'8p7'),n(2,'8'),rest],
+    [n(2,'6'),n(2,'5'),n(3,'7'),n(3,'5'),n(3,'8/9'),n(2,'8'),n(1,'8'),rest],
+  ],
+  pocket: [
+    [n(5,'0'),rest,n(3,'5h7'),n(2,'5'),rest,c('5','5','-','-','-','-'),rest,n(2,'8')],
+    [rest,n(5,'0'),c('-','5','5','-','-','-'),rest,n(1,'5'),n(2,'8p5'),rest,n(3,'5')],
+    [n(5,'0'),rest,n(3,'7p5'),n(4,'7'),rest,c('5','5','5','-','-','-'),rest,rest],
+  ],
+  minor9: [
+    [n(6,'5'),n(4,'5'),n(3,'5'),n(2,'5'),n(1,'7'),rest,n(1,'5'),rest],
+    [n(6,'5'),rest,c('8','5','5','5','-','-'),rest,c('7','5','5','5','-','-'),rest,c('5','5','5','5','-','-'),rest],
+    [n(6,'5'),n(4,'5'),n(3,'5'),n(2,'5'),c('7','5','5','5','-','5'),rest,rest,rest],
+  ],
+  major9: [
+    [n(5,'3'),n(3,'4'),n(2,'3'),n(4,'2'),n(2,'5'),n(2,'3'),n(3,'4'),rest],
+    [c('-','3','4','2','3','-'),rest,n(2,'5'),n(2,'3'),n(3,'4'),n(4,'2'),n(5,'3'),rest],
+    [n(5,'3'),n(4,'2'),n(3,'4'),n(2,'3'),c('-','3','4','2','3','-'),rest,rest,rest],
+  ],
+  twofive: [
+    [c('-','3','4','2','3','-'),rest,rest,n(2,'3'),n(2,'5'),n(2,'3'),n(3,'4'),rest],
+    [n(5,'5'),n(4,'3'),n(3,'5'),n(2,'5'),c('-','5','5','3','5','-'),rest,n(2,'6'),n(2,'5')],
+    [c('5','5','4','3','-','3'),rest,rest,rest,c('-','3','4','2','3','-'),rest,rest,rest],
+  ],
+  melodychord: [
+    [n(6,'5'),n(4,'5'),c('8','5','5','-','-','-'),rest,c('7','5','5','-','-','-'),rest,c('5','5','5','-','-','-'),rest],
+    [n(6,'5'),rest,c('7','5','5','5','-','-'),c('8','5','5','5','-','-'),n(1,'7'),n(1,'5'),c('-','8','5','5','-','-'),rest],
+    [n(6,'5'),n(4,'5'),n(3,'5'),n(2,'5'),c('7','5','5','5','-','-'),rest,c('5','5','5','5','-','5'),rest],
+  ],
+  hear9: [[n(6,'5'),n(3,'5'),n(2,'5'),n(1,'5'),n(1,'7'),n(1,'5'),c('7','5','5','5','-','5'),rest]],
+  guide: [[c('-','6','5','-','5','-'),rest,c('-','6','4','-','-','3'),rest,c('-','5','4','-','3','-'),rest,rest,rest]],
+};
+export const exercises: Exercise[] = sketches.map(exercise => ({
+  ...exercise,
+  cells: [...exercise.cells, ...continuations[exercise.id].flat()],
+  feel: exercise.id === 'hear9' ? 'Bar 1 compares two chords; bar 2 separates their notes so you can hear the change, then brings back Am9.' :
+    exercise.id === 'guide' ? 'Bar 1 isolates the two moving voices; bar 2 adds D, G and C bass notes underneath. Each change falls on beats 1, 2 and 3.' : exercise.feel,
+}));
 export function transposeText(text: string, offset: number): string {
   if (!offset) return text;
   return text.replace(/\b([A-G])([♯♭]?)(?=m|maj|13|7|9|\b|–)/g, (_, letter, accidental) => {
@@ -89,7 +151,11 @@ export function transposeText(text: string, offset: number): string {
 }
 export function renderTab(exercise: Exercise, offset = 0): string {
   const width = 7;
-  const slot = (s: string) => s.padEnd(width, '-');
-  return '  ' + ['1','&','2','&','3','&','4','&'].map(s => s.padEnd(width,' ')).join('') + '\n' +
-    ['e','B','G','D','A','E'].map((string, i) => string + '|' + exercise.cells.map(cell => slot(cell[i].replace(/\d+/g, f => String(Number(f) + offset)))).join('') + '|').join('\n');
+  const bars: string[] = [];
+  for (let start = 0; start < exercise.cells.length; start += 8) {
+    bars.push(`BAR ${start / 8 + 1}\n` +
+      '  ' + ['1','&','2','&','3','&','4','&'].map(s => s.padEnd(width,' ')).join('').trimEnd() + '\n' +
+      ['e','B','G','D','A','E'].map((string, i) => string + '|' + exercise.cells.slice(start, start + 8).map(cell => cell[i].replace(/\d+/g, f => String(Number(f) + offset)).padEnd(width, '-')).join('') + '|').join('\n'));
+  }
+  return bars.join('\n\n');
 }

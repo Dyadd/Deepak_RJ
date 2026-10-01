@@ -5,6 +5,7 @@ const base = import.meta.env.BASE_URL;
 ---
 
 <BaseLayout title="Deepak RJ" bare>
+  <a class="guitar-door" href={`${base}guitar/`}>guitar</a>
   <main class="home">
     <div class="home-layout">
       <div class="home-identity">
@@ -75,3 +76,8 @@ const base = import.meta.env.BASE_URL;
     </div>
   </main>
 </BaseLayout>
+
+<style>
+  .guitar-door { align-self: flex-end; margin: 1rem 1.5rem 0; padding: .6rem .4rem; font: .65rem var(--font-mono); color: var(--color-text-muted); text-decoration: none; }
+  .guitar-door:hover { color: var(--color-accent); text-decoration: underline; }
+</style>
